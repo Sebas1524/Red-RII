@@ -699,73 +699,118 @@ export default function HomePage() {
       </section >
 
 
-      < section
-        className="section-padding"
-        style={{ background: "#f8f8ff" }}
-      >
-        <div className="container-custom">
-          <div className="scroll-reveal" style={{ textAlign: "center", marginBottom: "2rem" }}>
-            <div
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: 64,
-                height: 64,
-                borderRadius: "16px",
-                background: "linear-gradient(135deg, #000049, #0a0a6e)",
-                marginBottom: "1.5rem",
-                boxShadow: "0 10px 25px rgba(0, 0, 73, 0.2)",
-              }}
-            >
-              <Globe2 size={32} color="#fff" />
-            </div>
-            <h2
-              style={{
-                fontSize: "clamp(1.8rem, 4vw, 2.5rem)",
-                fontWeight: 700,
-                color: "#000049",
-                marginBottom: "1rem",
-              }}
-            >
-              Conoce nuestra presencia en Iberoamérica
-            </h2>
-            <p
-              style={{
-                color: "#64648a",
-                fontSize: "1.1rem",
-                maxWidth: "600px",
-                margin: "0 auto",
-                lineHeight: 1.6,
-              }}
-            >
-              Descubre las instituciones, investigadores y proyectos que forman parte de la Red Iberoamericana de Investigación a lo largo de toda la región.
-            </p>
-          </div>
+      <section className="section-padding" style={{ position: "relative", overflow: "hidden" }}>
+  {/* Imagen de Fondo */}
+  <div
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      zIndex: 0,
+    }}
+  >
+    <Image
+      src="/images/fondoV1.png"
+      alt="Fondo de la Red"
+      fill
+      style={{ objectFit: "cover", objectPosition: "center" }}
+      priority={false}
+    />
+    {/* Overlay oscuro para mejorar la legibilidad del texto (opcional) */}
+    <div
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        background: "rgba(0, 0, 49, 0.5)", // Ajusta la opacidad según tu imagen
+        zIndex: 1,
+      }}
+    />
+  </div>
 
-          <div className="scroll-reveal" style={{ textAlign: "center", marginTop: "2rem" }}>
-            <Link
-              href="/la-red"
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "0.5rem",
-                color: "#000049",
-                fontWeight: 600,
-                textDecoration: "none",
-                fontSize: "0.95rem",
-                padding: "0.6rem 1.25rem",
-                borderRadius: "10px",
-                border: "2px solid #000049",
-                transition: "all 0.2s",
-              }}
-            >
-              Conocer más sobre la Red
-              <ArrowRight size={18} />
-            </Link>
-          </div>
-        </div>
-      </section >
+  {/* Contenido */}
+  <div className="container-custom" style={{ position: "relative", zIndex: 2, padding: "5rem 1.5rem" }}>
+    <div className="scroll-reveal" style={{ textAlign: "center", marginBottom: "2rem" }}>
+      <div
+        style={{
+          display: "inline-flex",
+          alignItems: "center",
+          justifyContent: "center",
+          width: 64,
+          height: 64,
+          borderRadius: "16px",
+          background: "linear-gradient(135deg, #000049, #0a0a6e)",
+          marginBottom: "1.5rem",
+          boxShadow: "0 10px 25px rgba(0, 0, 73, 0.2)",
+        }}
+      >
+        <Globe2 size={32} color="#fff" />
+      </div>
+      <h2
+        style={{
+          fontSize: "clamp(1.8rem, 4vw, 2.5rem)",
+          fontWeight: 700,
+          color: "#fff",
+          marginBottom: "1rem",
+          textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
+        }}
+      >
+        Conoce nuestra presencia en Iberoamérica
+      </h2>
+      <p
+        style={{
+          color: "rgba(255,255,255,0.9)",
+          fontSize: "1.1rem",
+          maxWidth: "600px",
+          margin: "0 auto",
+          lineHeight: 1.6,
+          textShadow: "1px 1px 2px rgba(0,0,0,0.2)",
+        }}
+      >
+        Descubre las instituciones, investigadores y proyectos que forman parte de la Red Iberoamericana de Investigación a lo largo de toda la región.
+      </p>
+    </div>
+
+    <div className="scroll-reveal" style={{ textAlign: "center", marginTop: "2rem" }}>
+      <Link
+        href="/la-red"
+        style={{
+          display: "inline-flex",
+          alignItems: "center",
+          gap: "0.5rem",
+          color: "#fff",
+          fontWeight: 600,
+          textDecoration: "none",
+          fontSize: "0.95rem",
+          padding: "0.6rem 1.25rem",
+          borderRadius: "10px",
+          border: "2px solid #fff",
+          transition: "all 0.2s",
+          backgroundColor: "rgba(0,0,49,0.2)",
+          backdropFilter: "blur(5px)",
+        }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.background = "#FEC704";
+          e.currentTarget.style.color = "#000049";
+          e.currentTarget.style.borderColor = "#FEC704";
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.background = "rgba(0,0,49,0.2)";
+          e.currentTarget.style.color = "#fff";
+          e.currentTarget.style.borderColor = "#fff";
+        }}
+      >
+        Conocer más sobre la Red
+        <ArrowRight size={18} />
+      </Link>
+    </div>
+  </div>
+</section>
+      
       <section className="section-padding" style={{ background: "#fff", padding: "4rem 0" }}>
   <div className="container-custom">
     {/* Encabezado de la sección */}
