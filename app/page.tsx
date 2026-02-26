@@ -358,55 +358,123 @@ export default function HomePage() {
       </section >
 
 
-      < section
-        style={{
-          background: "linear-gradient(135deg, #000049, #0a0a6e)",
-          padding: "3rem 1.5rem",
-          overflow: "hidden",
-        }
-        }
-      >
-        <div className="container-custom scroll-reveal" style={{ textAlign: "center" }}>
-          <h2
-            style={{
-              color: "#fff",
-              fontSize: "1.3rem",
-              fontWeight: 600,
-              marginBottom: "1.5rem",
-              letterSpacing: "1px",
-              textTransform: "uppercase",
-            }}
-          >
-            Áreas de Investigación
-          </h2>
-          <div
-            className="stagger-children"
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: "0.75rem",
-              justifyContent: "center",
-            }}
-          >
-            {researchAreas.map((area, i) => (
-              <span
-                key={i}
-                style={{
-                  padding: "0.5rem 1.25rem",
-                  background: "rgba(255,255,255,0.08)",
-                  borderRadius: "999px",
-                  color: "rgba(255,255,255,0.85)",
-                  fontSize: "0.875rem",
-                  border: "1px solid rgba(255,255,255,0.12)",
-                  letterSpacing: "0.3px",
-                }}
-              >
-                {area}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section >
+      <section
+  style={{
+    position: "relative",
+    overflow: "hidden",
+  }}
+>
+  {/* Imagen de Fondo */}
+  <div
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      zIndex: 0,
+    }}
+  >
+    <Image
+      src="/images/fondoV2.png"
+      alt="Fondo Áreas de Investigación"
+      fill
+      style={{ objectFit: "cover", objectPosition: "center" }}
+      priority={false}
+    />
+    {/* Overlay oscuro para mejorar la legibilidad del texto */}
+    <div
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        background: "rgba(0, 0, 49, 0.6)", // Ajusta la opacidad según necesites
+        zIndex: 1,
+      }}
+    />
+  </div>
+
+  {/* Contenido */}
+  <div className="container-custom scroll-reveal" 
+    style={{ 
+      position: "relative", 
+      zIndex: 2, 
+      padding: "4rem 1.5rem",
+      textAlign: "center",
+    }}
+  >
+    <h2
+      style={{
+        color: "#fff",
+        fontSize: "clamp(1.5rem, 3vw, 2rem)",
+        fontWeight: 700,
+        marginBottom: "2rem",
+        letterSpacing: "2px",
+        textTransform: "uppercase",
+        textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
+      }}
+    >
+      Áreas de Investigación
+    </h2>
+    
+    {/* Línea decorativa */}
+    <div
+      style={{
+        width: "80px",
+        height: "3px",
+        background: "#FEC704",
+        margin: "0 auto 2.5rem auto",
+        borderRadius: "2px",
+      }}
+    />
+    
+    <div
+      className="stagger-children"
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        gap: "0.75rem",
+        justifyContent: "center",
+        maxWidth: "1000px",
+        margin: "0 auto",
+      }}
+    >
+      {researchAreas.map((area, i) => (
+        <span
+          key={i}
+          style={{
+            padding: "0.6rem 1.5rem",
+            background: "rgba(255,255,255,0.1)",
+            borderRadius: "999px",
+            color: "#fff",
+            fontSize: "0.95rem",
+            border: "1px solid rgba(254,199,4,0.3)",
+            letterSpacing: "0.3px",
+            backdropFilter: "blur(5px)",
+            transition: "all 0.3s ease",
+            cursor: "default",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.background = "#FEC704";
+            e.currentTarget.style.color = "#000049";
+            e.currentTarget.style.borderColor = "#FEC704";
+            e.currentTarget.style.transform = "translateY(-2px)";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.background = "rgba(255,255,255,0.1)";
+            e.currentTarget.style.color = "#fff";
+            e.currentTarget.style.borderColor = "rgba(254,199,4,0.3)";
+            e.currentTarget.style.transform = "translateY(0)";
+          }}
+        >
+          {area}
+        </span>
+      ))}
+    </div>
+  </div>
+</section>
 
 
      <section className="section-padding" style={{ background: "#f8f8ff" }}>
