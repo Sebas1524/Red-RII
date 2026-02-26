@@ -766,6 +766,377 @@ export default function HomePage() {
           </div>
         </div>
       </section >
+      <section className="section-padding" style={{ background: "#fff", padding: "4rem 0" }}>
+  <div className="container-custom">
+    {/* Encabezado de la sección */}
+    <div className="scroll-reveal" style={{ textAlign: "center", marginBottom: "3rem" }}>
+      <div
+        style={{
+          display: "inline-flex",
+          alignItems: "center",
+          gap: "0.5rem",
+          background: "rgba(254,199,4,0.1)",
+          padding: "0.5rem 1.25rem",
+          borderRadius: "999px",
+          fontSize: "0.85rem",
+          marginBottom: "1.5rem",
+          border: "1px solid rgba(254,199,4,0.2)",
+          color: "#000049",
+          fontWeight: 600,
+          letterSpacing: "1px",
+        }}
+      >
+        <Calendar size={14} color="#FEC704" />
+        <span>ACTUALIDAD Y CONEXIÓN RII</span>
+      </div>
+
+      <h2
+        style={{
+          fontSize: "clamp(1.8rem, 4vw, 2.5rem)",
+          fontWeight: 700,
+          color: "#000049",
+          marginBottom: "1rem",
+          lineHeight: 1.2,
+        }}
+      >
+        El latido de la innovación
+        <br />
+        <span style={{ color: "#FEC704" }}>en un solo lugar</span>
+      </h2>
+
+      <p
+        style={{
+          color: "#64648a",
+          fontSize: "1.1rem",
+          maxWidth: "700px",
+          margin: "0 auto",
+          lineHeight: 1.7,
+        }}
+      >
+        Mantente conectado con el avance científico de la Red. Desde los hitos alcanzados 
+        en nuestras últimas investigaciones hasta la agenda de los próximos encuentros que 
+        marcarán el futuro tecnológico de Iberoamérica.
+      </p>
+
+      <div
+        style={{
+          marginTop: "1.5rem",
+          color: "#000049",
+          fontWeight: 500,
+          fontSize: "1rem",
+        }}
+      >
+        ¿Qué deseas explorar hoy?
+      </div>
+    </div>
+
+    {/* Sección dividida - Noticias y Eventos */}
+    <div
+      className="stagger-children"
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(2, 1fr)",
+        gap: "0",
+        borderRadius: "24px",
+        overflow: "hidden",
+        boxShadow: "0 20px 40px rgba(0,0,73,0.12)",
+        maxWidth: "1000px",
+        margin: "0 auto",
+      }}
+    >
+      {/* Bloque de NOTICIAS */}
+      <div
+        className="hover-lift"
+        style={{
+          background: "#f8f8ff",
+          padding: "3rem 2.5rem",
+          position: "relative",
+          transition: "all 0.4s ease",
+          borderRight: "1px solid rgba(0,0,73,0.05)",
+        }}
+      >
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            height: "4px",
+            background: "linear-gradient(90deg, #FEC704, #000049)",
+            opacity: 0.5,
+          }}
+        />
+
+        <div style={{ marginBottom: "2rem" }}>
+          <div
+            style={{
+              width: 64,
+              height: 64,
+              borderRadius: "16px",
+              background: "linear-gradient(135deg, #FEC704, #fdd835)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              marginBottom: "1.5rem",
+              boxShadow: "0 10px 20px rgba(254,199,4,0.3)",
+            }}
+          >
+            <BookOpen size={32} color="#000049" />
+          </div>
+
+          <h3
+            style={{
+              fontSize: "2rem",
+              fontWeight: 700,
+              color: "#000049",
+              marginBottom: "1rem",
+              lineHeight: 1.2,
+            }}
+          >
+            LO QUE ESTÁ
+            <br />
+            <span style={{ color: "#FEC704" }}>PASANDO</span>
+          </h3>
+
+          <p
+            style={{
+              color: "#000049",
+              fontSize: "1rem",
+              fontWeight: 600,
+              marginBottom: "0.5rem",
+              letterSpacing: "1px",
+            }}
+          >
+            Noticias y Boletines
+          </p>
+
+          <p
+            style={{
+              color: "#64648a",
+              fontSize: "0.95rem",
+              lineHeight: 1.6,
+              marginBottom: "2rem",
+            }}
+          >
+            Descubre los logros, publicaciones y convenios más recientes de nuestra comunidad académica.
+          </p>
+
+          <Link
+            href="/noticias"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "0.75rem",
+              background: "#000049",
+              color: "#fff",
+              padding: "0.9rem 2rem",
+              borderRadius: "12px",
+              fontWeight: 600,
+              textDecoration: "none",
+              fontSize: "0.95rem",
+              transition: "all 0.3s ease",
+              border: "2px solid #000049",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = "#FEC704";
+              e.currentTarget.style.color = "#000049";
+              e.currentTarget.style.borderColor = "#FEC704";
+              e.currentTarget.style.transform = "translateY(-2px)";
+              e.currentTarget.style.boxShadow = "0 10px 25px rgba(254,199,4,0.3)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = "#000049";
+              e.currentTarget.style.color = "#fff";
+              e.currentTarget.style.borderColor = "#000049";
+              e.currentTarget.style.transform = "translateY(0)";
+              e.currentTarget.style.boxShadow = "none";
+            }}
+          >
+            <span>VER NOTICIAS</span>
+            <ArrowRight size={18} />
+          </Link>
+        </div>
+
+        {/* Elemento decorativo */}
+        <div
+          style={{
+            position: "absolute",
+            bottom: "2rem",
+            right: "2rem",
+            opacity: 0.1,
+            fontSize: "8rem",
+            fontWeight: 800,
+            color: "#000049",
+            lineHeight: 1,
+            userSelect: "none",
+            pointerEvents: "none",
+          }}
+        >
+          01
+        </div>
+      </div>
+
+      {/* Bloque de EVENTOS */}
+      <div
+        className="hover-lift"
+        style={{
+          background: "linear-gradient(135deg, #000049, #0a0a6e)",
+          padding: "3rem 2.5rem",
+          position: "relative",
+          transition: "all 0.4s ease",
+        }}
+      >
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            height: "4px",
+            background: "linear-gradient(90deg, #FEC704, #fff)",
+            opacity: 0.3,
+          }}
+        />
+
+        <div style={{ marginBottom: "2rem" }}>
+          <div
+            style={{
+              width: 64,
+              height: 64,
+              borderRadius: "16px",
+              background: "#FEC704",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              marginBottom: "1.5rem",
+              boxShadow: "0 10px 20px rgba(254,199,4,0.2)",
+            }}
+          >
+            <Calendar size={32} color="#000049" />
+          </div>
+
+          <h3
+            style={{
+              fontSize: "2rem",
+              fontWeight: 700,
+              color: "#fff",
+              marginBottom: "1rem",
+              lineHeight: 1.2,
+            }}
+          >
+            LO QUE
+            <br />
+            <span style={{ color: "#FEC704" }}>VIENE</span>
+          </h3>
+
+          <p
+            style={{
+              color: "#FEC704",
+              fontSize: "1rem",
+              fontWeight: 600,
+              marginBottom: "0.5rem",
+              letterSpacing: "1px",
+            }}
+          >
+            Eventos y Próximos Encuentros
+          </p>
+
+          <p
+            style={{
+              color: "rgba(255,255,255,0.8)",
+              fontSize: "0.95rem",
+              lineHeight: 1.6,
+              marginBottom: "2rem",
+            }}
+          >
+            Asegura tu lugar en los webinars, talleres y la ruta oficial hacia el nuevo CAISEB.
+          </p>
+
+          <Link
+            href="/eventos"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "0.75rem",
+              background: "transparent",
+              color: "#FEC704",
+              padding: "0.9rem 2rem",
+              borderRadius: "12px",
+              fontWeight: 600,
+              textDecoration: "none",
+              fontSize: "0.95rem",
+              transition: "all 0.3s ease",
+              border: "2px solid #FEC704",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = "#FEC704";
+              e.currentTarget.style.color = "#000049";
+              e.currentTarget.style.transform = "translateY(-2px) scale(1.02)";
+              e.currentTarget.style.boxShadow = "0 10px 25px rgba(254,199,4,0.4)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = "transparent";
+              e.currentTarget.style.color = "#FEC704";
+              e.currentTarget.style.transform = "translateY(0) scale(1)";
+              e.currentTarget.style.boxShadow = "none";
+            }}
+          >
+            <span>VER EVENTOS</span>
+            <ArrowRight size={18} />
+          </Link>
+        </div>
+
+        {/* Elemento decorativo */}
+        <div
+          style={{
+            position: "absolute",
+            bottom: "2rem",
+            right: "2rem",
+            opacity: 0.1,
+            fontSize: "8rem",
+            fontWeight: 800,
+            color: "#fff",
+            lineHeight: 1,
+            userSelect: "none",
+            pointerEvents: "none",
+          }}
+        >
+          02
+        </div>
+      </div>
+    </div>
+
+    {/* Llamado adicional opcional */}
+    <div
+      className="scroll-reveal"
+      style={{
+        textAlign: "center",
+        marginTop: "3rem",
+      }}
+    >
+      <p
+        style={{
+          color: "#64648a",
+          fontSize: "0.95rem",
+        }}
+      >
+        ¿Eres miembro?{" "}
+        <Link
+          href="/contribuir"
+          style={{
+            color: "#000049",
+            fontWeight: 600,
+            textDecoration: "underline",
+            textUnderlineOffset: "4px",
+            textDecorationColor: "#FEC704",
+          }}
+        >
+          Contribuye con noticias o propón un evento
+        </Link>
+      </p>
+    </div>
+  </div>
+</section>
     </div >
   );
 }
