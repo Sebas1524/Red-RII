@@ -376,7 +376,7 @@ export default function HomePage() {
     }}
   >
     <Image
-      src="public/images/fondoV2.png"
+      src="/images/fondoV2.png"
       alt="Fondo Áreas de Investigación"
       fill
       style={{ objectFit: "cover", objectPosition: "center" }}
@@ -780,7 +780,7 @@ export default function HomePage() {
     }}
   >
     <Image
-      src="public/images/fondoV1.png"
+      src="/images/fondoV1.png"
       alt="Fondo de la Red"
       fill
       style={{ objectFit: "cover", objectPosition: "center" }}
