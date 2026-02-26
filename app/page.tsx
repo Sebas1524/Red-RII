@@ -1235,7 +1235,7 @@ export default function HomePage() {
       >
         ¿Eres miembro?{" "}
         <Link
-          href="/contribuir"
+          href="/contacto"
           style={{
             color: "#000049",
             fontWeight: 600,
