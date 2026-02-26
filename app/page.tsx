@@ -409,102 +409,176 @@ export default function HomePage() {
       </section >
 
 
-      < section className="section-padding" style={{ background: "#f8f8ff" }}>
-        <div className="container-custom">
+     <section className="section-padding" style={{ background: "#f8f8ff" }}>
+  <div className="container-custom">
+    <div
+      className="scroll-reveal"
+      style={{
+        maxWidth: "800px",
+        margin: "0 auto",
+        textAlign: "center",
+      }}
+    >
+      {/* Línea decorativa superior */}
+      <div
+        style={{
+          width: "80px",
+          height: "4px",
+          background: "linear-gradient(90deg, #FEC704, #000049)",
+          margin: "0 auto 2rem auto",
+          borderRadius: "2px",
+        }}
+      />
+
+      {/* Título principal */}
+      <h2
+        style={{
+          fontSize: "clamp(1.8rem, 4vw, 2.8rem)",
+          fontWeight: 700,
+          color: "#000049",
+          marginBottom: "1.5rem",
+          lineHeight: 1.2,
+        }}
+      >
+        ¿Hacia dónde proyectamos
+        <br />
+        <span style={{ color: "#FEC704" }}>la ciencia y la tecnología?</span>
+      </h2>
+
+      {/* Párrafo de visión */}
+      <p
+        style={{
+          color: "#2c2c4a",
+          fontSize: "clamp(1rem, 2vw, 1.2rem)",
+          lineHeight: 1.8,
+          marginBottom: "2.5rem",
+          opacity: 0.85,
+          fontWeight: 400,
+          maxWidth: "700px",
+          marginLeft: "auto",
+          marginRight: "auto",
+        }}
+      >
+        Para años próximos, la Red RII será reconocida como el ecosistema de 
+        investigación tecnológica más influyente de Iberoamérica, liderando la 
+        creación de conocimiento aplicado y formando alianzas estratégicas que 
+        impulsen el desarrollo científico, ético y social de nuestras instituciones 
+        aliadas.
+      </p>
+
+      {/* Texto "EXPLORA NUESTRA IDENTIDAD" con estilo */}
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "1rem",
+          marginBottom: "1.5rem",
+        }}
+      >
+        <div
+          style={{
+            height: "2px",
+            width: "40px",
+            background: "linear-gradient(90deg, transparent, #FEC704)",
+          }}
+        />
+        <span
+          style={{
+            fontSize: "0.9rem",
+            fontWeight: 600,
+            letterSpacing: "4px",
+            textTransform: "uppercase",
+            color: "#000049",
+            opacity: 0.7,
+          }}
+        >
+          EXPLORA NUESTRA IDENTIDAD
+        </span>
+        <div
+          style={{
+            height: "2px",
+            width: "40px",
+            background: "linear-gradient(90deg, #FEC704, transparent)",
+          }}
+        />
+      </div>
+
+      {/* Texto "Descubre lo que nos mueve" */}
+      <p
+        style={{
+          fontSize: "1.1rem",
+          color: "#64648a",
+          marginBottom: "2rem",
+          fontStyle: "italic",
+        }}
+      >
+        Descubre lo que nos mueve
+      </p>
+
+      {/* Botón estilizado */}
+      <Link
+        href="/la-red"
+        style={{
+          display: "inline-flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "0.75rem",
+          background: "transparent",
+          color: "#000049",
+          padding: "1rem 2.5rem",
+          borderRadius: "50px",
+          fontWeight: 600,
+          textDecoration: "none",
+          fontSize: "1rem",
+          border: "2px solid #000049",
+          transition: "all 0.3s ease",
+          position: "relative",
+          overflow: "hidden",
+          cursor: "pointer",
+        }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.background = "#000049";
+          e.currentTarget.style.color = "#fff";
+          e.currentTarget.style.transform = "translateY(-2px)";
+          e.currentTarget.style.boxShadow = "0 10px 25px rgba(0,0,73,0.2)";
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.background = "transparent";
+          e.currentTarget.style.color = "#000049";
+          e.currentTarget.style.transform = "translateY(0)";
+          e.currentTarget.style.boxShadow = "none";
+        }}
+      >
+        <span>Conocer nuestra identidad</span>
+        <ArrowRight size={18} style={{ transition: "transform 0.3s ease" }} />
+      </Link>
+
+      {/* Elementos decorativos */}
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          gap: "1rem",
+          marginTop: "3rem",
+        }}
+      >
+        {[1, 2, 3].map((dot) => (
           <div
-            className="stagger-children"
+            key={dot}
             style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-              gap: "2rem",
+              width: "8px",
+              height: "8px",
+              borderRadius: "50%",
+              background: dot === 2 ? "#FEC704" : "#e0e0f0",
+              transition: "all 0.3s ease",
             }}
-          >
-
-            <div
-              className="hover-lift scroll-reveal"
-              style={{
-                borderRadius: "20px",
-                overflow: "hidden",
-                background: "#fff",
-                boxShadow: "0 4px 20px rgba(0,0,73,0.06)",
-              }}
-            >
-              <div style={{ position: "relative", height: "200px" }}>
-                <Image
-                  src="/images/mission-teamwork.jpg"
-                  alt="Equipo de investigación"
-                  fill
-                  style={{ objectFit: "cover" }}
-                  sizes="(max-width: 768px) 100vw, 600px"
-                />
-                <div
-                  style={{
-                    position: "absolute",
-                    inset: 0,
-                    background: "linear-gradient(to bottom, rgba(0,0,73,0.3) 0%, rgba(0,0,73,0.7) 100%)",
-                    display: "flex",
-                    alignItems: "flex-end",
-                    padding: "1.5rem",
-                  }}
-                >
-                  <h3 style={{ color: "#fff", fontSize: "1.4rem", fontWeight: 700 }}>
-                    Nuestra Misión
-                  </h3>
-                </div>
-              </div>
-              <div style={{ padding: "1.5rem" }}>
-                <p style={{ color: "#444", fontSize: "0.95rem", lineHeight: 1.7 }}>
-                  Hacer de la investigación un proceso vital que parta de los
-                  intereses y motivaciones de diversas áreas del conocimiento,
-                  realizado de manera colegiada y sistemática.
-                </p>
-              </div>
-            </div>
-
-
-            <div
-              className="hover-lift scroll-reveal"
-              style={{
-                borderRadius: "20px",
-                overflow: "hidden",
-                background: "#fff",
-                boxShadow: "0 4px 20px rgba(0,0,73,0.06)",
-              }}
-            >
-              <div style={{ position: "relative", height: "200px" }}>
-                <Image
-                  src="/images/vision-future.jpg"
-                  alt="Visión educativa"
-                  fill
-                  style={{ objectFit: "cover" }}
-                  sizes="(max-width: 768px) 100vw, 600px"
-                />
-                <div
-                  style={{
-                    position: "absolute",
-                    inset: 0,
-                    background: "linear-gradient(to bottom, rgba(0,0,73,0.3) 0%, rgba(0,0,73,0.7) 100%)",
-                    display: "flex",
-                    alignItems: "flex-end",
-                    padding: "1.5rem",
-                  }}
-                >
-                  <h3 style={{ color: "#fff", fontSize: "1.4rem", fontWeight: 700 }}>
-                    Nuestra Visión
-                  </h3>
-                </div>
-              </div>
-              <div style={{ padding: "1.5rem" }}>
-                <p style={{ color: "#444", fontSize: "0.95rem", lineHeight: 1.7 }}>
-                  Posicionarnos como eje central de las investigaciones que apoyen
-                  la solución de problemáticas educativas, fortaleciendo la
-                  formación integral universitaria.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section >
+          />
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
 
 
       < section className="section-padding" style={{ background: "#fff" }}>
