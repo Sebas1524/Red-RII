@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 450" fill="none">
+  <!-- Background rectangle frame -->
+  <rect x="40" y="40" width="180" height="180" rx="4" stroke="#000049" stroke-width="6" fill="none"/>
+  
+  <!-- RII Text -->
+  <text x="70" y="185" font-family="Georgia, serif" font-size="72" font-weight="bold" fill="#000049">R</text>
+  <text x="120" y="185" font-family="Georgia, serif" font-size="72" fill="#000049">II</text>
+  
+  <!-- RED IBEROAMERICANA DE INVESTIGACIÓN text -->
+  <text x="60" y="240" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#000049" letter-spacing="2">RED</text>
+  <text x="60" y="265" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#000049" letter-spacing="1">IBEROAMERICANA</text>
+  <text x="60" y="290" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#000049" letter-spacing="1">DE INVESTIGACIÓN</text>
+  
+  <!-- Diamond pattern representing Latin America map (simplified) -->
+  <g fill="#000049">
+    <!-- Row pattern diamonds -->
+    <rect x="200" y="50" width="10" height="10" rx="1" transform="rotate(45 205 55)"/>
+    <rect x="216" y="50" width="10" height="10" rx="1" transform="rotate(45 221 55)"/>
+    <rect x="232" y="50" width="10" height="10" rx="1" transform="rotate(45 237 55)"/>
+    
+    <rect x="190" y="66" width="10" height="10" rx="1" transform="rotate(45 195 71)"/>
+    <rect x="206" y="66" width="10" height="10" rx="1" transform="rotate(45 211 71)"/>
+    <rect x="222" y="66" width="10" height="10" rx="1" transform="rotate(45 227 71)"/>
+    <rect x="238" y="66" width="10" height="10" rx="1" transform="rotate(45 243 71)"/>
+    <rect x="254" y="66" width="10" height="10" rx="1" transform="rotate(45 259 71)"/>
+    
+    <rect x="200" y="82" width="10" height="10" rx="1" transform="rotate(45 205 87)"/>
+    <rect x="216" y="82" width="10" height="10" rx="1" transform="rotate(45 221 87)"/>
+    <rect x="232" y="82" width="10" height="10" rx="1" transform="rotate(45 237 87)"/>
+    <rect x="248" y="82" width="10" height="10" rx="1" transform="rotate(45 253 87)"/>
+    <rect x="264" y="82" width="10" height="10" rx="1" transform="rotate(45 269 87)"/>
+    <rect x="280" y="82" width="10" height="10" rx="1" transform="rotate(45 285 87)"/>
+    
+    <rect x="210" y="98" width="10" height="10" rx="1" transform="rotate(45 215 103)"/>
+    <rect x="226" y="98" width="10" height="10" rx="1" transform="rotate(45 231 103)"/>
+    <rect x="242" y="98" width="10" height="10" rx="1" transform="rotate(45 247 103)"/>
+    <rect x="258" y="98" width="10" height="10" rx="1" transform="rotate(45 263 103)"/>
+    <rect x="274" y="98" width="10" height="10" rx="1" transform="rotate(45 279 103)"/>
+    <rect x="290" y="98" width="10" height="10" rx="1" transform="rotate(45 295 103)"/>
+    <rect x="306" y="98" width="10" height="10" rx="1" transform="rotate(45 311 103)"/>
+    
+    <rect x="220" y="114" width="10" height="10" rx="1" transform="rotate(45 225 119)"/>
+    <rect x="236" y="114" width="10" height="10" rx="1" transform="rotate(45 241 119)"/>
+    <rect x="252" y="114" width="10" height="10" rx="1" transform="rotate(45 257 119)"/>
+    <rect x="268" y="114" width="10" height="10" rx="1" transform="rotate(45 273 119)"/>
+    <rect x="284" y="114" width="10" height="10" rx="1" transform="rotate(45 289 119)"/>
+    <rect x="300" y="114" width="10" height="10" rx="1" transform="rotate(45 305 119)"/>
+    <rect x="316" y="114" width="10" height="10" rx="1" transform="rotate(45 321 119)"/>
+    <rect x="332" y="114" width="10" height="10" rx="1" transform="rotate(45 337 119)"/>
+    
+    <rect x="230" y="130" width="10" height="10" rx="1" transform="rotate(45 235 135)"/>
+    <rect x="246" y="130" width="10" height="10" rx="1" transform="rotate(45 251 135)"/>
+    <rect x="262" y="130" width="10" height="10" rx="1" transform="rotate(45 267 135)"/>
+    <rect x="278" y="130" width="10" height="10" rx="1" transform="rotate(45 283 135)"/>
+    <rect x="294" y="130" width="10" height="10" rx="1" transform="rotate(45 299 135)"/>
+    <rect x="310" y="130" width="10" height="10" rx="1" transform="rotate(45 315 135)"/>
+    <rect x="326" y="130" width="10" height="10" rx="1" transform="rotate(45 331 135)"/>
+    <rect x="342" y="130" width="10" height="10" rx="1" transform="rotate(45 347 135)"/>
+    
+    <rect x="230" y="146" width="10" height="10" rx="1" transform="rotate(45 235 151)"/>
+    <rect x="246" y="146" width="10" height="10" rx="1" transform="rotate(45 251 151)"/>
+    <rect x="262" y="146" width="10" height="10" rx="1" transform="rotate(45 267 151)"/>
+    <rect x="278" y="146" width="10" height="10" rx="1" transform="rotate(45 283 151)"/>
+    <rect x="294" y="146" width="10" height="10" rx="1" transform="rotate(45 299 151)"/>
+    <rect x="310" y="146" width="10" height="10" rx="1" transform="rotate(45 315 151)"/>
+    <rect x="326" y="146" width="10" height="10" rx="1" transform="rotate(45 331 151)"/>
+    
+    <rect x="240" y="162" width="10" height="10" rx="1" transform="rotate(45 245 167)"/>
+    <rect x="256" y="162" width="10" height="10" rx="1" transform="rotate(45 261 167)"/>
+    <rect x="272" y="162" width="10" height="10" rx="1" transform="rotate(45 277 167)"/>
+    <rect x="288" y="162" width="10" height="10" rx="1" transform="rotate(45 293 167)"/>
+    <rect x="304" y="162" width="10" height="10" rx="1" transform="rotate(45 309 167)"/>
+    <rect x="320" y="162" width="10" height="10" rx="1" transform="rotate(45 325 167)"/>
+    
+    <rect x="240" y="178" width="10" height="10" rx="1" transform="rotate(45 245 183)"/>
+    <rect x="256" y="178" width="10" height="10" rx="1" transform="rotate(45 261 183)"/>
+    <rect x="272" y="178" width="10" height="10" rx="1" transform="rotate(45 277 183)"/>
+    <rect x="288" y="178" width="10" height="10" rx="1" transform="rotate(45 293 183)"/>
+    <rect x="304" y="178" width="10" height="10" rx="1" transform="rotate(45 309 183)"/>
+    
+    <rect x="250" y="194" width="10" height="10" rx="1" transform="rotate(45 255 199)"/>
+    <rect x="266" y="194" width="10" height="10" rx="1" transform="rotate(45 271 199)"/>
+    <rect x="282" y="194" width="10" height="10" rx="1" transform="rotate(45 287 199)"/>
+    <rect x="298" y="194" width="10" height="10" rx="1" transform="rotate(45 303 199)"/>
+    
+    <rect x="260" y="210" width="10" height="10" rx="1" transform="rotate(45 265 215)"/>
+    <rect x="276" y="210" width="10" height="10" rx="1" transform="rotate(45 281 215)"/>
+    <rect x="292" y="210" width="10" height="10" rx="1" transform="rotate(45 297 215)"/>
+    
+    <rect x="260" y="226" width="10" height="10" rx="1" transform="rotate(45 265 231)"/>
+    <rect x="276" y="226" width="10" height="10" rx="1" transform="rotate(45 281 231)"/>
+    
+    <rect x="265" y="242" width="10" height="10" rx="1" transform="rotate(45 270 247)"/>
+    <rect x="281" y="242" width="10" height="10" rx="1" transform="rotate(45 286 247)"/>
+    
+    <rect x="270" y="258" width="10" height="10" rx="1" transform="rotate(45 275 263)"/>
+  </g>
+</svg>
