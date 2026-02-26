@@ -712,7 +712,7 @@ export default function HomePage() {
     }}
   >
     <Image
-      src="/images/fondoV1.png"
+      src="public/images/fondoV1.png"
       alt="Fondo de la Red"
       fill
       style={{ objectFit: "cover", objectPosition: "center" }}
