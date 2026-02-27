@@ -506,66 +506,139 @@ export default function LaRedPage() {
 
 
             <section
-                style={{
-                    background: "linear-gradient(135deg, #000049, #0a0a6e)",
-                    padding: "3.5rem 1.5rem",
-                }}
-            >
-                <div className="container-custom scroll-reveal" style={{ textAlign: "center" }}>
-                    <h2
-                        style={{
-                            color: "#fff",
-                            fontSize: "1.3rem",
-                            fontWeight: 600,
-                            marginBottom: "0.5rem",
-                            letterSpacing: "1px",
-                            textTransform: "uppercase",
-                        }}
-                    >
-                        Áreas Temáticas Transversales
-                    </h2>
-                    <p
-                        style={{
-                            color: "rgba(255,255,255,0.6)",
-                            marginBottom: "2rem",
-                            fontSize: "0.95rem",
-                        }}
-                    >
-                        Temas que cruzan todas las líneas de investigación
-                    </p>
-                    <div
-                        className="stagger-children"
-                        style={{
-                            display: "flex",
-                            flexWrap: "wrap",
-                            gap: "1rem",
-                            justifyContent: "center",
-                        }}
-                    >
-                        {transversalAreas.map((area, i) => (
-                            <div
-                                key={i}
-                                className="hover-lift"
-                                style={{
-                                    display: "flex",
-                                    alignItems: "center",
-                                    gap: "0.75rem",
-                                    background: "rgba(255,255,255,0.08)",
-                                    padding: "1rem 1.5rem",
-                                    borderRadius: "14px",
-                                    border: "1px solid rgba(255,255,255,0.1)",
-                                    color: "#fff",
-                                }}
-                            >
-                                <area.icon size={22} style={{ opacity: 0.8 }} />
-                                <span style={{ fontSize: "0.95rem", fontWeight: 500 }}>
-                                    {area.label}
-                                </span>
-                            </div>
-                        ))}
+    style={{
+        position: "relative",
+        overflow: "hidden",
+    }}
+>
+    {/* Imagen de Fondo */}
+    <div
+        style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            zIndex: 0,
+        }}
+    >
+        <Image
+            src="/images/fondoV3.png"
+            alt="Fondo Áreas Transversales"
+            fill
+            style={{ objectFit: "cover", objectPosition: "center" }}
+            priority={false}
+        />
+        {/* Overlay oscuro para mejorar la legibilidad del texto */}
+        <div
+            style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                background: "rgba(0, 0, 49, 0.7)", // Overlay más oscuro para mejor contraste
+                zIndex: 1,
+            }}
+        />
+    </div>
+
+    {/* Contenido */}
+    <div className="container-custom scroll-reveal" 
+        style={{ 
+            position: "relative", 
+            zIndex: 2, 
+            padding: "4rem 1.5rem",
+            textAlign: "center",
+        }}
+    >
+        <h2
+            style={{
+                color: "#fff",
+                fontSize: "clamp(1.5rem, 3vw, 2rem)",
+                fontWeight: 700,
+                marginBottom: "0.5rem",
+                letterSpacing: "1px",
+                textTransform: "uppercase",
+                textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
+            }}
+        >
+            Áreas Temáticas Transversales
+        </h2>
+        <p
+            style={{
+                color: "rgba(255,255,255,0.8)",
+                marginBottom: "2.5rem",
+                fontSize: "1rem",
+                textShadow: "1px 1px 2px rgba(0,0,0,0.2)",
+            }}
+        >
+            Temas que cruzan todas las líneas de investigación
+        </p>
+
+        {/* Línea decorativa */}
+        <div
+            style={{
+                width: "80px",
+                height: "3px",
+                background: "#FEC704",
+                margin: "0 auto 2.5rem auto",
+                borderRadius: "2px",
+            }}
+        />
+        
+        <div
+            className="stagger-children"
+            style={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "1rem",
+                justifyContent: "center",
+                maxWidth: "800px",
+                margin: "0 auto",
+            }}
+        >
+            {transversalAreas.map((area, i) => (
+                <div
+                    key={i}
+                    className="hover-lift"
+                    style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "0.75rem",
+                        background: "rgba(255,255,255,0.12)",
+                        padding: "1rem 2rem",
+                        borderRadius: "50px",
+                        border: "1px solid rgba(254,199,4,0.3)",
+                        color: "#fff",
+                        backdropFilter: "blur(8px)",
+                        transition: "all 0.3s ease",
+                        cursor: "default",
+                    }}
+                    onMouseEnter={(e) => {
+                        e.currentTarget.style.background = "#FEC704";
+                        e.currentTarget.style.color = "#000049";
+                        e.currentTarget.style.borderColor = "#FEC704";
+                        e.currentTarget.style.transform = "translateY(-3px)";
+                        e.currentTarget.style.boxShadow = "0 10px 25px rgba(254,199,4,0.3)";
+                    }}
+                    onMouseLeave={(e) => {
+                        e.currentTarget.style.background = "rgba(255,255,255,0.12)";
+                        e.currentTarget.style.color = "#fff";
+                        e.currentTarget.style.borderColor = "rgba(254,199,4,0.3)";
+                        e.currentTarget.style.transform = "translateY(0)";
+                        e.currentTarget.style.boxShadow = "none";
+                    }}
+                >
+                                    <area.icon size={22} style={{ opacity: 0.9 }} />
+                                    <span style={{ fontSize: "1rem", fontWeight: 500 }}>
+                                        {area.label}
+                                    </span>
+                                </div>
+                            ))}
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
             {/* Documentos Legales */}
 <section className="section-padding" style={{ background: "#fff", padding: "4rem 1.5rem" }}>
