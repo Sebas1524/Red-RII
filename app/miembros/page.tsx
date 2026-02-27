@@ -340,65 +340,150 @@ export default function MiembrosPage() {
                 </div>
             </section>
 
-            {/* Estadísticas con animación */}
-            <section style={{ padding: "4rem 1.5rem", background: "#f8f9fc" }}>
-                <div className="container-custom">
+            {/* Estadísticas con animación y fondo */}
+<section
+    style={{
+        position: "relative",
+        overflow: "hidden",
+    }}
+>
+    {/* Imagen de Fondo */}
+    <div
+        style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            zIndex: 0,
+        }}
+    >
+        <img
+            src="/images/fondoV4.png"
+            alt="Fondo Estadísticas"
+            style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                objectPosition: "center",
+            }}
+        />
+        {/* Overlay oscuro para mejorar la legibilidad del texto */}
+        <div
+            style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                background: "rgba(0, 0, 49, 0.75)", // Overlay más oscuro para mejor contraste
+                zIndex: 1,
+            }}
+        />
+    </div>
+
+    {/* Contenido */}
+    <div className="container-custom" 
+        style={{ 
+            position: "relative", 
+            zIndex: 2, 
+            padding: "5rem 1.5rem",
+        }}
+    >
+        <div className="scroll-reveal" style={{ textAlign: "center", marginBottom: "3rem" }}>
+            <h2
+                style={{
+                    color: "#fff",
+                    fontSize: "clamp(1.8rem, 3vw, 2.2rem)",
+                    fontWeight: 700,
+                    marginBottom: "1rem",
+                    textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
+                }}
+            >
+                Nuestro Impacto en Números
+            </h2>
+            <div
+                style={{
+                    width: "80px",
+                    height: "3px",
+                    background: "#FEC704",
+                    margin: "0 auto",
+                    borderRadius: "2px",
+                }}
+            />
+        </div>
+
+        <div
+            className="stagger-children"
+            style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+                gap: "2rem",
+            }}
+        >
+            {stats.map((stat, index) => (
+                <div
+                    key={index}
+                    className="hover-lift"
+                    style={{
+                        background: "rgba(255,255,255,0.1)",
+                        backdropFilter: "blur(10px)",
+                        padding: "2rem",
+                        borderRadius: "16px",
+                        textAlign: "center",
+                        border: "1px solid rgba(254,199,4,0.2)",
+                        transition: "all 0.3s ease",
+                    }}
+                    onMouseEnter={(e) => {
+                        e.currentTarget.style.background = "rgba(254,199,4,0.15)";
+                        e.currentTarget.style.borderColor = "#FEC704";
+                        e.currentTarget.style.transform = "translateY(-5px)";
+                        e.currentTarget.style.boxShadow = "0 15px 30px rgba(0,0,0,0.3)";
+                    }}
+                    onMouseLeave={(e) => {
+                        e.currentTarget.style.background = "rgba(255,255,255,0.1)";
+                        e.currentTarget.style.borderColor = "rgba(254,199,4,0.2)";
+                        e.currentTarget.style.transform = "translateY(0)";
+                        e.currentTarget.style.boxShadow = "none";
+                    }}
+                >
                     <div
-                        className="stagger-children"
                         style={{
-                            display: "grid",
-                            gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-                            gap: "2rem",
+                            display: "inline-flex",
+                            padding: "1rem",
+                            borderRadius: "50%",
+                            background: "rgba(254,199,4,0.2)",
+                            color: "#FEC704",
+                            marginBottom: "1rem",
                         }}
                     >
-                        {stats.map((stat, index) => (
-                            <div
-                                key={index}
-                                className="hover-lift"
-                                style={{
-                                    background: "#fff",
-                                    padding: "2rem",
-                                    borderRadius: "16px",
-                                    textAlign: "center",
-                                    boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.05)",
-                                }}
-                            >
-                                <div
-                                    style={{
-                                        display: "inline-flex",
-                                        padding: "1rem",
-                                        borderRadius: "50%",
-                                        background: "#f0f0f8",
-                                        color: "#000049",
-                                        marginBottom: "1rem",
-                                    }}
-                                >
-                                    <stat.icon size={24} />
-                                </div>
-                                <div
-                                    style={{
-                                        fontSize: "2.5rem",
-                                        fontWeight: 800,
-                                        color: "#000049",
-                                        marginBottom: "0.5rem",
-                                    }}
-                                >
-                                    <AnimatedCounter end={stat.value} suffix={stat.suffix} />
-                                </div>
-                                <div
-                                    style={{
-                                        fontSize: "0.9rem",
-                                        color: "#64648a",
-                                        fontWeight: 500,
-                                    }}
-                                >
-                                    {stat.label}
-                                </div>
-                            </div>
-                        ))}
+                        <stat.icon size={24} />
+                    </div>
+                    <div
+                        style={{
+                            fontSize: "2.5rem",
+                            fontWeight: 800,
+                            color: "#fff",
+                            marginBottom: "0.5rem",
+                            textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
+                        }}
+                    >
+                        <AnimatedCounter end={stat.value} suffix={stat.suffix} />
+                    </div>
+                    <div
+                        style={{
+                            fontSize: "0.9rem",
+                            color: "rgba(255,255,255,0.9)",
+                            fontWeight: 500,
+                        }}
+                    >
+                        {stat.label}
                     </div>
                 </div>
-            </section>
+            ))}
+        </div>
+    </div>
+</section>
 
             {/* Instituciones Aliadas */}
             <section style={{ padding: "4rem 1.5rem 6rem", background: "#fff" }}>
