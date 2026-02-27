@@ -54,10 +54,14 @@ const stats = [
     { label: "Proyectos Activos", value: 25, icon: Search, suffix: "+" },
 ];
 
-// Componente de contador animado
-function AnimatedCounter({ end, duration = 2000, suffix = "" }) {
+// Componente de contador animado con tipos
+function AnimatedCounter({ end, duration = 2000, suffix = "" }: { 
+    end: number; 
+    duration?: number; 
+    suffix?: string;
+}) {
     const [count, setCount] = useState(0);
-    const countRef = useRef(null);
+    const countRef = useRef<HTMLSpanElement>(null);
     const started = useRef(false);
 
     useEffect(() => {
