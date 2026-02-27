@@ -32,7 +32,7 @@ const memberLogos = [
     { src: "nikola-tesla.png", url: "https://istnikolatesla.edu.ec/" },
     { src: "ORELLANA.png", url: "" },
     { src: "pichincha-logo.png", url: "https://www.tecnologicopichincha.edu.ec/" },
-    { src: "QUININDE.png", url: "https://institutoquininde.edu.ec/" },
+    { src: "quininde_copy.png", url: "https://institutoquininde.edu.ec/" },
     { src: "QUITO.png", url: "https://itq.edu.ec/" },
     { src: "rey-david.png", url: "https://itred.edu.ec/" },
     { src: "sudaamericano-guayaquil.jpg", url: "https://www.tecsu-online.com/" },
