@@ -33,7 +33,7 @@ const memberLogos = [
     { src: "ORELLANA.png", url: "" },
     { src: "pichincha-logo.png", url: "https://www.tecnologicopichincha.edu.ec/" },
     { src: "quininde_copy.png", url: "https://institutoquininde.edu.ec/" },
-    { src: "QUITO.png", url: "https://itq.edu.ec/" },
+    { src: "quito_copy.png", url: "https://itq.edu.ec/" },
     { src: "rey-david.png", url: "https://itred.edu.ec/" },
     { src: "sudaamericano-guayaquil.jpg", url: "https://www.tecsu-online.com/" },
     { src: "SUDAMERICANO.png", url: "https://sudamericano.edu.ec/" },
