@@ -640,7 +640,7 @@ export default function LaRedPage() {
                     </div>
                 </section>
 
-            {/* Documentos Legales */}
+                       {/* Documentos Legales */}
 <section className="section-padding" style={{ background: "#fff", padding: "4rem 1.5rem" }}>
     <div className="container-custom">
         <div className="scroll-reveal" style={{ textAlign: "center", marginBottom: "3rem" }}>
@@ -694,6 +694,124 @@ export default function LaRedPage() {
                 margin: "0 auto",
             }}
         >
+            {/* ACTA 27 MARZO 2024 */}
+            <a
+                href="/documentos-legales/ACTARII1-27 MARZO DEL 2024.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none" }}
+            >
+                <div
+                    className="hover-lift"
+                    style={{
+                        background: "#f8f8ff",
+                        borderRadius: "16px",
+                        padding: "1.5rem",
+                        border: "1px solid #e8e8f4",
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "1rem",
+                        transition: "all 0.3s ease",
+                        cursor: "pointer",
+                        height: "100%",
+                    }}
+                >
+                    <div
+                        style={{
+                            width: 50,
+                            height: 50,
+                            borderRadius: "12px",
+                            background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            flexShrink: 0,
+                        }}
+                    >
+                        <BookOpen size={24} color="#FEC704" />
+                    </div>
+                    <div style={{ flex: 1 }}>
+                        <h3
+                            style={{
+                                fontSize: "1rem",
+                                fontWeight: 600,
+                                color: "#000049",
+                                marginBottom: "0.25rem",
+                            }}
+                        >
+                            Acta RII
+                        </h3>
+                        <p
+                            style={{
+                                fontSize: "0.85rem",
+                                color: "#64648a",
+                            }}
+                        >
+                            27 Marzo 2024
+                        </p>
+                    </div>
+                </div>
+            </a>
+
+            {/* ACTA 27 JUNIO 2024 */}
+            <a
+                href="/documentos-legales/ACTA_RED1-27 JUNIO DEL 2024.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none" }}
+            >
+                <div
+                    className="hover-lift"
+                    style={{
+                        background: "#f8f8ff",
+                        borderRadius: "16px",
+                        padding: "1.5rem",
+                        border: "1px solid #e8e8f4",
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "1rem",
+                        transition: "all 0.3s ease",
+                        cursor: "pointer",
+                        height: "100%",
+                    }}
+                >
+                    <div
+                        style={{
+                            width: 50,
+                            height: 50,
+                            borderRadius: "12px",
+                            background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            flexShrink: 0,
+                        }}
+                    >
+                        <BookOpen size={24} color="#FEC704" />
+                    </div>
+                    <div style={{ flex: 1 }}>
+                        <h3
+                            style={{
+                                fontSize: "1rem",
+                                fontWeight: 600,
+                                color: "#000049",
+                                marginBottom: "0.25rem",
+                            }}
+                        >
+                            Acta RED
+                        </h3>
+                        <p
+                            style={{
+                                fontSize: "0.85rem",
+                                color: "#64648a",
+                            }}
+                        >
+                            27 Junio 2024
+                        </p>
+                    </div>
+                </div>
+            </a>
+
             {/* Acta Constitutiva */}
             <a
                 href="/documentos-legales/ACTA CONSTITUTIVA-RED RII.pdf"
