@@ -45,6 +45,8 @@ const memberLogos = [
     { src: "ohiggins.png", url: "https://www.instituto-ohiggins.edu.ec/" },
     { src: "wissen.png", url: "https://wissen.edu.ec/" },
     { src: "Sucre.png", url: "https://tecnologicosucre.edu.ec/web/" },
+    { src: "jaime-mola.png", url: "https://conservatoriojaimemola.edu.ec/" },
+    { src: "fundacion-entorno.jpg", url: "https://www.facebook.com/Fundentorno/" },
 ];
 
 const stats = [
