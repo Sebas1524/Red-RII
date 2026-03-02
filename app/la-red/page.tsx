@@ -739,7 +739,7 @@ export default function LaRedPage() {
                                 marginBottom: "0.25rem",
                             }}
                         >
-                            Acta RII
+                            Acta de Reunión-RII
                         </h3>
                         <p
                             style={{
@@ -798,7 +798,7 @@ export default function LaRedPage() {
                                 marginBottom: "0.25rem",
                             }}
                         >
-                            Acta RED
+                            Acta de Reunión-RED
                         </h3>
                         <p
                             style={{
