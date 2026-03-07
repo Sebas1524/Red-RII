@@ -1238,1201 +1238,1788 @@ export default function LaRedPage() {
         </div>
 
         {/* Cartas de Adhesión */}
-        <div className="scroll-reveal">
-            <h3
-                style={{
-                    fontSize: "1.3rem",
-                    fontWeight: 600,
-                    color: "#000049",
-                    marginBottom: "1.5rem",
-                    paddingBottom: "0.5rem",
-                    borderBottom: "2px solid #FEC704",
-                }}
-            >
-                Cartas de Adhesión
-            </h3>
-            <div
-                className="stagger-children"
-                style={{
-                    display: "grid",
-                    gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
-                    gap: "1rem",
-                }}
-            >
-                {/* Acta de Adhesion Bolivar */}
-                <a
-                    href="/documentos-legales/Acta de Adhesion Bolivar.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none" }}
-                >
-                    <div
-                        className="hover-lift"
-                        style={{
-                            background: "#fff",
-                            borderRadius: "12px",
-                            padding: "1rem",
-                            border: "1px solid #e8e8f4",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.75rem",
-                            transition: "all 0.3s ease",
-                            cursor: "pointer",
-                            height: "100%",
-                        }}
-                    >
-                        <div
-                            style={{
-                                width: 40,
-                                height: 40,
-                                borderRadius: "8px",
-                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                flexShrink: 0,
-                            }}
-                        >
-                            <BookOpen size={20} color="#FEC704" />
-                        </div>
-                        <div style={{ flex: 1 }}>
-                            <h4
-                                style={{
-                                    fontSize: "0.95rem",
-                                    fontWeight: 500,
-                                    color: "#000049",
-                                }}
-                            >
-                                Bolívar
-                            </h4>
-                        </div>
-                    </div>
-                </a>
-
-                {/* ACTIONGROW */}
-                <a
-                    href="/documentos-legales/ACTA DE ADHESIÓN_ ACTIONGROW.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none" }}
-                >
-                    <div
-                        className="hover-lift"
-                        style={{
-                            background: "#fff",
-                            borderRadius: "12px",
-                            padding: "1rem",
-                            border: "1px solid #e8e8f4",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.75rem",
-                            transition: "all 0.3s ease",
-                            cursor: "pointer",
-                            height: "100%",
-                        }}
-                    >
-                        <div
-                            style={{
-                                width: 40,
-                                height: 40,
-                                borderRadius: "8px",
-                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                flexShrink: 0,
-                            }}
-                        >
-                            <BookOpen size={20} color="#FEC704" />
-                        </div>
-                        <div style={{ flex: 1 }}>
-                            <h4
-                                style={{
-                                    fontSize: "0.95rem",
-                                    fontWeight: 500,
-                                    color: "#000049",
-                                }}
-                            >
-                                ACTIONGROW
-                            </h4>
-                        </div>
-                    </div>
-                </a>
-
-                {/* Inst-Guayaquil */}
-                <a
-                    href="/documentos-legales/ACTA DE ADHESIÓN-inst-Guayaquil.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none" }}
-                >
-                    <div
-                        className="hover-lift"
-                        style={{
-                            background: "#fff",
-                            borderRadius: "12px",
-                            padding: "1rem",
-                            border: "1px solid #e8e8f4",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.75rem",
-                            transition: "all 0.3s ease",
-                            cursor: "pointer",
-                            height: "100%",
-                        }}
-                    >
-                        <div
-                            style={{
-                                width: 40,
-                                height: 40,
-                                borderRadius: "8px",
-                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                flexShrink: 0,
-                            }}
-                        >
-                            <BookOpen size={20} color="#FEC704" />
-                        </div>
-                        <div style={{ flex: 1 }}>
-                            <h4
-                                style={{
-                                    fontSize: "0.95rem",
-                                    fontWeight: 500,
-                                    color: "#000049",
-                                }}
-                            >
-                                Inst. Guayaquil
-                            </h4>
-                        </div>
-                    </div>
-                </a>
-
-                {/* ACTIONGROW-X */}
-                <a
-                    href="/documentos-legales/ACTIONGROW-X -ACTA DE ADESHIÓN.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none" }}
-                >
-                    <div
-                        className="hover-lift"
-                        style={{
-                            background: "#fff",
-                            borderRadius: "12px",
-                            padding: "1rem",
-                            border: "1px solid #e8e8f4",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.75rem",
-                            transition: "all 0.3s ease",
-                            cursor: "pointer",
-                            height: "100%",
-                        }}
-                    >
-                        <div
-                            style={{
-                                width: 40,
-                                height: 40,
-                                borderRadius: "8px",
-                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                flexShrink: 0,
-                            }}
-                        >
-                            <BookOpen size={20} color="#FEC704" />
-                        </div>
-                        <div style={{ flex: 1 }}>
-                            <h4
-                                style={{
-                                    fontSize: "0.95rem",
-                                    fontWeight: 500,
-                                    color: "#000049",
-                                }}
-                            >
-                                ACTIONGROW-X
-                            </h4>
-                        </div>
-                    </div>
-                </a>
-
-                {/* Carta de Intencion Bolivar */}
-                <a
-                    href="/documentos-legales/Carta de Intencion Bolivar.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none" }}
-                >
-                    <div
-                        className="hover-lift"
-                        style={{
-                            background: "#fff",
-                            borderRadius: "12px",
-                            padding: "1rem",
-                            border: "1px solid #e8e8f4",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.75rem",
-                            transition: "all 0.3s ease",
-                            cursor: "pointer",
-                            height: "100%",
-                        }}
-                    >
-                        <div
-                            style={{
-                                width: 40,
-                                height: 40,
-                                borderRadius: "8px",
-                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                flexShrink: 0,
-                            }}
-                        >
-                            <BookOpen size={20} color="#FEC704" />
-                        </div>
-                        <div style={{ flex: 1 }}>
-                            <h4
-                                style={{
-                                    fontSize: "0.95rem",
-                                    fontWeight: 500,
-                                    color: "#000049",
-                                }}
-                            >
-                                Carta Intención Bolívar
-                            </h4>
-                        </div>
-                    </div>
-                </a>
-
-                {/* IST SUCRE 2023 */}
-                <a
-                    href="/documentos-legales/Carta de intención IST SUCRE 2023.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none" }}
-                >
-                    <div
-                        className="hover-lift"
-                        style={{
-                            background: "#fff",
-                            borderRadius: "12px",
-                            padding: "1rem",
-                            border: "1px solid #e8e8f4",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.75rem",
-                            transition: "all 0.3s ease",
-                            cursor: "pointer",
-                            height: "100%",
-                        }}
-                    >
-                        <div
-                            style={{
-                                width: 40,
-                                height: 40,
-                                borderRadius: "8px",
-                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                flexShrink: 0,
-                            }}
-                        >
-                            <BookOpen size={20} color="#FEC704" />
-                        </div>
-                        <div style={{ flex: 1 }}>
-                            <h4
-                                style={{
-                                    fontSize: "0.95rem",
-                                    fontWeight: 500,
-                                    color: "#000049",
-                                }}
-                            >
-                                IST SUCRE 2023
-                            </h4>
-                        </div>
-                    </div>
-                </a>
-
-                {/* CENESTUR */}
-                <a
-                    href="/documentos-legales/CENESTUR.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none" }}
-                >
-                    <div
-                        className="hover-lift"
-                        style={{
-                            background: "#fff",
-                            borderRadius: "12px",
-                            padding: "1rem",
-                            border: "1px solid #e8e8f4",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.75rem",
-                            transition: "all 0.3s ease",
-                            cursor: "pointer",
-                            height: "100%",
-                        }}
-                    >
-                        <div
-                            style={{
-                                width: 40,
-                                height: 40,
-                                borderRadius: "8px",
-                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                flexShrink: 0,
-                            }}
-                        >
-                            <BookOpen size={20} color="#FEC704" />
-                        </div>
-                        <div style={{ flex: 1 }}>
-                            <h4
-                                style={{
-                                    fontSize: "0.95rem",
-                                    fontWeight: 500,
-                                    color: "#000049",
-                                }}
-                            >
-                                CENESTUR
-                            </h4>
-                        </div>
-                    </div>
-                </a>
-
-                {/* CEPU */}
-                <a
-                    href="/documentos-legales/CEPU.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none" }}
-                >
-                    <div
-                        className="hover-lift"
-                        style={{
-                            background: "#fff",
-                            borderRadius: "12px",
-                            padding: "1rem",
-                            border: "1px solid #e8e8f4",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.75rem",
-                            transition: "all 0.3s ease",
-                            cursor: "pointer",
-                            height: "100%",
-                        }}
-                    >
-                        <div
-                            style={{
-                                width: 40,
-                                height: 40,
-                                borderRadius: "8px",
-                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                flexShrink: 0,
-                            }}
-                        >
-                            <BookOpen size={20} color="#FEC704" />
-                        </div>
-                        <div style={{ flex: 1 }}>
-                            <h4
-                                style={{
-                                    fontSize: "0.95rem",
-                                    fontWeight: 500,
-                                    color: "#000049",
-                                }}
-                            >
-                                CEPU
-                            </h4>
-                        </div>
-                    </div>
-                </a>
-
-                {/* CUESTTV */}
-                <a
-                    href="/documentos-legales/CUESTTV.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none" }}
-                >
-                    <div
-                        className="hover-lift"
-                        style={{
-                            background: "#fff",
-                            borderRadius: "12px",
-                            padding: "1rem",
-                            border: "1px solid #e8e8f4",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.75rem",
-                            transition: "all 0.3s ease",
-                            cursor: "pointer",
-                            height: "100%",
-                        }}
-                    >
-                        <div
-                            style={{
-                                width: 40,
-                                height: 40,
-                                borderRadius: "8px",
-                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                flexShrink: 0,
-                            }}
-                        >
-                            <BookOpen size={20} color="#FEC704" />
-                        </div>
-                        <div style={{ flex: 1 }}>
-                            <h4
-                                style={{
-                                    fontSize: "0.95rem",
-                                    fontWeight: 500,
-                                    color: "#000049",
-                                }}
-                            >
-                                CUESTTV
-                            </h4>
-                        </div>
-                    </div>
-                </a>
-
-                {/* ILLINGWORTH-SERVIENTREGA */}
-                <a
-                    href="/documentos-legales/ILLINGWORTH-SERVIENTREGA.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none" }}
-                >
-                    <div
-                        className="hover-lift"
-                        style={{
-                            background: "#fff",
-                            borderRadius: "12px",
-                            padding: "1rem",
-                            border: "1px solid #e8e8f4",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.75rem",
-                            transition: "all 0.3s ease",
-                            cursor: "pointer",
-                            height: "100%",
-                        }}
-                    >
-                        <div
-                            style={{
-                                width: 40,
-                                height: 40,
-                                borderRadius: "8px",
-                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                flexShrink: 0,
-                            }}
-                        >
-                            <BookOpen size={20} color="#FEC704" />
-                        </div>
-                        <div style={{ flex: 1 }}>
-                            <h4
-                                style={{
-                                    fontSize: "0.95rem",
-                                    fontWeight: 500,
-                                    color: "#000049",
-                                }}
-                            >
-                                Illingworth
-                            </h4>
-                        </div>
-                    </div>
-                </a>
-
-                {/* ITI */}
-                <a
-                    href="/documentos-legales/ITI.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none" }}
-                >
-                    <div
-                        className="hover-lift"
-                        style={{
-                            background: "#fff",
-                            borderRadius: "12px",
-                            padding: "1rem",
-                            border: "1px solid #e8e8f4",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.75rem",
-                            transition: "all 0.3s ease",
-                            cursor: "pointer",
-                            height: "100%",
-                        }}
-                    >
-                        <div
-                            style={{
-                                width: 40,
-                                height: 40,
-                                borderRadius: "8px",
-                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                flexShrink: 0,
-                            }}
-                        >
-                            <BookOpen size={20} color="#FEC704" />
-                        </div>
-                        <div style={{ flex: 1 }}>
-                            <h4
-                                style={{
-                                    fontSize: "0.95rem",
-                                    fontWeight: 500,
-                                    color: "#000049",
-                                }}
-                            >
-                                ITI
-                            </h4>
-                        </div>
-                    </div>
-                </a>
-
-                {/* ITSU-SERVIENTREGA */}
-                <a
-                    href="/documentos-legales/ITSU-SERVIENTREGA.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none" }}
-                >
-                    <div
-                        className="hover-lift"
-                        style={{
-                            background: "#fff",
-                            borderRadius: "12px",
-                            padding: "1rem",
-                            border: "1px solid #e8e8f4",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.75rem",
-                            transition: "all 0.3s ease",
-                            cursor: "pointer",
-                            height: "100%",
-                        }}
-                    >
-                        <div
-                            style={{
-                                width: 40,
-                                height: 40,
-                                borderRadius: "8px",
-                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                flexShrink: 0,
-                            }}
-                        >
-                            <BookOpen size={20} color="#FEC704" />
-                        </div>
-                        <div style={{ flex: 1 }}>
-                            <h4
-                                style={{
-                                    fontSize: "0.95rem",
-                                    fontWeight: 500,
-                                    color: "#000049",
-                                }}
-                            >
-                                ITSU
-                            </h4>
-                        </div>
-                    </div>
-                </a>
-
-                {/* JAPON */}
-                <a
-                    href="/documentos-legales/JAPON.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none" }}
-                >
-                    <div
-                        className="hover-lift"
-                        style={{
-                            background: "#fff",
-                            borderRadius: "12px",
-                            padding: "1rem",
-                            border: "1px solid #e8e8f4",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.75rem",
-                            transition: "all 0.3s ease",
-                            cursor: "pointer",
-                            height: "100%",
-                        }}
-                    >
-                        <div
-                            style={{
-                                width: 40,
-                                height: 40,
-                                borderRadius: "8px",
-                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                flexShrink: 0,
-                            }}
-                        >
-                            <BookOpen size={20} color="#FEC704" />
-                        </div>
-                        <div style={{ flex: 1 }}>
-                            <h4
-                                style={{
-                                    fontSize: "0.95rem",
-                                    fontWeight: 500,
-                                    color: "#000049",
-                                }}
-                            >
-                                JAPON
-                            </h4>
-                        </div>
-                    </div>
-                </a>
-
-                {/* LENDAN */}
-                <a
-                    href="/documentos-legales/LENDAN.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none" }}
-                >
-                    <div
-                        className="hover-lift"
-                        style={{
-                            background: "#fff",
-                            borderRadius: "12px",
-                            padding: "1rem",
-                            border: "1px solid #e8e8f4",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.75rem",
-                            transition: "all 0.3s ease",
-                            cursor: "pointer",
-                            height: "100%",
-                        }}
-                    >
-                        <div
-                            style={{
-                                width: 40,
-                                height: 40,
-                                borderRadius: "8px",
-                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                flexShrink: 0,
-                            }}
-                        >
-                            <BookOpen size={20} color="#FEC704" />
-                        </div>
-                        <div style={{ flex: 1 }}>
-                            <h4
-                                style={{
-                                    fontSize: "0.95rem",
-                                    fontWeight: 500,
-                                    color: "#000049",
-                                }}
-                            >
-                                LENDAN
-                            </h4>
-                        </div>
-                    </div>
-                </a>
-
-                {/* MISAEL ACOSTA-SERVIENTREGA */}
-                <a
-                    href="/documentos-legales/MISAEL ACOSTA-SERVIENTREGA.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none" }}
-                >
-                    <div
-                        className="hover-lift"
-                        style={{
-                            background: "#fff",
-                            borderRadius: "12px",
-                            padding: "1rem",
-                            border: "1px solid #e8e8f4",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.75rem",
-                            transition: "all 0.3s ease",
-                            cursor: "pointer",
-                            height: "100%",
-                        }}
-                    >
-                        <div
-                            style={{
-                                width: 40,
-                                height: 40,
-                                borderRadius: "8px",
-                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                flexShrink: 0,
-                            }}
-                        >
-                            <BookOpen size={20} color="#FEC704" />
-                        </div>
-                        <div style={{ flex: 1 }}>
-                            <h4
-                                style={{
-                                    fontSize: "0.95rem",
-                                    fontWeight: 500,
-                                    color: "#000049",
-                                }}
-                            >
-                                Misael Acosta
-                            </h4>
-                        </div>
-                    </div>
-                </a>
-
-                {/* NELSON TORRES-SERVIENTREGA */}
-                <a
-                    href="/documentos-legales/NELSON TORRES-SERVIENTREGA.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none" }}
-                >
-                    <div
-                        className="hover-lift"
-                        style={{
-                            background: "#fff",
-                            borderRadius: "12px",
-                            padding: "1rem",
-                            border: "1px solid #e8e8f4",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.75rem",
-                            transition: "all 0.3s ease",
-                            cursor: "pointer",
-                            height: "100%",
-                        }}
-                    >
-                        <div
-                            style={{
-                                width: 40,
-                                height: 40,
-                                borderRadius: "8px",
-                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                flexShrink: 0,
-                            }}
-                        >
-                            <BookOpen size={20} color="#FEC704" />
-                        </div>
-                        <div style={{ flex: 1 }}>
-                            <h4
-                                style={{
-                                    fontSize: "0.95rem",
-                                    fontWeight: 500,
-                                    color: "#000049",
-                                }}
-                            >
-                                Nelson Torres
-                            </h4>
-                        </div>
-                    </div>
-                </a>
-
-                {/* PICHINCHA */}
-                <a
-                    href="/documentos-legales/PICHINCHA.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none" }}
-                >
-                    <div
-                        className="hover-lift"
-                        style={{
-                            background: "#fff",
-                            borderRadius: "12px",
-                            padding: "1rem",
-                            border: "1px solid #e8e8f4",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.75rem",
-                            transition: "all 0.3s ease",
-                            cursor: "pointer",
-                            height: "100%",
-                        }}
-                    >
-                        <div
-                            style={{
-                                width: 40,
-                                height: 40,
-                                borderRadius: "8px",
-                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                flexShrink: 0,
-                            }}
-                        >
-                            <BookOpen size={20} color="#FEC704" />
-                        </div>
-                        <div style={{ flex: 1 }}>
-                            <h4
-                                style={{
-                                    fontSize: "0.95rem",
-                                    fontWeight: 500,
-                                    color: "#000049",
-                                }}
-                            >
-                                PICHINCHA
-                            </h4>
-                        </div>
-                    </div>
-                </a>
-
-                {/* REY DAVID-SERVIENTREGA */}
-                <a
-                    href="/documentos-legales/REY DAVID-SERVIENTREGA.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none" }}
-                >
-                    <div
-                        className="hover-lift"
-                        style={{
-                            background: "#fff",
-                            borderRadius: "12px",
-                            padding: "1rem",
-                            border: "1px solid #e8e8f4",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.75rem",
-                            transition: "all 0.3s ease",
-                            cursor: "pointer",
-                            height: "100%",
-                        }}
-                    >
-                        <div
-                            style={{
-                                width: 40,
-                                height: 40,
-                                borderRadius: "8px",
-                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                flexShrink: 0,
-                            }}
-                        >
-                            <BookOpen size={20} color="#FEC704" />
-                        </div>
-                        <div style={{ flex: 1 }}>
-                            <h4
-                                style={{
-                                    fontSize: "0.95rem",
-                                    fontWeight: 500,
-                                    color: "#000049",
-                                }}
-                            >
-                                Rey David
-                            </h4>
-                        </div>
-                    </div>
-                </a>
-
-                {/* SUDAMERICANO */}
-                <a
-                    href="/documentos-legales/SUDAMERICANO.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none" }}
-                >
-                    <div
-                        className="hover-lift"
-                        style={{
-                            background: "#fff",
-                            borderRadius: "12px",
-                            padding: "1rem",
-                            border: "1px solid #e8e8f4",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.75rem",
-                            transition: "all 0.3s ease",
-                            cursor: "pointer",
-                            height: "100%",
-                        }}
-                    >
-                        <div
-                            style={{
-                                width: 40,
-                                height: 40,
-                                borderRadius: "8px",
-                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                flexShrink: 0,
-                            }}
-                        >
-                            <BookOpen size={20} color="#FEC704" />
-                        </div>
-                        <div style={{ flex: 1 }}>
-                            <h4
-                                style={{
-                                    fontSize: "0.95rem",
-                                    fontWeight: 500,
-                                    color: "#000049",
-                                }}
-                            >
-                                SUDAMERICANO
-                            </h4>
-                        </div>
-                    </div>
-                </a>
-
-                {/* TECLEMAS-SERVIENTREGA */}
-                <a
-                    href="/documentos-legales/TECLEMAS-SERVIENTREGA.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none" }}
-                >
-                    <div
-                        className="hover-lift"
-                        style={{
-                            background: "#fff",
-                            borderRadius: "12px",
-                            padding: "1rem",
-                            border: "1px solid #e8e8f4",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.75rem",
-                            transition: "all 0.3s ease",
-                            cursor: "pointer",
-                            height: "100%",
-                        }}
-                    >
-                        <div
-                            style={{
-                                width: 40,
-                                height: 40,
-                                borderRadius: "8px",
-                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                flexShrink: 0,
-                            }}
-                        >
-                            <BookOpen size={20} color="#FEC704" />
-                        </div>
-                        <div style={{ flex: 1 }}>
-                            <h4
-                                style={{
-                                    fontSize: "0.95rem",
-                                    fontWeight: 500,
-                                    color: "#000049",
-                                }}
-                            >
-                                TECLEMAS
-                            </h4>
-                        </div>
-                    </div>
-                </a>
-
-                {/* TRAVERSARI */}
-                <a
-                    href="/documentos-legales/TRAVERSARI.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none" }}
-                >
-                    <div
-                        className="hover-lift"
-                        style={{
-                            background: "#fff",
-                            borderRadius: "12px",
-                            padding: "1rem",
-                            border: "1px solid #e8e8f4",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.75rem",
-                            transition: "all 0.3s ease",
-                            cursor: "pointer",
-                            height: "100%",
-                        }}
-                    >
-                        <div
-                            style={{
-                                width: 40,
-                                height: 40,
-                                borderRadius: "8px",
-                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                flexShrink: 0,
-                            }}
-                        >
-                            <BookOpen size={20} color="#FEC704" />
-                        </div>
-                        <div style={{ flex: 1 }}>
-                            <h4
-                                style={{
-                                    fontSize: "0.95rem",
-                                    fontWeight: 500,
-                                    color: "#000049",
-                                }}
-                            >
-                                TRAVERSARI
-                            </h4>
-                        </div>
-                    </div>
-                </a>
-
-                {/* UNIVERSITARIO ORIENTE */}
-                <a
-                    href="/documentos-legales/UNIVERSITARIO ORIENTE.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none" }}
-                >
-                    <div
-                        className="hover-lift"
-                        style={{
-                            background: "#fff",
-                            borderRadius: "12px",
-                            padding: "1rem",
-                            border: "1px solid #e8e8f4",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.75rem",
-                            transition: "all 0.3s ease",
-                            cursor: "pointer",
-                            height: "100%",
-                        }}
-                    >
-                        <div
-                            style={{
-                                width: 40,
-                                height: 40,
-                                borderRadius: "8px",
-                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                flexShrink: 0,
-                            }}
-                        >
-                            <BookOpen size={20} color="#FEC704" />
-                        </div>
-                        <div style={{ flex: 1 }}>
-                            <h4
-                                style={{
-                                    fontSize: "0.95rem",
-                                    fontWeight: 500,
-                                    color: "#000049",
-                                }}
-                            >
-                                Univ. Oriente
-                            </h4>
-                        </div>
-                    </div>
-                </a>
-
-                {/* WISSEN-SERVIENTREGA */}
-                <a
-                    href="/documentos-legales/WISSEN-SERVIENTREGA.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none" }}
-                >
-                    <div
-                        className="hover-lift"
-                        style={{
-                            background: "#fff",
-                            borderRadius: "12px",
-                            padding: "1rem",
-                            border: "1px solid #e8e8f4",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.75rem",
-                            transition: "all 0.3s ease",
-                            cursor: "pointer",
-                            height: "100%",
-                        }}
-                    >
-                        <div
-                            style={{
-                                width: 40,
-                                height: 40,
-                                borderRadius: "8px",
-                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                flexShrink: 0,
-                            }}
-                        >
-                            <BookOpen size={20} color="#FEC704" />
-                        </div>
-                        <div style={{ flex: 1 }}>
-                            <h4
-                                style={{
-                                    fontSize: "0.95rem",
-                                    fontWeight: 500,
-                                    color: "#000049",
-                                }}
-                            >
-                                WISSEN
-                            </h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        {/* Nota al pie */}
-        <div
-            className="scroll-reveal"
-            style={{
-                textAlign: "center",
-                marginTop: "3rem",
-                paddingTop: "2rem",
-                borderTop: "1px solid #e8e8f4",
-            }}
+<div className="scroll-reveal">
+    <h3
+        style={{
+            fontSize: "1.3rem",
+            fontWeight: 600,
+            color: "#000049",
+            marginBottom: "1.5rem",
+            paddingBottom: "0.5rem",
+            borderBottom: "2px solid #FEC704",
+        }}
+    >
+        Cartas de Adhesión Institucional
+    </h3>
+    <p
+        style={{
+            color: "#64648a",
+            fontSize: "0.95rem",
+            marginBottom: "1.5rem",
+            fontStyle: "italic",
+        }}
+    >
+        Documentos de adhesión de instituciones que forman parte de la Red Iberoamericana de Investigación
+    </p>
+    <div
+        className="stagger-children"
+        style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+            gap: "1rem",
+        }}
+    >
+        {/* ALQUIMIA */}
+        <a
+            href="/documentos-legales/ACTA ADHESION ALQUIMIA-signed-signed.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
         >
-            <p
+            <div
+                className="hover-lift"
                 style={{
-                    color: "#64648a",
-                    fontSize: "0.9rem",
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
                 }}
             >
-                Documentos oficiales de la Red Iberoamericana de Investigación.
-                Haz clic en cada documento para verlo o descargarlo.
-            </p>
-        </div>
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Superior Tecnológico Alquimia
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* CARLOS CISNEROS */}
+        <a
+            href="/documentos-legales/ACTA ADHESION CARLOS CISNEROS-signed-signed.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Superior Tecnológico Carlos Cisneros
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* EL LIBERTADOR */}
+        <a
+            href="/documentos-legales/ACTA ADHESION EL LIBERTADOR-signed-signed.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Superior Tecnológico El Libertador
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* INSTITUTO QUITO */}
+        <a
+            href="/documentos-legales/ACTA ADHESION INSTITUTO QUITO-signed-signed-signed.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Superior Tecnológico Quito
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* INSTITUTO SUDAMERICANO */}
+        <a
+            href="/documentos-legales/ACTA ADHESION INSTITUTO SUDAMERICANO-signed-signed.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Superior Tecnológico Sudamericano
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* QUININDÉ */}
+        <a
+            href="/documentos-legales/ACTA ADHESION QUININDÉ-signed-signed-signed.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Superior Tecnológico Quinindé
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* UNIVERSITARIO BOLIVARIANO */}
+        <a
+            href="/documentos-legales/ACTA ADHESION UNIVERSITARIO BOLIVARIANO-signed-signed.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Superior Universitario Bolivariano
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* EDUPRAXIS */}
+        <a
+            href="/documentos-legales/ACTA DE ADHESIÓN EDUPRAXIS-signed-signed.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Edupraxis
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* INSTITUTO ORELLANA */}
+        <a
+            href="/documentos-legales/ACTA DE ADHESION INSTITUTO ORELLANA-signed-signed.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Superior Tecnológico Orellana
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* ITCA */}
+        <a
+            href="/documentos-legales/ACTA DE ADHESION ITCA-signed-signed.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Tecnológico Superior ITCA
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* PRODUCTIVIDAD */}
+        <a
+            href="/documentos-legales/Acta de adhesión-productividad-signed-signed.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Superior Tecnológico Productividad
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* YAVIRAC */}
+        <a
+            href="/documentos-legales/Acta de adhesión-YAVIRAC-signed-signed.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Superior Tecnológico Yavirac
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* ELOY ALFARO */}
+        <a
+            href="/documentos-legales/ACTA INSTITUTO ELOY ALFARO-signed-signed.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Superior Tecnológico Eloy Alfaro
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* BOLIVAR (Actualizado con nombre formal) */}
+        <a
+            href="/documentos-legales/Acta de Adhesion Bolivar.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Superior Tecnológico Bolívar
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* Inst-Guayaquil (Actualizado con nombre formal) */}
+        <a
+            href="/documentos-legales/ACTA DE ADHESIÓN-inst-Guayaquil.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Superior Tecnológico Guayaquil
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* ACTIONGROW (Actualizado con nombre formal) */}
+        <a
+            href="/documentos-legales/ACTA DE ADHESIÓN_ ACTIONGROW.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        ACTIONGROW
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* Carta Intención Bolívar (Actualizado) */}
+        <a
+            href="/documentos-legales/Carta de Intencion Bolivar.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Carta de Intención - Bolívar
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* IST SUCRE (Actualizado) */}
+        <a
+            href="/documentos-legales/Carta de intención IST SUCRE 2023.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Carta de Intención - IST Sucre 2023
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* CENESTUR (Actualizado) */}
+        <a
+            href="/documentos-legales/CENESTUR.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        CENESTUR
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* CEPU (Actualizado) */}
+        <a
+            href="/documentos-legales/CEPU.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        CEPU
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* CUESTTV (Actualizado) */}
+        <a
+            href="/documentos-legales/CUESTTV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        CUESTTV
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* Illingworth (Actualizado) */}
+        <a
+            href="/documentos-legales/ILLINGWORTH-SERVIENTREGA.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Superior Tecnológico Illingworth
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* ITI (Actualizado) */}
+        <a
+            href="/documentos-legales/ITI.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Tecnológico ITI
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* ITSU (Actualizado) */}
+        <a
+            href="/documentos-legales/ITSU-SERVIENTREGA.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Superior Tecnológico ITSU
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* JAPON (Actualizado) */}
+        <a
+            href="/documentos-legales/JAPON.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Superior Tecnológico Japón
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* LENDAN (Actualizado) */}
+        <a
+            href="/documentos-legales/LENDAN.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        LENDAN
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* Misael Acosta (Actualizado) */}
+        <a
+            href="/documentos-legales/MISAEL ACOSTA-SERVIENTREGA.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Superior Tecnológico Misael Acosta
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* Nelson Torres (Actualizado) */}
+        <a
+            href="/documentos-legales/NELSON TORRES-SERVIENTREGA.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Superior Tecnológico Nelson Torres
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* PICHINCHA (Actualizado) */}
+        <a
+            href="/documentos-legales/PICHINCHA.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Superior Tecnológico Pichincha
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* Rey David (Actualizado) */}
+        <a
+            href="/documentos-legales/REY DAVID-SERVIENTREGA.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Superior Tecnológico Rey David
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* SUDAMERICANO (Actualizado) */}
+        <a
+            href="/documentos-legales/SUDAMERICANO.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Superior Tecnológico Sudamericano
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* TECLEMAS (Actualizado) */}
+        <a
+            href="/documentos-legales/TECLEMAS-SERVIENTREGA.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Superior Tecnológico TECLEMAS
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* TRAVERSARI (Actualizado) */}
+        <a
+            href="/documentos-legales/TRAVERSARI.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Superior Tecnológico Traversari
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* Universitario Oriente (Actualizado) */}
+        <a
+            href="/documentos-legales/UNIVERSITARIO ORIENTE.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Superior Universitario Oriente
+                    </h4>
+                </div>
+            </div>
+        </a>
+
+        {/* WISSEN (Actualizado) */}
+        <a
+            href="/documentos-legales/WISSEN-SERVIENTREGA.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+        >
+            <div
+                className="hover-lift"
+                style={{
+                    background: "#fff",
+                    borderRadius: "12px",
+                    padding: "1rem",
+                    border: "1px solid #e8e8f4",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                    height: "100%",
+                }}
+            >
+                <div
+                    style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: "8px",
+                        background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                    }}
+                >
+                    <BookOpen size={20} color="#FEC704" />
+                </div>
+                <div style={{ flex: 1 }}>
+                    <h4
+                        style={{
+                            fontSize: "0.95rem",
+                            fontWeight: 500,
+                            color: "#000049",
+                        }}
+                    >
+                        Instituto Superior Tecnológico Wissen
+                    </h4>
+                </div>
+            </div>
+        </a>
     </div>
-</section>
+</div>
         </div>
     );
 }
