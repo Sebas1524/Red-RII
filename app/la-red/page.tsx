@@ -638,9 +638,7 @@ export default function LaRedPage() {
                             ))}
                         </div>
                     </div>
-                </section>
-
-                       {/* Documentos Legales */}
+                </section>            {/* Documentos Legales */}
 <section className="section-padding" style={{ background: "#fff", padding: "4rem 1.5rem" }}>
     <div className="container-custom">
         <div className="scroll-reveal" style={{ textAlign: "center", marginBottom: "3rem" }}>
@@ -684,546 +682,1733 @@ export default function LaRedPage() {
             </p>
         </div>
 
-        <div
-            className="stagger-children"
-            style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fill, minmax(350px, 1fr))",
-                gap: "1.5rem",
-                maxWidth: "1200px",
-                margin: "0 auto",
-            }}
-        >
-            {/* ACTA DE REUNIÓN 27 MARZO 2024 */}
-            <a
-                href="/documentos-legales/1ACTARII1-27 MARZO DEL 2024.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ textDecoration: "none" }}
+        {/* Documentos Principales */}
+        <div className="scroll-reveal" style={{ marginBottom: "3rem" }}>
+            <h3
+                style={{
+                    fontSize: "1.3rem",
+                    fontWeight: 600,
+                    color: "#000049",
+                    marginBottom: "1.5rem",
+                    paddingBottom: "0.5rem",
+                    borderBottom: "2px solid #FEC704",
+                }}
             >
-                <div
-                    className="hover-lift"
-                    style={{
-                        background: "#f8f8ff",
-                        borderRadius: "16px",
-                        padding: "1.5rem",
-                        border: "1px solid #e8e8f4",
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "1rem",
-                        transition: "all 0.3s ease",
-                        cursor: "pointer",
-                        height: "100%",
-                    }}
+                Documentos Fundamentales
+            </h3>
+            <div
+                className="stagger-children"
+                style={{
+                    display: "grid",
+                    gridTemplateColumns: "repeat(auto-fill, minmax(350px, 1fr))",
+                    gap: "1.5rem",
+                }}
+            >
+                {/* ACTA 27 MARZO 2024 */}
+                <a
+                    href="/documentos-legales/ACTARII1-27 MARZO DEL 2024.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
                 >
                     <div
+                        className="hover-lift"
                         style={{
-                            width: 50,
-                            height: 50,
-                            borderRadius: "12px",
-                            background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                            background: "#f8f8ff",
+                            borderRadius: "16px",
+                            padding: "1.5rem",
+                            border: "1px solid #e8e8f4",
                             display: "flex",
                             alignItems: "center",
-                            justifyContent: "center",
-                            flexShrink: 0,
+                            gap: "1rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
                         }}
                     >
-                        <BookOpen size={24} color="#FEC704" />
-                    </div>
-                    <div style={{ flex: 1 }}>
-                        <h3
+                        <div
                             style={{
-                                fontSize: "1rem",
-                                fontWeight: 600,
-                                color: "#000049",
-                                marginBottom: "0.25rem",
+                                width: 50,
+                                height: 50,
+                                borderRadius: "12px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
                             }}
                         >
-                            Acta de Reunión-RII
-                        </h3>
-                        <p
-                            style={{
-                                fontSize: "0.85rem",
-                                color: "#64648a",
-                            }}
-                        >
-                            27 Marzo 2024
-                        </p>
+                            <BookOpen size={24} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h3
+                                style={{
+                                    fontSize: "1rem",
+                                    fontWeight: 600,
+                                    color: "#000049",
+                                    marginBottom: "0.25rem",
+                                }}
+                            >
+                                Acta RII
+                            </h3>
+                            <p
+                                style={{
+                                    fontSize: "0.85rem",
+                                    color: "#64648a",
+                                }}
+                            >
+                                27 Marzo 2024
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
 
-            {/* ACTA DE REUNIÓN 27 JUNIO 2024 */}
-            <a
-                href="/documentos-legales/2ACTA_RED1-27 JUNIO DEL 2024.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ textDecoration: "none" }}
-            >
-                <div
-                    className="hover-lift"
-                    style={{
-                        background: "#f8f8ff",
-                        borderRadius: "16px",
-                        padding: "1.5rem",
-                        border: "1px solid #e8e8f4",
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "1rem",
-                        transition: "all 0.3s ease",
-                        cursor: "pointer",
-                        height: "100%",
-                    }}
+                {/* ACTA 27 JUNIO 2024 */}
+                <a
+                    href="/documentos-legales/ACTA_RED1-27 JUNIO DEL 2024.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
                 >
                     <div
+                        className="hover-lift"
                         style={{
-                            width: 50,
-                            height: 50,
-                            borderRadius: "12px",
-                            background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                            background: "#f8f8ff",
+                            borderRadius: "16px",
+                            padding: "1.5rem",
+                            border: "1px solid #e8e8f4",
                             display: "flex",
                             alignItems: "center",
-                            justifyContent: "center",
-                            flexShrink: 0,
+                            gap: "1rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
                         }}
                     >
-                        <BookOpen size={24} color="#FEC704" />
-                    </div>
-                    <div style={{ flex: 1 }}>
-                        <h3
+                        <div
                             style={{
-                                fontSize: "1rem",
-                                fontWeight: 600,
-                                color: "#000049",
-                                marginBottom: "0.25rem",
+                                width: 50,
+                                height: 50,
+                                borderRadius: "12px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
                             }}
                         >
-                            Acta de Reunión-RED
-                        </h3>
-                        <p
-                            style={{
-                                fontSize: "0.85rem",
-                                color: "#64648a",
-                            }}
-                        >
-                            27 Junio 2024
-                        </p>
+                            <BookOpen size={24} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h3
+                                style={{
+                                    fontSize: "1rem",
+                                    fontWeight: 600,
+                                    color: "#000049",
+                                    marginBottom: "0.25rem",
+                                }}
+                            >
+                                Acta RED
+                            </h3>
+                            <p
+                                style={{
+                                    fontSize: "0.85rem",
+                                    color: "#64648a",
+                                }}
+                            >
+                                27 Junio 2024
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
 
-            {/* Acta Constitutiva */}
-            <a
-                href="/documentos-legales/ACTA CONSTITUTIVA-RED RII.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ textDecoration: "none" }}
-            >
-                <div
-                    className="hover-lift"
-                    style={{
-                        background: "#f8f8ff",
-                        borderRadius: "16px",
-                        padding: "1.5rem",
-                        border: "1px solid #e8e8f4",
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "1rem",
-                        transition: "all 0.3s ease",
-                        cursor: "pointer",
-                        height: "100%",
-                    }}
+                {/* Acta Constitutiva */}
+                <a
+                    href="/documentos-legales/ACTA CONSTITUTIVA-RED RII.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
                 >
                     <div
+                        className="hover-lift"
                         style={{
-                            width: 50,
-                            height: 50,
-                            borderRadius: "12px",
-                            background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                            background: "#f8f8ff",
+                            borderRadius: "16px",
+                            padding: "1.5rem",
+                            border: "1px solid #e8e8f4",
                             display: "flex",
                             alignItems: "center",
-                            justifyContent: "center",
-                            flexShrink: 0,
+                            gap: "1rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
                         }}
                     >
-                        <BookOpen size={24} color="#FEC704" />
-                    </div>
-                    <div style={{ flex: 1 }}>
-                        <h3
+                        <div
                             style={{
-                                fontSize: "1rem",
-                                fontWeight: 600,
-                                color: "#000049",
-                                marginBottom: "0.25rem",
+                                width: 50,
+                                height: 50,
+                                borderRadius: "12px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
                             }}
                         >
-                            Acta Constitutiva
-                        </h3>
-                        <p
-                            style={{
-                                fontSize: "0.85rem",
-                                color: "#64648a",
-                            }}
-                        >
-                            Documento fundacional de la Red RII
-                        </p>
+                            <BookOpen size={24} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h3
+                                style={{
+                                    fontSize: "1rem",
+                                    fontWeight: 600,
+                                    color: "#000049",
+                                    marginBottom: "0.25rem",
+                                }}
+                            >
+                                Acta Constitutiva
+                            </h3>
+                            <p
+                                style={{
+                                    fontSize: "0.85rem",
+                                    color: "#64648a",
+                                }}
+                            >
+                                Documento fundacional de la Red RII
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
 
-            {/* Acuerdo de Cooperación */}
-            <a
-                href="/documentos-legales/Acuerdo de Cooperacion RII_ ABUSO SEXUAL INFANTIL.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ textDecoration: "none" }}
-            >
-                <div
-                    className="hover-lift"
-                    style={{
-                        background: "#f8f8ff",
-                        borderRadius: "16px",
-                        padding: "1.5rem",
-                        border: "1px solid #e8e8f4",
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "1rem",
-                        transition: "all 0.3s ease",
-                        cursor: "pointer",
-                        height: "100%",
-                    }}
+                {/* Acuerdo de Cooperación */}
+                <a
+                    href="/documentos-legales/Acuerdo de Cooperacion RII_ ABUSO SEXUAL INFANTIL.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
                 >
                     <div
+                        className="hover-lift"
                         style={{
-                            width: 50,
-                            height: 50,
-                            borderRadius: "12px",
-                            background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                            background: "#f8f8ff",
+                            borderRadius: "16px",
+                            padding: "1.5rem",
+                            border: "1px solid #e8e8f4",
                             display: "flex",
                             alignItems: "center",
-                            justifyContent: "center",
-                            flexShrink: 0,
+                            gap: "1rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
                         }}
                     >
-                        <BookOpen size={24} color="#FEC704" />
-                    </div>
-                    <div style={{ flex: 1 }}>
-                        <h3
+                        <div
                             style={{
-                                fontSize: "1rem",
-                                fontWeight: 600,
-                                color: "#000049",
-                                marginBottom: "0.25rem",
+                                width: 50,
+                                height: 50,
+                                borderRadius: "12px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
                             }}
                         >
-                            Acuerdo de Cooperación
-                        </h3>
-                        <p
-                            style={{
-                                fontSize: "0.85rem",
-                                color: "#64648a",
-                            }}
-                        >
-                            Abuso Sexual Infantil
-                        </p>
+                            <BookOpen size={24} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h3
+                                style={{
+                                    fontSize: "1rem",
+                                    fontWeight: 600,
+                                    color: "#000049",
+                                    marginBottom: "0.25rem",
+                                }}
+                            >
+                                Acuerdo de Cooperación
+                            </h3>
+                            <p
+                                style={{
+                                    fontSize: "0.85rem",
+                                    color: "#64648a",
+                                }}
+                            >
+                                Abuso Sexual Infantil
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
 
-            {/* Informe Inicial CAISEB 2024 */}
-            <a
-                href="/documentos-legales/DIR-INV-TECSU-043-M - INFORME INICIAL CAISEB 2024 CONSOLIDADO (2).pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ textDecoration: "none" }}
-            >
-                <div
-                    className="hover-lift"
-                    style={{
-                        background: "#f8f8ff",
-                        borderRadius: "16px",
-                        padding: "1.5rem",
-                        border: "1px solid #e8e8f4",
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "1rem",
-                        transition: "all 0.3s ease",
-                        cursor: "pointer",
-                        height: "100%",
-                    }}
+                {/* Informe Inicial CAISEB 2024 */}
+                <a
+                    href="/documentos-legales/DIR-INV-TECSU-043-M - INFORME INICIAL CAISEB 2024 CONSOLIDADO (2).pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
                 >
                     <div
+                        className="hover-lift"
                         style={{
-                            width: 50,
-                            height: 50,
-                            borderRadius: "12px",
-                            background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                            background: "#f8f8ff",
+                            borderRadius: "16px",
+                            padding: "1.5rem",
+                            border: "1px solid #e8e8f4",
                             display: "flex",
                             alignItems: "center",
-                            justifyContent: "center",
-                            flexShrink: 0,
+                            gap: "1rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
                         }}
                     >
-                        <BookOpen size={24} color="#FEC704" />
-                    </div>
-                    <div style={{ flex: 1 }}>
-                        <h3
+                        <div
                             style={{
-                                fontSize: "1rem",
-                                fontWeight: 600,
-                                color: "#000049",
-                                marginBottom: "0.25rem",
+                                width: 50,
+                                height: 50,
+                                borderRadius: "12px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
                             }}
                         >
-                            Informe Inicial CAISEB 2024
-                        </h3>
-                        <p
-                            style={{
-                                fontSize: "0.85rem",
-                                color: "#64648a",
-                            }}
-                        >
-                            Consolidado del congreso
-                        </p>
+                            <BookOpen size={24} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h3
+                                style={{
+                                    fontSize: "1rem",
+                                    fontWeight: 600,
+                                    color: "#000049",
+                                    marginBottom: "0.25rem",
+                                }}
+                            >
+                                Informe Inicial CAISEB 2024
+                            </h3>
+                            <p
+                                style={{
+                                    fontSize: "0.85rem",
+                                    color: "#64648a",
+                                }}
+                            >
+                                Consolidado del congreso
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
 
-            {/* Plan de Trabajo 2023-2025 */}
-            <a
-                href="/documentos-legales/PLAN TRABAJO 2023-2025-RED RII-1.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ textDecoration: "none" }}
-            >
-                <div
-                    className="hover-lift"
-                    style={{
-                        background: "#f8f8ff",
-                        borderRadius: "16px",
-                        padding: "1.5rem",
-                        border: "1px solid #e8e8f4",
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "1rem",
-                        transition: "all 0.3s ease",
-                        cursor: "pointer",
-                        height: "100%",
-                    }}
+                {/* Plan de Trabajo 2023-2025 */}
+                <a
+                    href="/documentos-legales/PLAN TRABAJO 2023-2025-RED RII-1.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
                 >
                     <div
+                        className="hover-lift"
                         style={{
-                            width: 50,
-                            height: 50,
-                            borderRadius: "12px",
-                            background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                            background: "#f8f8ff",
+                            borderRadius: "16px",
+                            padding: "1.5rem",
+                            border: "1px solid #e8e8f4",
                             display: "flex",
                             alignItems: "center",
-                            justifyContent: "center",
-                            flexShrink: 0,
+                            gap: "1rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
                         }}
                     >
-                        <BookOpen size={24} color="#FEC704" />
-                    </div>
-                    <div style={{ flex: 1 }}>
-                        <h3
+                        <div
                             style={{
-                                fontSize: "1rem",
-                                fontWeight: 600,
-                                color: "#000049",
-                                marginBottom: "0.25rem",
+                                width: 50,
+                                height: 50,
+                                borderRadius: "12px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
                             }}
                         >
-                            Plan de Trabajo
-                        </h3>
-                        <p
-                            style={{
-                                fontSize: "0.85rem",
-                                color: "#64648a",
-                            }}
-                        >
-                            2023-2025
-                        </p>
+                            <BookOpen size={24} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h3
+                                style={{
+                                    fontSize: "1rem",
+                                    fontWeight: 600,
+                                    color: "#000049",
+                                    marginBottom: "0.25rem",
+                                }}
+                            >
+                                Plan de Trabajo
+                            </h3>
+                            <p
+                                style={{
+                                    fontSize: "0.85rem",
+                                    color: "#64648a",
+                                }}
+                            >
+                                2023-2025
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
 
-            {/* Plan de Trabajo 2025-2027 */}
-            <a
-                href="/documentos-legales/RII- PLAN DE DE TRABAJO-2025-2027-2.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ textDecoration: "none" }}
-            >
-                <div
-                    className="hover-lift"
-                    style={{
-                        background: "#f8f8ff",
-                        borderRadius: "16px",
-                        padding: "1.5rem",
-                        border: "1px solid #e8e8f4",
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "1rem",
-                        transition: "all 0.3s ease",
-                        cursor: "pointer",
-                        height: "100%",
-                    }}
+                {/* Plan de Trabajo 2025-2027 */}
+                <a
+                    href="/documentos-legales/RII- PLAN DE DE TRABAJO-2025-2027-2.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
                 >
                     <div
+                        className="hover-lift"
                         style={{
-                            width: 50,
-                            height: 50,
-                            borderRadius: "12px",
-                            background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                            background: "#f8f8ff",
+                            borderRadius: "16px",
+                            padding: "1.5rem",
+                            border: "1px solid #e8e8f4",
                             display: "flex",
                             alignItems: "center",
-                            justifyContent: "center",
-                            flexShrink: 0,
+                            gap: "1rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
                         }}
                     >
-                        <BookOpen size={24} color="#FEC704" />
-                    </div>
-                    <div style={{ flex: 1 }}>
-                        <h3
+                        <div
                             style={{
-                                fontSize: "1rem",
-                                fontWeight: 600,
-                                color: "#000049",
-                                marginBottom: "0.25rem",
+                                width: 50,
+                                height: 50,
+                                borderRadius: "12px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
                             }}
                         >
-                            Plan de Trabajo
-                        </h3>
-                        <p
-                            style={{
-                                fontSize: "0.85rem",
-                                color: "#64648a",
-                            }}
-                        >
-                            2025-2027
-                        </p>
+                            <BookOpen size={24} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h3
+                                style={{
+                                    fontSize: "1rem",
+                                    fontWeight: 600,
+                                    color: "#000049",
+                                    marginBottom: "0.25rem",
+                                }}
+                            >
+                                Plan de Trabajo
+                            </h3>
+                            <p
+                                style={{
+                                    fontSize: "0.85rem",
+                                    color: "#64648a",
+                                }}
+                            >
+                                2025-2027
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
 
-            {/* Reglamento de la Red */}
-            <a
-                href="/documentos-legales/Reglamento de la Red.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ textDecoration: "none" }}
-            >
-                <div
-                    className="hover-lift"
-                    style={{
-                        background: "#f8f8ff",
-                        borderRadius: "16px",
-                        padding: "1.5rem",
-                        border: "1px solid #e8e8f4",
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "1rem",
-                        transition: "all 0.3s ease",
-                        cursor: "pointer",
-                        height: "100%",
-                    }}
+                {/* Reglamento de la Red */}
+                <a
+                    href="/documentos-legales/Reglamento de la Red.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
                 >
                     <div
+                        className="hover-lift"
                         style={{
-                            width: 50,
-                            height: 50,
-                            borderRadius: "12px",
-                            background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                            background: "#f8f8ff",
+                            borderRadius: "16px",
+                            padding: "1.5rem",
+                            border: "1px solid #e8e8f4",
                             display: "flex",
                             alignItems: "center",
-                            justifyContent: "center",
-                            flexShrink: 0,
+                            gap: "1rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
                         }}
                     >
-                        <BookOpen size={24} color="#FEC704" />
-                    </div>
-                    <div style={{ flex: 1 }}>
-                        <h3
+                        <div
                             style={{
-                                fontSize: "1rem",
-                                fontWeight: 600,
-                                color: "#000049",
-                                marginBottom: "0.25rem",
+                                width: 50,
+                                height: 50,
+                                borderRadius: "12px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
                             }}
                         >
-                            Reglamento de la Red
-                        </h3>
-                        <p
-                            style={{
-                                fontSize: "0.85rem",
-                                color: "#64648a",
-                            }}
-                        >
-                            Normativa interna
-                        </p>
+                            <BookOpen size={24} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h3
+                                style={{
+                                    fontSize: "1rem",
+                                    fontWeight: 600,
+                                    color: "#000049",
+                                    marginBottom: "0.25rem",
+                                }}
+                            >
+                                Reglamento de la Red
+                            </h3>
+                            <p
+                                style={{
+                                    fontSize: "0.85rem",
+                                    color: "#64648a",
+                                }}
+                            >
+                                Normativa interna
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
 
-            {/* SENESCYT */}
-            <a
-                href="/documentos-legales/SENESCYT-SDIC-DIC-2023-0233-O.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ textDecoration: "none" }}
-            >
-                <div
-                    className="hover-lift"
-                    style={{
-                        background: "#f8f8ff",
-                        borderRadius: "16px",
-                        padding: "1.5rem",
-                        border: "1px solid #e8e8f4",
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "1rem",
-                        transition: "all 0.3s ease",
-                        cursor: "pointer",
-                        height: "100%",
-                    }}
+                {/* SENESCYT */}
+                <a
+                    href="/documentos-legales/SENESCYT-SDIC-DIC-2023-0233-O.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
                 >
                     <div
+                        className="hover-lift"
                         style={{
-                            width: 50,
-                            height: 50,
-                            borderRadius: "12px",
-                            background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                            background: "#f8f8ff",
+                            borderRadius: "16px",
+                            padding: "1.5rem",
+                            border: "1px solid #e8e8f4",
                             display: "flex",
                             alignItems: "center",
-                            justifyContent: "center",
-                            flexShrink: 0,
+                            gap: "1rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
                         }}
                     >
-                        <BookOpen size={24} color="#FEC704" />
-                    </div>
-                    <div style={{ flex: 1 }}>
-                        <h3
+                        <div
                             style={{
-                                fontSize: "1rem",
-                                fontWeight: 600,
-                                color: "#000049",
-                                marginBottom: "0.25rem",
+                                width: 50,
+                                height: 50,
+                                borderRadius: "12px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
                             }}
                         >
-                            Reconocimiento SENESCYT
-                        </h3>
-                        <p
+                            <BookOpen size={24} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h3
+                                style={{
+                                    fontSize: "1rem",
+                                    fontWeight: 600,
+                                    color: "#000049",
+                                    marginBottom: "0.25rem",
+                                }}
+                            >
+                                Reconocimiento SENESCYT
+                            </h3>
+                            <p
+                                style={{
+                                    fontSize: "0.85rem",
+                                    color: "#64648a",
+                                }}
+                            >
+                                SDIC-DIC-2023-0233-O
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        {/* Cartas de Adhesión */}
+        <div className="scroll-reveal">
+            <h3
+                style={{
+                    fontSize: "1.3rem",
+                    fontWeight: 600,
+                    color: "#000049",
+                    marginBottom: "1.5rem",
+                    paddingBottom: "0.5rem",
+                    borderBottom: "2px solid #FEC704",
+                }}
+            >
+                Cartas de Adhesión
+            </h3>
+            <div
+                className="stagger-children"
+                style={{
+                    display: "grid",
+                    gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+                    gap: "1rem",
+                }}
+            >
+                {/* Acta de Adhesion Bolivar */}
+                <a
+                    href="/documentos-legales/Acta de Adhesion Bolivar.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                >
+                    <div
+                        className="hover-lift"
+                        style={{
+                            background: "#fff",
+                            borderRadius: "12px",
+                            padding: "1rem",
+                            border: "1px solid #e8e8f4",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.75rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
+                        }}
+                    >
+                        <div
                             style={{
-                                fontSize: "0.85rem",
-                                color: "#64648a",
+                                width: 40,
+                                height: 40,
+                                borderRadius: "8px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
                             }}
                         >
-                            SDIC-DIC-2023-0233-O
-                        </p>
+                            <BookOpen size={20} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h4
+                                style={{
+                                    fontSize: "0.95rem",
+                                    fontWeight: 500,
+                                    color: "#000049",
+                                }}
+                            >
+                                Bolívar
+                            </h4>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
+
+                {/* ACTIONGROW */}
+                <a
+                    href="/documentos-legales/ACTA DE ADHESIÓN_ ACTIONGROW.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                >
+                    <div
+                        className="hover-lift"
+                        style={{
+                            background: "#fff",
+                            borderRadius: "12px",
+                            padding: "1rem",
+                            border: "1px solid #e8e8f4",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.75rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
+                        }}
+                    >
+                        <div
+                            style={{
+                                width: 40,
+                                height: 40,
+                                borderRadius: "8px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
+                            }}
+                        >
+                            <BookOpen size={20} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h4
+                                style={{
+                                    fontSize: "0.95rem",
+                                    fontWeight: 500,
+                                    color: "#000049",
+                                }}
+                            >
+                                ACTIONGROW
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+
+                {/* Inst-Guayaquil */}
+                <a
+                    href="/documentos-legales/ACTA DE ADHESIÓN-inst-Guayaquil.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                >
+                    <div
+                        className="hover-lift"
+                        style={{
+                            background: "#fff",
+                            borderRadius: "12px",
+                            padding: "1rem",
+                            border: "1px solid #e8e8f4",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.75rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
+                        }}
+                    >
+                        <div
+                            style={{
+                                width: 40,
+                                height: 40,
+                                borderRadius: "8px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
+                            }}
+                        >
+                            <BookOpen size={20} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h4
+                                style={{
+                                    fontSize: "0.95rem",
+                                    fontWeight: 500,
+                                    color: "#000049",
+                                }}
+                            >
+                                Inst. Guayaquil
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+
+                {/* ACTIONGROW-X */}
+                <a
+                    href="/documentos-legales/ACTIONGROW-X -ACTA DE ADESHIÓN.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                >
+                    <div
+                        className="hover-lift"
+                        style={{
+                            background: "#fff",
+                            borderRadius: "12px",
+                            padding: "1rem",
+                            border: "1px solid #e8e8f4",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.75rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
+                        }}
+                    >
+                        <div
+                            style={{
+                                width: 40,
+                                height: 40,
+                                borderRadius: "8px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
+                            }}
+                        >
+                            <BookOpen size={20} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h4
+                                style={{
+                                    fontSize: "0.95rem",
+                                    fontWeight: 500,
+                                    color: "#000049",
+                                }}
+                            >
+                                ACTIONGROW-X
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+
+                {/* Carta de Intencion Bolivar */}
+                <a
+                    href="/documentos-legales/Carta de Intencion Bolivar.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                >
+                    <div
+                        className="hover-lift"
+                        style={{
+                            background: "#fff",
+                            borderRadius: "12px",
+                            padding: "1rem",
+                            border: "1px solid #e8e8f4",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.75rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
+                        }}
+                    >
+                        <div
+                            style={{
+                                width: 40,
+                                height: 40,
+                                borderRadius: "8px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
+                            }}
+                        >
+                            <BookOpen size={20} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h4
+                                style={{
+                                    fontSize: "0.95rem",
+                                    fontWeight: 500,
+                                    color: "#000049",
+                                }}
+                            >
+                                Carta Intención Bolívar
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+
+                {/* IST SUCRE 2023 */}
+                <a
+                    href="/documentos-legales/Carta de intención IST SUCRE 2023.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                >
+                    <div
+                        className="hover-lift"
+                        style={{
+                            background: "#fff",
+                            borderRadius: "12px",
+                            padding: "1rem",
+                            border: "1px solid #e8e8f4",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.75rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
+                        }}
+                    >
+                        <div
+                            style={{
+                                width: 40,
+                                height: 40,
+                                borderRadius: "8px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
+                            }}
+                        >
+                            <BookOpen size={20} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h4
+                                style={{
+                                    fontSize: "0.95rem",
+                                    fontWeight: 500,
+                                    color: "#000049",
+                                }}
+                            >
+                                IST SUCRE 2023
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+
+                {/* CENESTUR */}
+                <a
+                    href="/documentos-legales/CENESTUR.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                >
+                    <div
+                        className="hover-lift"
+                        style={{
+                            background: "#fff",
+                            borderRadius: "12px",
+                            padding: "1rem",
+                            border: "1px solid #e8e8f4",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.75rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
+                        }}
+                    >
+                        <div
+                            style={{
+                                width: 40,
+                                height: 40,
+                                borderRadius: "8px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
+                            }}
+                        >
+                            <BookOpen size={20} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h4
+                                style={{
+                                    fontSize: "0.95rem",
+                                    fontWeight: 500,
+                                    color: "#000049",
+                                }}
+                            >
+                                CENESTUR
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+
+                {/* CEPU */}
+                <a
+                    href="/documentos-legales/CEPU.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                >
+                    <div
+                        className="hover-lift"
+                        style={{
+                            background: "#fff",
+                            borderRadius: "12px",
+                            padding: "1rem",
+                            border: "1px solid #e8e8f4",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.75rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
+                        }}
+                    >
+                        <div
+                            style={{
+                                width: 40,
+                                height: 40,
+                                borderRadius: "8px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
+                            }}
+                        >
+                            <BookOpen size={20} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h4
+                                style={{
+                                    fontSize: "0.95rem",
+                                    fontWeight: 500,
+                                    color: "#000049",
+                                }}
+                            >
+                                CEPU
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+
+                {/* CUESTTV */}
+                <a
+                    href="/documentos-legales/CUESTTV.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                >
+                    <div
+                        className="hover-lift"
+                        style={{
+                            background: "#fff",
+                            borderRadius: "12px",
+                            padding: "1rem",
+                            border: "1px solid #e8e8f4",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.75rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
+                        }}
+                    >
+                        <div
+                            style={{
+                                width: 40,
+                                height: 40,
+                                borderRadius: "8px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
+                            }}
+                        >
+                            <BookOpen size={20} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h4
+                                style={{
+                                    fontSize: "0.95rem",
+                                    fontWeight: 500,
+                                    color: "#000049",
+                                }}
+                            >
+                                CUESTTV
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+
+                {/* ILLINGWORTH-SERVIENTREGA */}
+                <a
+                    href="/documentos-legales/ILLINGWORTH-SERVIENTREGA.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                >
+                    <div
+                        className="hover-lift"
+                        style={{
+                            background: "#fff",
+                            borderRadius: "12px",
+                            padding: "1rem",
+                            border: "1px solid #e8e8f4",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.75rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
+                        }}
+                    >
+                        <div
+                            style={{
+                                width: 40,
+                                height: 40,
+                                borderRadius: "8px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
+                            }}
+                        >
+                            <BookOpen size={20} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h4
+                                style={{
+                                    fontSize: "0.95rem",
+                                    fontWeight: 500,
+                                    color: "#000049",
+                                }}
+                            >
+                                Illingworth
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+
+                {/* ITI */}
+                <a
+                    href="/documentos-legales/ITI.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                >
+                    <div
+                        className="hover-lift"
+                        style={{
+                            background: "#fff",
+                            borderRadius: "12px",
+                            padding: "1rem",
+                            border: "1px solid #e8e8f4",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.75rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
+                        }}
+                    >
+                        <div
+                            style={{
+                                width: 40,
+                                height: 40,
+                                borderRadius: "8px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
+                            }}
+                        >
+                            <BookOpen size={20} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h4
+                                style={{
+                                    fontSize: "0.95rem",
+                                    fontWeight: 500,
+                                    color: "#000049",
+                                }}
+                            >
+                                ITI
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+
+                {/* ITSU-SERVIENTREGA */}
+                <a
+                    href="/documentos-legales/ITSU-SERVIENTREGA.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                >
+                    <div
+                        className="hover-lift"
+                        style={{
+                            background: "#fff",
+                            borderRadius: "12px",
+                            padding: "1rem",
+                            border: "1px solid #e8e8f4",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.75rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
+                        }}
+                    >
+                        <div
+                            style={{
+                                width: 40,
+                                height: 40,
+                                borderRadius: "8px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
+                            }}
+                        >
+                            <BookOpen size={20} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h4
+                                style={{
+                                    fontSize: "0.95rem",
+                                    fontWeight: 500,
+                                    color: "#000049",
+                                }}
+                            >
+                                ITSU
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+
+                {/* JAPON */}
+                <a
+                    href="/documentos-legales/JAPON.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                >
+                    <div
+                        className="hover-lift"
+                        style={{
+                            background: "#fff",
+                            borderRadius: "12px",
+                            padding: "1rem",
+                            border: "1px solid #e8e8f4",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.75rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
+                        }}
+                    >
+                        <div
+                            style={{
+                                width: 40,
+                                height: 40,
+                                borderRadius: "8px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
+                            }}
+                        >
+                            <BookOpen size={20} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h4
+                                style={{
+                                    fontSize: "0.95rem",
+                                    fontWeight: 500,
+                                    color: "#000049",
+                                }}
+                            >
+                                JAPON
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+
+                {/* LENDAN */}
+                <a
+                    href="/documentos-legales/LENDAN.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                >
+                    <div
+                        className="hover-lift"
+                        style={{
+                            background: "#fff",
+                            borderRadius: "12px",
+                            padding: "1rem",
+                            border: "1px solid #e8e8f4",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.75rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
+                        }}
+                    >
+                        <div
+                            style={{
+                                width: 40,
+                                height: 40,
+                                borderRadius: "8px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
+                            }}
+                        >
+                            <BookOpen size={20} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h4
+                                style={{
+                                    fontSize: "0.95rem",
+                                    fontWeight: 500,
+                                    color: "#000049",
+                                }}
+                            >
+                                LENDAN
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+
+                {/* MISAEL ACOSTA-SERVIENTREGA */}
+                <a
+                    href="/documentos-legales/MISAEL ACOSTA-SERVIENTREGA.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                >
+                    <div
+                        className="hover-lift"
+                        style={{
+                            background: "#fff",
+                            borderRadius: "12px",
+                            padding: "1rem",
+                            border: "1px solid #e8e8f4",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.75rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
+                        }}
+                    >
+                        <div
+                            style={{
+                                width: 40,
+                                height: 40,
+                                borderRadius: "8px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
+                            }}
+                        >
+                            <BookOpen size={20} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h4
+                                style={{
+                                    fontSize: "0.95rem",
+                                    fontWeight: 500,
+                                    color: "#000049",
+                                }}
+                            >
+                                Misael Acosta
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+
+                {/* NELSON TORRES-SERVIENTREGA */}
+                <a
+                    href="/documentos-legales/NELSON TORRES-SERVIENTREGA.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                >
+                    <div
+                        className="hover-lift"
+                        style={{
+                            background: "#fff",
+                            borderRadius: "12px",
+                            padding: "1rem",
+                            border: "1px solid #e8e8f4",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.75rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
+                        }}
+                    >
+                        <div
+                            style={{
+                                width: 40,
+                                height: 40,
+                                borderRadius: "8px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
+                            }}
+                        >
+                            <BookOpen size={20} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h4
+                                style={{
+                                    fontSize: "0.95rem",
+                                    fontWeight: 500,
+                                    color: "#000049",
+                                }}
+                            >
+                                Nelson Torres
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+
+                {/* PICHINCHA */}
+                <a
+                    href="/documentos-legales/PICHINCHA.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                >
+                    <div
+                        className="hover-lift"
+                        style={{
+                            background: "#fff",
+                            borderRadius: "12px",
+                            padding: "1rem",
+                            border: "1px solid #e8e8f4",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.75rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
+                        }}
+                    >
+                        <div
+                            style={{
+                                width: 40,
+                                height: 40,
+                                borderRadius: "8px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
+                            }}
+                        >
+                            <BookOpen size={20} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h4
+                                style={{
+                                    fontSize: "0.95rem",
+                                    fontWeight: 500,
+                                    color: "#000049",
+                                }}
+                            >
+                                PICHINCHA
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+
+                {/* REY DAVID-SERVIENTREGA */}
+                <a
+                    href="/documentos-legales/REY DAVID-SERVIENTREGA.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                >
+                    <div
+                        className="hover-lift"
+                        style={{
+                            background: "#fff",
+                            borderRadius: "12px",
+                            padding: "1rem",
+                            border: "1px solid #e8e8f4",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.75rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
+                        }}
+                    >
+                        <div
+                            style={{
+                                width: 40,
+                                height: 40,
+                                borderRadius: "8px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
+                            }}
+                        >
+                            <BookOpen size={20} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h4
+                                style={{
+                                    fontSize: "0.95rem",
+                                    fontWeight: 500,
+                                    color: "#000049",
+                                }}
+                            >
+                                Rey David
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+
+                {/* SUDAMERICANO */}
+                <a
+                    href="/documentos-legales/SUDAMERICANO.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                >
+                    <div
+                        className="hover-lift"
+                        style={{
+                            background: "#fff",
+                            borderRadius: "12px",
+                            padding: "1rem",
+                            border: "1px solid #e8e8f4",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.75rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
+                        }}
+                    >
+                        <div
+                            style={{
+                                width: 40,
+                                height: 40,
+                                borderRadius: "8px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
+                            }}
+                        >
+                            <BookOpen size={20} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h4
+                                style={{
+                                    fontSize: "0.95rem",
+                                    fontWeight: 500,
+                                    color: "#000049",
+                                }}
+                            >
+                                SUDAMERICANO
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+
+                {/* TECLEMAS-SERVIENTREGA */}
+                <a
+                    href="/documentos-legales/TECLEMAS-SERVIENTREGA.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                >
+                    <div
+                        className="hover-lift"
+                        style={{
+                            background: "#fff",
+                            borderRadius: "12px",
+                            padding: "1rem",
+                            border: "1px solid #e8e8f4",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.75rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
+                        }}
+                    >
+                        <div
+                            style={{
+                                width: 40,
+                                height: 40,
+                                borderRadius: "8px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
+                            }}
+                        >
+                            <BookOpen size={20} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h4
+                                style={{
+                                    fontSize: "0.95rem",
+                                    fontWeight: 500,
+                                    color: "#000049",
+                                }}
+                            >
+                                TECLEMAS
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+
+                {/* TRAVERSARI */}
+                <a
+                    href="/documentos-legales/TRAVERSARI.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                >
+                    <div
+                        className="hover-lift"
+                        style={{
+                            background: "#fff",
+                            borderRadius: "12px",
+                            padding: "1rem",
+                            border: "1px solid #e8e8f4",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.75rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
+                        }}
+                    >
+                        <div
+                            style={{
+                                width: 40,
+                                height: 40,
+                                borderRadius: "8px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
+                            }}
+                        >
+                            <BookOpen size={20} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h4
+                                style={{
+                                    fontSize: "0.95rem",
+                                    fontWeight: 500,
+                                    color: "#000049",
+                                }}
+                            >
+                                TRAVERSARI
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+
+                {/* UNIVERSITARIO ORIENTE */}
+                <a
+                    href="/documentos-legales/UNIVERSITARIO ORIENTE.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                >
+                    <div
+                        className="hover-lift"
+                        style={{
+                            background: "#fff",
+                            borderRadius: "12px",
+                            padding: "1rem",
+                            border: "1px solid #e8e8f4",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.75rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
+                        }}
+                    >
+                        <div
+                            style={{
+                                width: 40,
+                                height: 40,
+                                borderRadius: "8px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
+                            }}
+                        >
+                            <BookOpen size={20} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h4
+                                style={{
+                                    fontSize: "0.95rem",
+                                    fontWeight: 500,
+                                    color: "#000049",
+                                }}
+                            >
+                                Univ. Oriente
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+
+                {/* WISSEN-SERVIENTREGA */}
+                <a
+                    href="/documentos-legales/WISSEN-SERVIENTREGA.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                >
+                    <div
+                        className="hover-lift"
+                        style={{
+                            background: "#fff",
+                            borderRadius: "12px",
+                            padding: "1rem",
+                            border: "1px solid #e8e8f4",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.75rem",
+                            transition: "all 0.3s ease",
+                            cursor: "pointer",
+                            height: "100%",
+                        }}
+                    >
+                        <div
+                            style={{
+                                width: 40,
+                                height: 40,
+                                borderRadius: "8px",
+                                background: "linear-gradient(135deg, #000049, #0a0a6e)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
+                            }}
+                        >
+                            <BookOpen size={20} color="#FEC704" />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h4
+                                style={{
+                                    fontSize: "0.95rem",
+                                    fontWeight: 500,
+                                    color: "#000049",
+                                }}
+                            >
+                                WISSEN
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
 
         {/* Nota al pie */}
