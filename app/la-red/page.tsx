@@ -706,7 +706,7 @@ export default function LaRedPage() {
             >
                 {/* ACTA 27 MARZO 2024 */}
                 <a
-                    href="/documentos-legales/ACTARII1-27 MARZO DEL 2024.pdf"
+                    href="/documentos-legales/1ACTARII1-27 MARZO DEL 2024.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ textDecoration: "none" }}
@@ -749,7 +749,7 @@ export default function LaRedPage() {
                                     marginBottom: "0.25rem",
                                 }}
                             >
-                                Acta RII
+                                Acta RII-ACTA DE REUNIÓN
                             </h3>
                             <p
                                 style={{
@@ -765,7 +765,7 @@ export default function LaRedPage() {
 
                 {/* ACTA 27 JUNIO 2024 */}
                 <a
-                    href="/documentos-legales/ACTA_RED1-27 JUNIO DEL 2024.pdf"
+                    href="/documentos-legales/2ACTA_RED1-27 JUNIO DEL 2024.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ textDecoration: "none" }}
@@ -808,7 +808,7 @@ export default function LaRedPage() {
                                     marginBottom: "0.25rem",
                                 }}
                             >
-                                Acta RED
+                                Acta RED-ACTA DE REUNIÓN
                             </h3>
                             <p
                                 style={{
