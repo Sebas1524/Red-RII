@@ -2969,7 +2969,7 @@ export default function LaRedPage() {
             </div>
         </a>
 
-        {/* WISSEN (Actualizado) */}
+                {/* WISSEN (Actualizado) */}
         <a
             href="/documentos-legales/WISSEN-SERVIENTREGA.pdf"
             target="_blank"
@@ -3017,11 +3017,11 @@ export default function LaRedPage() {
                     </h4>
                 </div>
             </div>
-         </a>
-    </div>  {/* Cierre del div con className="stagger-children" de Cartas de Adhesión */}
-</div>  {/* Cierre del div con className="scroll-reveal" de Cartas de Adhesión */}
-    </div>  {/* Cierre del div container-custom */}
-</section>  {/* Cierre de la sección de Documentos Legales */}
-    </div>  {/* Cierre del div principal con ref={containerRef} */}
-    );
+        </a>
+    </div>
+</div>
+    </div>
+</section>
+    </div>
+);
 }
