@@ -174,7 +174,8 @@ export default function MiembrosPage() {
            {/* Foto del Presidente + Mensaje */}
 <section style={{ padding: "4rem 1.5rem", background: "#fff" }}>
     <div className="container-custom">
-        <div className="scroll-reveal" 
+        <div 
+            className="scroll-reveal presidente-grid" 
             style={{
                 display: "grid",
                 gridTemplateColumns: "1fr 1.5fr",
@@ -184,15 +185,6 @@ export default function MiembrosPage() {
                 margin: "0 auto",
             }}
         >
-            <style jsx>{`
-                @media (max-width: 768px) {
-                    div[style*="grid-template-columns: 1fr 1.5fr"] {
-                        grid-template-columns: 1fr !important;
-                        gap: 2rem !important;
-                    }
-                }
-            `}</style>
-            
             {/* Foto del Presidente */}
             <div
                 className="hover-lift"
@@ -350,6 +342,23 @@ export default function MiembrosPage() {
         </div>
     </div>
 </section>
+
+{/* Agrega este estilo al final del componente, junto con los otros estilos jsx */}
+<style jsx>{`
+    @media (max-width: 768px) {
+        .presidente-grid {
+            grid-template-columns: 1fr !important;
+            gap: 2rem !important;
+        }
+    }
+    
+    .logo-hover {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .logo-hover:hover {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+`}</style>
 
             {/* Estadísticas con animación y fondo */}
 <section
