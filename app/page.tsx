@@ -712,7 +712,7 @@ export default function HomePage() {
                   marginBottom: "1.5rem",
                 }}
               >
-                10 y 11 de Marzo — Congreso Académico Internacional
+                Próximamente — Congreso Académico Internacional de Innovación en Salud, Educación y Bienestar
               </p>
               <Link
                 href="/caiseb"
