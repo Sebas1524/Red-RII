@@ -101,4 +101,24 @@
   "sending": "SENDING...",
   "send": "SEND MESSAGE"
 }
+  ,
+"lared": {
+  "title": "The Network",
+  "description": "Learn about our mission, vision and the research lines that drive educational and social development across Ibero-America.",
+  "missionTitle": "Mission",
+  "missionText": "The Network's mission is to make research a vital process stemming from the interests, motivations and affinities of the diverse areas of knowledge that comprise it. This process must be carried out in a collegiate, organized and systematic manner among all its members and collaborators.",
+  "visionTitle": "Vision",
+  "visionText": "The RII's vision is to position itself as the central axis of research that supports the solution of various problems arising in the educational field. It seeks to strengthen curricula and, consequently, comprehensive university education in different areas of knowledge.",
+  "mapTitle": "Presence in Ibero-America",
+  "mapDescription": "A living network of scientific collaboration connecting 16 countries and more than 80 researchers.",
+  "researchTitle": "Research Lines",
+  "researchDescription": "Aimed at strengthening projects that generate impact in development, innovation and the improvement of society.",
+  "transversalTitle": "Cross-cutting Thematic Areas",
+  "transversalDescription": "Topics that cut across all research lines",
+  "docsTitle": "Legal Documents",
+  "docsDescription": "Explore the fundamental documents that support and guide the work of the Ibero-American Research Network.",
+  "docsMainTitle": "Core Documents",
+  "adhesionTitle": "Institutional Membership Letters",
+  "adhesionDescription": "Membership documents of institutions that are part of the Ibero-American Research Network"
+}
 }
