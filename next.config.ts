@@ -1,18 +1,21 @@
+import createNextIntlPlugin from "next-intl/plugin";
 import type { NextConfig } from "next";
+
+const withNextIntl = createNextIntlPlugin("./i18n.ts");
 
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "**", // Allows external images from WordPress (you can restrict this to your specific domain later)
+        hostname: "**",
       },
       {
         protocol: "http",
-        hostname: "localhost", // For local WordPress development
+        hostname: "localhost",
       },
     ],
   },
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);
