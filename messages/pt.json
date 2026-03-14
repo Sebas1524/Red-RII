@@ -101,4 +101,24 @@
   "sending": "ENVIANDO...",
   "send": "ENVIAR MENSAGEM"
 }
+  ,
+"lared": {
+  "title": "A Rede",
+  "description": "Conheça nossa missão, visão e as linhas de pesquisa que impulsionam o desenvolvimento educacional e social na Ibero-América.",
+  "missionTitle": "Missão",
+  "missionText": "A missão da Rede é tornar a pesquisa um processo vital que parta dos interesses, motivações e afinidades das diversas áreas do conhecimento que a integram. Este processo deve ser realizado de forma colegiada, organizada e sistemática entre todos os seus membros e colaboradores.",
+  "visionTitle": "Visão",
+  "visionText": "A visão da RII é posicionar-se como o eixo central das pesquisas que apoiem a solução de diversas problemáticas no âmbito educacional. Busca o fortalecimento dos currículos e a formação universitária integral nas diferentes áreas do conhecimento.",
+  "mapTitle": "Presença na Ibero-América",
+  "mapDescription": "Uma rede viva de colaboração científica que une 16 países e mais de 80 pesquisadores.",
+  "researchTitle": "Linhas de Pesquisa",
+  "researchDescription": "Orientadas ao fortalecimento de projetos que gerem impacto no desenvolvimento, inovação e melhoria da sociedade.",
+  "transversalTitle": "Áreas Temáticas Transversais",
+  "transversalDescription": "Temas que perpassam todas as linhas de pesquisa",
+  "docsTitle": "Documentos Legais",
+  "docsDescription": "Conheça os documentos fundamentais que respaldam e guiam o trabalho da Rede Ibero-Americana de Pesquisa.",
+  "docsMainTitle": "Documentos Fundamentais",
+  "adhesionTitle": "Cartas de Adesão Institucional",
+  "adhesionDescription": "Documentos de adesão de instituições que fazem parte da Rede Ibero-Americana de Pesquisa"
+}
 }
