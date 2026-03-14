@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "home": "Início",
+    "network": "A Rede",
+    "caiseb": "CAISEB",
+    "news": "Notícias",
+    "events": "Eventos",
+    "contact": "Contato"
+  },
+  "hero": {
+    "badge": "CAISEB 2026 — Em Breve",
+    "title": "Rede Ibero-Americana",
+    "subtitle": "de Pesquisa",
+    "description": "Fortalecemos a pesquisa colegiada, organizada e sistemática, impulsionando a inovação educacional e o desenvolvimento universitário integral na Ibero-América.",
+    "btnNetwork": "Conhecer a Rede",
+    "btnCaiseb": "CAISEB 2026"
+  },
+  "highlights": {
+    "title": "O que fazemos?",
+    "subtitle": "Impulsionamos a pesquisa multidisciplinar como motor de transformação social e educacional.",
+    "items": [
+      { "title": "Pesquisa Colegiada", "description": "Processo vital que parte dos interesses e motivações de diversas áreas do conhecimento." },
+      { "title": "Inovação Educacional", "description": "Fortalecimento de currículos e formação universitária integral em múltiplas disciplinas." },
+      { "title": "Rede Ibero-Americana", "description": "Colaboração internacional entre membros e colaboradores de toda a Ibero-América." }
+    ]
+  },
+  "research": {
+    "title": "Áreas de Pesquisa",
+    "areas": ["Educação", "Mecânica Automotiva", "Administração e Marketing", "Desenvolvimento de Software", "Saúde e Bem-estar", "Gastronomia", "Estética Integral", "Turismo", "Eletricidade"]
+  },
+  "vision": {
+    "title1": "Para onde projetamos",
+    "title2": "a ciência e a tecnologia?",
+    "description": "Nos próximos anos, a Rede RII será reconhecida como o ecossistema de pesquisa tecnológica mais influente da Ibero-América, liderando a criação de conhecimento aplicado e formando alianças estratégicas.",
+    "exploreLabel": "EXPLORE NOSSA IDENTIDADE",
+    "exploreSubtitle": "Descubra o que nos move",
+    "btn": "Conhecer nossa identidade"
+  },
+  "caiseb": {
+    "badge": "Próximo Evento",
+    "title": "CAISEB 2026",
+    "description": "Em Breve — Congresso Acadêmico Internacional de Inovação em Saúde, Educação e Bem-estar",
+    "btn": "Ver detalhes"
+  },
+  "presence": {
+    "title": "Conheça nossa presença na Ibero-América",
+    "description": "Descubra as instituições, pesquisadores e projetos que fazem parte da Rede Ibero-Americana de Pesquisa em toda a região.",
+    "btn": "Saber mais sobre a Rede"
+  },
+  "updates": {
+    "badge": "ATUALIDADE E CONEXÃO RII",
+    "title1": "O pulso da inovação",
+    "title2": "em um só lugar",
+    "description": "Fique conectado com o avanço científico da Rede. Dos marcos alcançados em nossas últimas pesquisas à agenda dos próximos encontros.",
+    "question": "O que você deseja explorar hoje?",
+    "newsTitle": "O QUE ESTÁ",
+    "newsHighlight": "ACONTECENDO",
+    "newsLabel": "Notícias e Boletins",
+    "newsDescription": "Descubra as conquistas, publicações e convênios mais recentes da nossa comunidade acadêmica.",
+    "newsBtn": "VER NOTÍCIAS",
+    "eventsTitle": "O QUE",
+    "eventsHighlight": "VEM AÍ",
+    "eventsLabel": "Eventos e Próximos Encontros",
+    "eventsDescription": "Garanta seu lugar nos webinars, workshops e a rota oficial para o novo CAISEB.",
+    "eventsBtn": "VER EVENTOS",
+    "memberText": "É membro?",
+    "memberLink": "Contribua com notícias ou proponha um evento"
+  }
+}
