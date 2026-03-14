@@ -121,4 +121,23 @@
   "adhesionTitle": "Institutional Membership Letters",
   "adhesionDescription": "Membership documents of institutions that are part of the Ibero-American Research Network"
 }
+  ,
+"miembros": {
+  "badge": "Our Community",
+  "title": "Network Members",
+  "description": "Leading institutions united by their commitment to research, innovation and academic excellence across Ibero-America.",
+  "presidentBadge": "President",
+  "presidentName": "Dr. Milton Altamirano Pazmiño",
+  "messageTitle": "Message from the President",
+  "messageP1": "\"The Ibero-American Research Network (RII) was born with the conviction that science should not be an isolated effort, but a bridge toward common development. Our vision for 2026 is to consolidate an ecosystem where technology and ethics walk hand in hand, transforming each finding into a tangible solution for our society.",
+  "messageP2": "Through events like CAISEB, we reaffirm our commitment to enhancing the capabilities of our academics and professionals, aligning with national and international development goals. We are not only building a knowledge network; we are designing the productive and human future of Ibero-America.\"",
+  "messageDate": "2026 - Vision for the future",
+  "statsTitle": "Our Impact in Numbers",
+  "stat1": "Member Institutions",
+  "stat2": "Researchers",
+  "stat3": "Countries",
+  "stat4": "Active Projects",
+  "alliesTitle": "Allied Institutions",
+  "alliesDescription": "Meet the organizations that make our mission to strengthen research possible."
+}
 }
