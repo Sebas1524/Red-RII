@@ -101,4 +101,24 @@
   "sending": "ENVOI EN COURS...",
   "send": "ENVOYER LE MESSAGE"
 }
+  ,
+"lared": {
+  "title": "Le Réseau",
+  "description": "Découvrez notre mission, vision et les lignes de recherche qui stimulent le développement éducatif et social en Ibéro-Amérique.",
+  "missionTitle": "Mission",
+  "missionText": "La mission du Réseau est de faire de la recherche un processus vital partant des intérêts, motivations et affinités des diverses domaines du savoir qui le composent. Ce processus doit être réalisé de manière collégiale, organisée et systématique entre tous ses membres et collaborateurs.",
+  "visionTitle": "Vision",
+  "visionText": "La vision du RII est de se positionner comme l'axe central des recherches soutenant la résolution de diverses problématiques dans le domaine éducatif. Elle cherche à renforcer les programmes et la formation universitaire intégrale dans les différents domaines du savoir.",
+  "mapTitle": "Présence en Ibéro-Amérique",
+  "mapDescription": "Un réseau vivant de collaboration scientifique unissant 16 pays et plus de 80 chercheurs.",
+  "researchTitle": "Lignes de Recherche",
+  "researchDescription": "Orientées vers le renforcement de projets générant un impact sur le développement, l'innovation et l'amélioration de la société.",
+  "transversalTitle": "Domaines Thématiques Transversaux",
+  "transversalDescription": "Thèmes qui traversent toutes les lignes de recherche",
+  "docsTitle": "Documents Légaux",
+  "docsDescription": "Découvrez les documents fondamentaux qui soutiennent et guident le travail du Réseau de Recherche Ibéro-Américain.",
+  "docsMainTitle": "Documents Fondamentaux",
+  "adhesionTitle": "Lettres d'Adhésion Institutionnelle",
+  "adhesionDescription": "Documents d'adhésion des institutions faisant partie du Réseau de Recherche Ibéro-Américain"
+}
 }
