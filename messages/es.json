@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "network": "La Red",
+    "caiseb": "CAISEB",
+    "news": "Noticias",
+    "events": "Eventos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "badge": "CAISEB 2026 — Próximamente",
+    "title": "Red Iberoamericana",
+    "subtitle": "de Investigación",
+    "description": "Fortalecemos la investigación colegiada, organizada y sistemática, impulsando la innovación educativa y el desarrollo integral universitario en Iberoamérica.",
+    "btnNetwork": "Conocer la Red",
+    "btnCaiseb": "CAISEB 2026"
+  },
+  "highlights": {
+    "title": "¿Qué hacemos?",
+    "subtitle": "Impulsamos la investigación multidisciplinaria como motor de transformación social y educativa.",
+    "items": [
+      { "title": "Investigación Colegiada", "description": "Proceso vital que parte de los intereses y motivaciones de diversas áreas del conocimiento." },
+      { "title": "Innovación Educativa", "description": "Fortalecimiento de currículos y formación integral universitaria en múltiples disciplinas." },
+      { "title": "Red Iberoamericana", "description": "Colaboración internacional entre miembros y colaboradores de toda Iberoamérica." }
+    ]
+  },
+  "research": {
+    "title": "Áreas de Investigación",
+    "areas": ["Educación", "Mecánica Automotriz", "Administración y Marketing", "Desarrollo de Software", "Salud y Bienestar", "Gastronomía", "Estética Integral", "Turismo", "Electricidad"]
+  },
+  "vision": {
+    "title1": "¿Hacia dónde proyectamos",
+    "title2": "la ciencia y la tecnología?",
+    "description": "Para años próximos, la Red RII será reconocida como el ecosistema de investigación tecnológica más influyente de Iberoamérica, liderando la creación de conocimiento aplicado y formando alianzas estratégicas que impulsen el desarrollo científico, ético y social de nuestras instituciones aliadas.",
+    "exploreLabel": "EXPLORA NUESTRA IDENTIDAD",
+    "exploreSubtitle": "Descubre lo que nos mueve",
+    "btn": "Conocer nuestra identidad"
+  },
+  "caiseb": {
+    "badge": "Próximo Evento",
+    "title": "CAISEB 2026",
+    "description": "Próximamente — Congreso Académico Internacional de Innovación en Salud, Educación y Bienestar",
+    "btn": "Ver detalles"
+  },
+  "presence": {
+    "title": "Conoce nuestra presencia en Iberoamérica",
+    "description": "Descubre las instituciones, investigadores y proyectos que forman parte de la Red Iberoamericana de Investigación a lo largo de toda la región.",
+    "btn": "Conocer más sobre la Red"
+  },
+  "updates": {
+    "badge": "ACTUALIDAD Y CONEXIÓN RII",
+    "title1": "El latido de la innovación",
+    "title2": "en un solo lugar",
+    "description": "Mantente conectado con el avance científico de la Red. Desde los hitos alcanzados en nuestras últimas investigaciones hasta la agenda de los próximos encuentros.",
+    "question": "¿Qué deseas explorar hoy?",
+    "newsTitle": "LO QUE ESTÁ",
+    "newsHighlight": "PASANDO",
+    "newsLabel": "Noticias y Boletines",
+    "newsDescription": "Descubre los logros, publicaciones y convenios más recientes de nuestra comunidad académica.",
+    "newsBtn": "VER NOTICIAS",
+    "eventsTitle": "LO QUE",
+    "eventsHighlight": "VIENE",
+    "eventsLabel": "Eventos y Próximos Encuentros",
+    "eventsDescription": "Asegura tu lugar en los webinars, talleres y la ruta oficial hacia el nuevo CAISEB.",
+    "eventsBtn": "VER EVENTOS",
+    "memberText": "¿Eres miembro?",
+    "memberLink": "Contribuye con noticias o propón un evento"
+  }
+}
