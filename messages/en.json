@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "home": "Home",
+    "network": "The Network",
+    "caiseb": "CAISEB",
+    "news": "News",
+    "events": "Events",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "CAISEB 2026 — Coming Soon",
+    "title": "Ibero-American Network",
+    "subtitle": "of Research",
+    "description": "We strengthen collegiate, organized and systematic research, driving educational innovation and comprehensive university development across Ibero-America.",
+    "btnNetwork": "Discover the Network",
+    "btnCaiseb": "CAISEB 2026"
+  },
+  "highlights": {
+    "title": "What do we do?",
+    "subtitle": "We drive multidisciplinary research as an engine of social and educational transformation.",
+    "items": [
+      { "title": "Collegiate Research", "description": "A vital process that stems from the interests and motivations of diverse areas of knowledge." },
+      { "title": "Educational Innovation", "description": "Strengthening curricula and comprehensive university education across multiple disciplines." },
+      { "title": "Ibero-American Network", "description": "International collaboration among members and collaborators from across Ibero-America." }
+    ]
+  },
+  "research": {
+    "title": "Research Areas",
+    "areas": ["Education", "Automotive Mechanics", "Administration & Marketing", "Software Development", "Health & Wellness", "Gastronomy", "Integral Aesthetics", "Tourism", "Electricity"]
+  },
+  "vision": {
+    "title1": "Where are we projecting",
+    "title2": "science and technology?",
+    "description": "In the coming years, the RII Network will be recognized as the most influential technological research ecosystem in Ibero-America, leading the creation of applied knowledge and forming strategic alliances that drive scientific, ethical and social development.",
+    "exploreLabel": "EXPLORE OUR IDENTITY",
+    "exploreSubtitle": "Discover what drives us",
+    "btn": "Learn about our identity"
+  },
+  "caiseb": {
+    "badge": "Upcoming Event",
+    "title": "CAISEB 2026",
+    "description": "Coming Soon — International Academic Congress on Innovation in Health, Education and Wellness",
+    "btn": "View details"
+  },
+  "presence": {
+    "title": "Discover our presence in Ibero-America",
+    "description": "Explore the institutions, researchers and projects that are part of the Ibero-American Research Network across the entire region.",
+    "btn": "Learn more about the Network"
+  },
+  "updates": {
+    "badge": "NEWS & RII CONNECTION",
+    "title1": "The heartbeat of innovation",
+    "title2": "in one place",
+    "description": "Stay connected with the scientific progress of the Network. From milestones in our latest research to the agenda of upcoming events.",
+    "question": "What would you like to explore today?",
+    "newsTitle": "WHAT'S",
+    "newsHighlight": "HAPPENING",
+    "newsLabel": "News & Bulletins",
+    "newsDescription": "Discover the latest achievements, publications and agreements from our academic community.",
+    "newsBtn": "VIEW NEWS",
+    "eventsTitle": "WHAT'S",
+    "eventsHighlight": "COMING",
+    "eventsLabel": "Events & Upcoming Meetings",
+    "eventsDescription": "Secure your spot at webinars, workshops and the official road to the new CAISEB.",
+    "eventsBtn": "VIEW EVENTS",
+    "memberText": "Are you a member?",
+    "memberLink": "Contribute news or propose an event"
+  }
+}
