@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "network": "Le Réseau",
+    "caiseb": "CAISEB",
+    "news": "Actualités",
+    "events": "Événements",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "CAISEB 2026 — Bientôt",
+    "title": "Réseau Ibéro-Américain",
+    "subtitle": "de Recherche",
+    "description": "Nous renforçons la recherche collégiale, organisée et systématique, en favorisant l'innovation éducative et le développement universitaire intégral en Ibéro-Amérique.",
+    "btnNetwork": "Découvrir le Réseau",
+    "btnCaiseb": "CAISEB 2026"
+  },
+  "highlights": {
+    "title": "Que faisons-nous?",
+    "subtitle": "Nous promouvons la recherche multidisciplinaire comme moteur de transformation sociale et éducative.",
+    "items": [
+      { "title": "Recherche Collégiale", "description": "Un processus vital qui part des intérêts et motivations de divers domaines du savoir." },
+      { "title": "Innovation Éducative", "description": "Renforcement des programmes et formation universitaire intégrale dans de multiples disciplines." },
+      { "title": "Réseau Ibéro-Américain", "description": "Collaboration internationale entre membres et collaborateurs de toute l'Ibéro-Amérique." }
+    ]
+  },
+  "research": {
+    "title": "Domaines de Recherche",
+    "areas": ["Éducation", "Mécanique Automobile", "Administration et Marketing", "Développement Logiciel", "Santé et Bien-être", "Gastronomie", "Esthétique Intégrale", "Tourisme", "Électricité"]
+  },
+  "vision": {
+    "title1": "Où projetons-nous",
+    "title2": "la science et la technologie?",
+    "description": "Dans les prochaines années, le Réseau RII sera reconnu comme l'écosystème de recherche technologique le plus influent d'Ibéro-Amérique, menant la création de connaissances appliquées et formant des alliances stratégiques.",
+    "exploreLabel": "EXPLOREZ NOTRE IDENTITÉ",
+    "exploreSubtitle": "Découvrez ce qui nous anime",
+    "btn": "Connaître notre identité"
+  },
+  "caiseb": {
+    "badge": "Prochain Événement",
+    "title": "CAISEB 2026",
+    "description": "Bientôt — Congrès Académique International sur l'Innovation en Santé, Éducation et Bien-être",
+    "btn": "Voir les détails"
+  },
+  "presence": {
+    "title": "Découvrez notre présence en Ibéro-Amérique",
+    "description": "Explorez les institutions, chercheurs et projets qui font partie du Réseau de Recherche Ibéro-Américain dans toute la région.",
+    "btn": "En savoir plus sur le Réseau"
+  },
+  "updates": {
+    "badge": "ACTUALITÉ ET CONNEXION RII",
+    "title1": "Le battement de l'innovation",
+    "title2": "en un seul endroit",
+    "description": "Restez connecté avec les avancées scientifiques du Réseau. Des jalons de nos dernières recherches à l'agenda des prochaines rencontres.",
+    "question": "Que souhaitez-vous explorer aujourd'hui?",
+    "newsTitle": "CE QUI SE",
+    "newsHighlight": "PASSE",
+    "newsLabel": "Actualités et Bulletins",
+    "newsDescription": "Découvrez les dernières réalisations, publications et accords de notre communauté académique.",
+    "newsBtn": "VOIR LES ACTUALITÉS",
+    "eventsTitle": "CE QUI",
+    "eventsHighlight": "VIENT",
+    "eventsLabel": "Événements et Prochaines Rencontres",
+    "eventsDescription": "Réservez votre place aux webinaires, ateliers et la route officielle vers le nouveau CAISEB.",
+    "eventsBtn": "VOIR LES ÉVÉNEMENTS",
+    "memberText": "Êtes-vous membre?",
+    "memberLink": "Contribuez avec des actualités ou proposez un événement"
+  }
+}
