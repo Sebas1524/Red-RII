@@ -121,4 +121,23 @@
   "adhesionTitle": "Lettres d'Adhésion Institutionnelle",
   "adhesionDescription": "Documents d'adhésion des institutions faisant partie du Réseau de Recherche Ibéro-Américain"
 }
+  ,
+"miembros": {
+  "badge": "Notre Communauté",
+  "title": "Membres du Réseau",
+  "description": "Institutions leaders unies par leur engagement envers la recherche, l'innovation et l'excellence académique en Ibéro-Amérique.",
+  "presidentBadge": "Président",
+  "presidentName": "Dr. Milton Altamirano Pazmiño",
+  "messageTitle": "Message de la Présidence",
+  "messageP1": "\"Le Réseau de Recherche Ibéro-Américain (RII) est né avec la conviction que la science ne doit pas être un effort isolé, mais un pont vers le développement commun. Notre vision pour 2026 est de consolider un écosystème où la technologie et l'éthique marchent main dans la main.",
+  "messageP2": "À travers des événements comme le CAISEB, nous réaffirmons notre engagement à renforcer les capacités de nos académiciens et professionnels, en nous alignant sur les objectifs de développement national et international. Nous ne construisons pas seulement un réseau de connaissances; nous concevons l'avenir productif et humain de l'Ibéro-Amérique.\"",
+  "messageDate": "2026 - Vision d'avenir",
+  "statsTitle": "Notre Impact en Chiffres",
+  "stat1": "Institutions Membres",
+  "stat2": "Chercheurs",
+  "stat3": "Pays",
+  "stat4": "Projets Actifs",
+  "alliesTitle": "Institutions Alliées",
+  "alliesDescription": "Découvrez les organisations qui rendent possible notre mission de renforcer la recherche."
+}
 }
