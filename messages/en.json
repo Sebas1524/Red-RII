@@ -140,4 +140,13 @@
   "alliesTitle": "Allied Institutions",
   "alliesDescription": "Meet the organizations that make our mission to strengthen research possible."
 }
+  ,
+"noticias": {
+  "title": "News",
+  "description": "Stay up to date with the latest news, calls and publications from the Ibero-American Research Network.",
+  "readMore": "Read more",
+  "reading": "read",
+  "noNews": "No news available at this time.",
+  "backToNews": "Back to News"
+}
 }
