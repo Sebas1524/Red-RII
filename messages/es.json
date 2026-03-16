@@ -121,4 +121,23 @@
   "adhesionTitle": "Cartas de Adhesión Institucional",
   "adhesionDescription": "Documentos de adhesión de instituciones que forman parte de la Red Iberoamericana de Investigación"
 }
+  ,
+"miembros": {
+  "badge": "Nuestra Comunidad",
+  "title": "Miembros de la Red",
+  "description": "Instituciones líderes unidas por el compromiso con la investigación, la innovación y la excelencia académica en Iberoamérica.",
+  "presidentBadge": "Presidente",
+  "presidentName": "Dr. Milton Altamirano Pazmiño",
+  "messageTitle": "Mensaje de la Presidencia",
+  "messageP1": "\"La Red Iberoamericana de Investigación (RII) nació con la convicción de que la ciencia no debe ser un esfuerzo aislado, sino un puente hacia el desarrollo común. Nuestra visión para el 2029 es consolidar un ecosistema donde la tecnología y la ética caminen de la mano, transformando cada hallazgo en una solución tangible para nuestra sociedad.",
+  "messageP2": "A través de eventos como el CAISEB, reafirmamos nuestro compromiso de potenciar las capacidades de nuestros académicos y profesionales, alineándonos a las metas de desarrollo nacional e internacional. No solo estamos construyendo una red de conocimientos; estamos diseñando el futuro productivo y humano de Iberoamérica.\"",
+  "messageDate": "Visión de futuro",
+  "statsTitle": "Nuestro Impacto en Números",
+  "stat1": "Instituciones Miembro",
+  "stat2": "Investigadores",
+  "stat3": "Países",
+  "stat4": "Proyectos Activos",
+  "alliesTitle": "Instituciones Aliadas",
+  "alliesDescription": "Conoce a las organizaciones que hacen posible nuestra misión de fortalecer la investigación."
+}
 }
