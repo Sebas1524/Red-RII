@@ -140,4 +140,13 @@
   "alliesTitle": "Institutions Alliées",
   "alliesDescription": "Découvrez les organisations qui rendent possible notre mission de renforcer la recherche."
 }
+  ,
+"noticias": {
+  "title": "Actualités",
+  "description": "Restez informé des dernières nouvelles, appels et publications du Réseau de Recherche Ibéro-Américain.",
+  "readMore": "Lire plus",
+  "reading": "lecture",
+  "noNews": "Aucune actualité disponible pour le moment.",
+  "backToNews": "Retour aux actualités"
+}
 }
