@@ -140,4 +140,13 @@
   "alliesTitle": "Instituições Aliadas",
   "alliesDescription": "Conheça as organizações que tornam possível nossa missão de fortalecer a pesquisa."
 }
+  ,
+"noticias": {
+  "title": "Notícias",
+  "description": "Fique atualizado com as últimas novidades, chamadas e publicações da Rede Ibero-Americana de Pesquisa.",
+  "readMore": "Ler mais",
+  "reading": "leitura",
+  "noNews": "Não há notícias disponíveis no momento.",
+  "backToNews": "Voltar para Notícias"
+}
 }
