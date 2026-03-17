@@ -149,4 +149,17 @@
   "noNews": "No news available at this time.",
   "backToNews": "Back to News"
 }
+  ,
+"multimedia": {
+  "title": "Multimedia",
+  "description": "Gallery of photos, videos and publications from our events and academic activities.",
+  "all": "All",
+  "photos": "Photos",
+  "videos": "Videos",
+  "photo": "Photo",
+  "video": "Video",
+  "publication": "Publication",
+  "viewResource": "View resource",
+  "noContent": "No multimedia content available at this time."
+}
 }
