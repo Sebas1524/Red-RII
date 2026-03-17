@@ -57,10 +57,8 @@ export async function getNews(locale: string = "es"): Promise<Article[]> {
     return posts
       .filter((post) => {
         if (locale === "es") {
-          // Posts en español NO tienen /en/, /fr/, /pt/ en su URL
           return !post.link.match(/\/(en|fr|pt)\//);
         }
-        // Posts en otros idiomas SÍ tienen el locale en su URL
         return post.link.includes(`/${locale}/`);
       })
       .map((post) => {
@@ -83,6 +81,41 @@ export async function getNews(locale: string = "es"): Promise<Article[]> {
   } catch (error) {
     console.error("Error fetching news from WordPress:", error);
     return [];
+  }
+}
+
+export async function getNewsBySlug(slug: string, locale: string = "es"): Promise<{
+  title: string; content: string; excerpt: string; date: string; category: string; imageUrl?: string; readTime: string;
+} | null> {
+  try {
+    const timestamp = new Date().getTime();
+    const langParam = locale !== "es" ? `&lang=${locale}` : "";
+    const res = await fetch(
+      `${API}/posts?_embed&slug=${encodeURIComponent(slug)}${langParam}&t=${timestamp}`,
+      { cache: "no-store" }
+    );
+    if (!res.ok) return null;
+    const posts: WPPost[] = await res.json();
+    if (posts.length === 0) return null;
+
+    const post = posts[0];
+    const categories = post._embedded?.["wp:term"]?.[0] ?? [];
+    const categoryName = categories.length > 0 ? categories[0].name : "General";
+    const media = post._embedded?.["wp:featuredmedia"]?.[0];
+    const imageUrl = media?.media_details?.sizes?.large?.source_url ?? media?.source_url ?? undefined;
+    const plainContent = stripHtml(post.content?.rendered || "");
+
+    return {
+      title: stripHtml(post.title?.rendered || ""),
+      content: post.content?.rendered || "",
+      excerpt: stripHtml(post.excerpt?.rendered || ""),
+      date: formatDate(post.date, locale),
+      category: categoryName,
+      imageUrl,
+      readTime: estimateReadTime(plainContent),
+    };
+  } catch {
+    return null;
   }
 }
 
