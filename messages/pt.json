@@ -162,4 +162,17 @@
   "viewResource": "Ver recurso",
   "noContent": "Nenhum conteúdo multimídia disponível no momento."
 }
+  ,
+"eventos": {
+  "title": "Eventos",
+  "description": "Congressos, simpósios, workshops e fóruns que organizamos para promover a pesquisa e a colaboração.",
+  "upcoming": "Próximos Eventos",
+  "past": "Eventos Passados",
+  "featured": "Destaque",
+  "featuredEvent": "Evento em Destaque",
+  "viewMore": "Ver mais",
+  "noUpcoming": "Nenhum evento próximo programado.",
+  "backToEvents": "Voltar aos eventos",
+  "goToEvent": "Ir ao evento"
+}
 }
