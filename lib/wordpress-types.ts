@@ -42,6 +42,7 @@ export interface WPEvent {
     id: number;
     slug: string;
     date: string;
+    link: string;
     title: WPRendered;
     content: WPRendered;
     excerpt: WPRendered;
