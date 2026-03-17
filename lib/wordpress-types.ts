@@ -26,6 +26,7 @@ export interface WPPost {
     id: number;
     slug: string;
     date: string; // ISO 8601
+     link: string;  // ← agrega esta línea
     title: WPRendered;
     excerpt: WPRendered;
     content: WPRendered;
