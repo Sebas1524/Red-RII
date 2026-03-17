@@ -162,4 +162,17 @@
   "viewResource": "View resource",
   "noContent": "No multimedia content available at this time."
 }
+  ,
+"eventos": {
+  "title": "Events",
+  "description": "Congresses, symposiums, workshops and forums we organize to promote research and collaboration.",
+  "upcoming": "Upcoming Events",
+  "past": "Past Events",
+  "featured": "Featured",
+  "featuredEvent": "Featured Event",
+  "viewMore": "View more",
+  "noUpcoming": "No upcoming events scheduled.",
+  "backToEvents": "Back to Events",
+  "goToEvent": "Go to event"
+}
 }
