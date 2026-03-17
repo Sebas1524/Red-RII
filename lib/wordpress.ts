@@ -265,6 +265,30 @@ export async function getCategories(): Promise<WPCategory[]> {
 
 // ─── PAGES ───────────────────────────────────────────────────────────────────
 
+async function getElementorCss(slug: string): Promise<string[]> {
+  try {
+    const pageUrl = `${WP_URL}/${slug}/`;
+    const res = await fetch(pageUrl, { cache: "no-store" });
+    if (!res.ok) return [];
+    const html = await res.text();
+
+    const cssRegex = /<link[^>]+rel=["']stylesheet["'][^>]+href=["']([^"']*elementor[^"']*)["'][^>]*>/gi;
+    const urls: string[] = [];
+    let match;
+    while ((match = cssRegex.exec(html)) !== null) urls.push(match[1]);
+
+    const cssRegex2 = /<link[^>]+href=["']([^"']*elementor[^"']*)["'][^>]+rel=["']stylesheet["'][^>]*>/gi;
+    while ((match = cssRegex2.exec(html)) !== null) {
+      if (!urls.includes(match[1])) urls.push(match[1]);
+    }
+
+    return urls;
+  } catch (error) {
+    console.error("Error fetching Elementor CSS:", error);
+    return [];
+  }
+}
+
 export async function getPageBySlug(slug: string, locale: string = "es"): Promise<{
   title: string; content: string; cssUrls: string[];
 } | null> {
@@ -272,7 +296,6 @@ export async function getPageBySlug(slug: string, locale: string = "es"): Promis
     const timestamp = new Date().getTime();
     const langParam = locale !== "es" ? `&lang=${locale}` : "";
 
-    // Primero intenta con el slug original + lang
     const res = await fetch(
       `${API}/pages?slug=${encodeURIComponent(slug)}${langParam}&t=${timestamp}`,
       { cache: "no-store" }
@@ -280,7 +303,6 @@ export async function getPageBySlug(slug: string, locale: string = "es"): Promis
     if (!res.ok) return null;
     const pages = await res.json();
 
-    // Si encontró la página en el idioma correcto
     if (pages.length > 0) {
       const page = pages[0];
       const cssUrls = await getElementorCss(slug);
@@ -291,8 +313,7 @@ export async function getPageBySlug(slug: string, locale: string = "es"): Promis
       };
     }
 
-    // Si no encontró, busca todas las páginas con ese slug base
-    // Polylang genera slugs como "caiseb-2", "caiseb-3" para traducciones
+    // Fallback: busca por search + lang (para slugs como caiseb-2)
     const fallbackRes = await fetch(
       `${API}/pages?search=${encodeURIComponent(slug)}&lang=${locale}&t=${timestamp}`,
       { cache: "no-store" }
