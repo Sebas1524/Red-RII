@@ -56,9 +56,7 @@ export async function getNews(locale: string = "es"): Promise<Article[]> {
 
     return posts
       .filter((post) => {
-        if (locale === "es") {
-          return !post.link.match(/\/(en|fr|pt)\//);
-        }
+        if (locale === "es") return !post.link.match(/\/(en|fr|pt)\//);
         return post.link.includes(`/${locale}/`);
       })
       .map((post) => {
@@ -132,27 +130,32 @@ export async function getEvents(locale: string = "es"): Promise<{ upcoming: Even
     if (!res.ok) throw new Error(`WP API responded with ${res.status}`);
     const events: WPEvent[] = await res.json();
 
-    const all: Event[] = events.map((ev) => {
-      const acf = ev.acf ?? {} as WPEvent["acf"];
-      const rawEventDate = acf.event_date || ev.date;
-      const parsedDate = parseACFDate(rawEventDate);
-      const media = ev._embedded?.["wp:featuredmedia"]?.[0];
-      const imageUrl = media?.media_details?.sizes?.large?.source_url ?? media?.source_url ?? undefined;
+    const all: Event[] = events
+      .filter((ev) => {
+        if (locale === "es") return !ev.link.match(/\/(en|fr|pt)\//);
+        return ev.link.includes(`/${locale}/`);
+      })
+      .map((ev) => {
+        const acf = ev.acf ?? {} as WPEvent["acf"];
+        const rawEventDate = acf.event_date || ev.date;
+        const parsedDate = parseACFDate(rawEventDate);
+        const media = ev._embedded?.["wp:featuredmedia"]?.[0];
+        const imageUrl = media?.media_details?.sizes?.large?.source_url ?? media?.source_url ?? undefined;
 
-      return {
-        title: stripHtml(ev.title?.rendered || ""),
-        date: formatDate(parsedDate, locale),
-        location: acf.event_location || "Por definir",
-        description: stripHtml(ev.excerpt?.rendered || ev.content?.rendered || ""),
-        content: ev.content?.rendered || "",
-        featured: acf.is_featured ?? false,
-        link: acf.event_link || "#",
-        color: acf.is_featured ? "#582080" : "#000049",
-        rawDate: parsedDate,
-        slug: ev.slug,
-        imageUrl,
-      };
-    });
+        return {
+          title: stripHtml(ev.title?.rendered || ""),
+          date: formatDate(parsedDate, locale),
+          location: acf.event_location || "Por definir",
+          description: stripHtml(ev.excerpt?.rendered || ev.content?.rendered || ""),
+          content: ev.content?.rendered || "",
+          featured: acf.is_featured ?? false,
+          link: acf.event_link || "#",
+          color: acf.is_featured ? "#582080" : "#000049",
+          rawDate: parsedDate,
+          slug: ev.slug,
+          imageUrl,
+        };
+      });
 
     const now = new Date();
     const todayStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
