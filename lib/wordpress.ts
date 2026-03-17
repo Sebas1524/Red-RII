@@ -271,48 +271,49 @@ export async function getPageBySlug(slug: string, locale: string = "es"): Promis
   try {
     const timestamp = new Date().getTime();
     const langParam = locale !== "es" ? `&lang=${locale}` : "";
+
+    // Primero intenta con el slug original + lang
     const res = await fetch(
       `${API}/pages?slug=${encodeURIComponent(slug)}${langParam}&t=${timestamp}`,
       { cache: "no-store" }
     );
     if (!res.ok) return null;
     const pages = await res.json();
-    if (pages.length === 0) return null;
 
-    const page = pages[0];
-    const cssUrls = await getElementorCss(slug);
+    // Si encontró la página en el idioma correcto
+    if (pages.length > 0) {
+      const page = pages[0];
+      const cssUrls = await getElementorCss(slug);
+      return {
+        title: stripHtml(page.title?.rendered || ""),
+        content: page.content?.rendered || "",
+        cssUrls,
+      };
+    }
 
-    return {
-      title: stripHtml(page.title?.rendered || ""),
-      content: page.content?.rendered || "",
-      cssUrls,
-    };
+    // Si no encontró, busca todas las páginas con ese slug base
+    // Polylang genera slugs como "caiseb-2", "caiseb-3" para traducciones
+    const fallbackRes = await fetch(
+      `${API}/pages?search=${encodeURIComponent(slug)}&lang=${locale}&t=${timestamp}`,
+      { cache: "no-store" }
+    );
+    if (!fallbackRes.ok) return null;
+    const fallbackPages = await fallbackRes.json();
+
+    if (fallbackPages.length > 0) {
+      const page = fallbackPages[0];
+      const pageSlug = page.slug;
+      const cssUrls = await getElementorCss(pageSlug);
+      return {
+        title: stripHtml(page.title?.rendered || ""),
+        content: page.content?.rendered || "",
+        cssUrls,
+      };
+    }
+
+    return null;
   } catch (error) {
     console.error("Error fetching page from WordPress:", error);
     return null;
-  }
-}
-
-async function getElementorCss(slug: string): Promise<string[]> {
-  try {
-    const pageUrl = `${WP_URL}/${slug}/`;
-    const res = await fetch(pageUrl, { cache: "no-store" });
-    if (!res.ok) return [];
-    const html = await res.text();
-
-    const cssRegex = /<link[^>]+rel=["']stylesheet["'][^>]+href=["']([^"']*elementor[^"']*)["'][^>]*>/gi;
-    const urls: string[] = [];
-    let match;
-    while ((match = cssRegex.exec(html)) !== null) urls.push(match[1]);
-
-    const cssRegex2 = /<link[^>]+href=["']([^"']*elementor[^"']*)["'][^>]+rel=["']stylesheet["'][^>]*>/gi;
-    while ((match = cssRegex2.exec(html)) !== null) {
-      if (!urls.includes(match[1])) urls.push(match[1]);
-    }
-
-    return urls;
-  } catch (error) {
-    console.error("Error fetching Elementor CSS:", error);
-    return [];
   }
 }
