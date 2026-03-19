@@ -7,6 +7,25 @@ function stripHtml(html: string): string {
   return html.replace(/<[^>]*>/g, "").trim();
 }
 
+function decodeHtmlEntities(text: string): string {
+  return text
+    .replace(/&#8211;/g, "–")
+    .replace(/&#8212;/g, "—")
+    .replace(/&#8216;/g, "'")
+    .replace(/&#8217;/g, "'")
+    .replace(/&#8218;/g, "‚")
+    .replace(/&#8220;/g, "\u201C")
+    .replace(/&#8221;/g, "\u201D")
+    .replace(/&#8230;/g, "…")
+    .replace(/&hellip;/g, "…")
+    .replace(/&amp;/g, "&")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">");
+}
+
 function formatDate(isoDate: string, locale: string = "es"): string {
   const d = new Date(isoDate);
   const monthsEs = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
@@ -64,10 +83,10 @@ export async function getNews(locale: string = "es"): Promise<Article[]> {
         const categoryName = categories.length > 0 ? categories[0].name : "General";
         const media = post._embedded?.["wp:featuredmedia"]?.[0];
         const imageUrl = media?.media_details?.sizes?.large?.source_url ?? media?.source_url ?? undefined;
-        const plainExcerpt = stripHtml(post.excerpt?.rendered || "");
+        const plainExcerpt = decodeHtmlEntities(stripHtml(post.excerpt?.rendered || ""));
         const plainContent = stripHtml(post.content?.rendered || "");
         return {
-          title: stripHtml(post.title?.rendered || ""),
+          title: decodeHtmlEntities(stripHtml(post.title?.rendered || "")),
           excerpt: plainExcerpt,
           date: formatDate(post.date, locale),
           category: categoryName,
@@ -104,9 +123,9 @@ export async function getNewsBySlug(slug: string, locale: string = "es"): Promis
     const plainContent = stripHtml(post.content?.rendered || "");
 
     return {
-      title: stripHtml(post.title?.rendered || ""),
+      title: decodeHtmlEntities(stripHtml(post.title?.rendered || "")),
       content: post.content?.rendered || "",
-      excerpt: stripHtml(post.excerpt?.rendered || ""),
+      excerpt: decodeHtmlEntities(stripHtml(post.excerpt?.rendered || "")),
       date: formatDate(post.date, locale),
       category: categoryName,
       imageUrl,
@@ -143,10 +162,10 @@ export async function getEvents(locale: string = "es"): Promise<{ upcoming: Even
         const imageUrl = media?.media_details?.sizes?.large?.source_url ?? media?.source_url ?? undefined;
 
         return {
-          title: stripHtml(ev.title?.rendered || ""),
+          title: decodeHtmlEntities(stripHtml(ev.title?.rendered || "")),
           date: formatDate(parsedDate, locale),
           location: acf.event_location || "Por definir",
-          description: stripHtml(ev.excerpt?.rendered || ev.content?.rendered || ""),
+          description: decodeHtmlEntities(stripHtml(ev.excerpt?.rendered || ev.content?.rendered || "")),
           content: ev.content?.rendered || "",
           featured: acf.is_featured ?? false,
           link: acf.event_link || "#",
@@ -191,7 +210,7 @@ export async function getEventBySlug(slug: string, locale: string = "es"): Promi
     const imageUrl = media?.media_details?.sizes?.large?.source_url ?? media?.source_url ?? undefined;
 
     return {
-      title: stripHtml(ev.title?.rendered || ""),
+      title: decodeHtmlEntities(stripHtml(ev.title?.rendered || "")),
       content: ev.content?.rendered || "",
       date: formatDate(parseACFDate(acf.event_date || ev.date), locale),
       location: acf.event_location || "Por definir",
@@ -233,8 +252,8 @@ export async function getMultimedia(locale: string = "es"): Promise<MultimediaIt
       }
 
       return {
-        title: stripHtml(item.title?.rendered || ""),
-        description: stripHtml(item.excerpt?.rendered || item.content?.rendered || ""),
+        title: decodeHtmlEntities(stripHtml(item.title?.rendered || "")),
+        description: decodeHtmlEntities(stripHtml(item.excerpt?.rendered || item.content?.rendered || "")),
         type: acf.media_type || "foto",
         imageUrl,
         videoUrl: acf.video_url || undefined,
@@ -307,7 +326,7 @@ export async function getPageBySlug(slug: string, locale: string = "es"): Promis
       const page = pages[0];
       const cssUrls = await getElementorCss(slug);
       return {
-        title: stripHtml(page.title?.rendered || ""),
+        title: decodeHtmlEntities(stripHtml(page.title?.rendered || "")),
         content: page.content?.rendered || "",
         cssUrls,
       };
@@ -326,7 +345,7 @@ export async function getPageBySlug(slug: string, locale: string = "es"): Promis
       const pageSlug = page.slug;
       const cssUrls = await getElementorCss(pageSlug);
       return {
-        title: stripHtml(page.title?.rendered || ""),
+        title: decodeHtmlEntities(stripHtml(page.title?.rendered || "")),
         content: page.content?.rendered || "",
         cssUrls,
       };
