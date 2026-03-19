@@ -251,7 +251,7 @@ export default function LaRedPage() {
       </section>
 
       {/* DOCUMENTOS LEGALES */}
-      <section className="section-padding" style={{ background: "#fff", padding: "4rem 1.5rem" }}>
+     <section id="documentos" className="section-padding" style={{ background: "#fff", padding: "4rem 1.5rem" }}>
         <div className="container-custom">
           <div className="scroll-reveal" style={{ textAlign: "center", marginBottom: "3rem" }}>
             <div style={{ width: 64, height: 64, borderRadius: "16px", background: "linear-gradient(135deg, #FEC704, #fdd835)", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 1.5rem auto" }}>
