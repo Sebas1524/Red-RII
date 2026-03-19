@@ -639,7 +639,7 @@ export default function LaRedPage() {
                         </div>
                     </div>
                 </section>            {/* Documentos Legales */}
-<section className="section-padding" style={{ background: "#fff", padding: "4rem 1.5rem" }}>
+<section id="documentos" className="section-padding" style={{ background: "#fff", padding: "4rem 1.5rem" }}>
     <div className="container-custom">
         <div className="scroll-reveal" style={{ textAlign: "center", marginBottom: "3rem" }}>
             {/* Icono decorativo */}
