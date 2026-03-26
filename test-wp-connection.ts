@@ -1,5 +1,5 @@
 
-const WP_URL = "https://institutoj12.sg-host.com";
+const WP_URL = "https://blog.redibero.com";
 const API = `${WP_URL}/wp-json/wp/v2`;
 
 async function testConnection() {
