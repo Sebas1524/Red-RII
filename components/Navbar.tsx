@@ -74,7 +74,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link href={`/${currentLocale}`} style={{ display: "flex", alignItems: "center", gap: "0.75rem", textDecoration: "none" }}>
-          <Image src="/logo.svg" alt="RII Logo" width={48} height={48} style={{ filter: "brightness(0) invert(1)" }} />
+          <Image src="/logo-red-actual.jpeg" alt="RII Logo" width={48} height={48} style={{ borderRadius: "8px", objectFit: "contain" }} />
           <span style={{ color: "#fff", fontWeight: 700, fontSize: "1.1rem", letterSpacing: "0.5px", lineHeight: 1.2 }}>RII</span>
         </Link>
 
