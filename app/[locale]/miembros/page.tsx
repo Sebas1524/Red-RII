@@ -48,6 +48,10 @@ const memberLogos = [
   { src: "Sucre.png", url: "https://tecnologicosucre.edu.ec/web/" },
   { src: "jaime-mola.png", url: "https://conservatoriojaimemola.edu.ec/" },
   { src: "fundacion-entorno.jpg", url: "https://www.facebook.com/Fundentorno/" },
+  { src: "NELSON-TORRES.png", url: "https://www.facebook.com/vienuongdamianchinhhangvn/?locale=es_LA" },
+  { src: "logo-ACTIONGROW.png", url: "https://www.agtech.edu.ec/" },
+  { src: "logo-LUIS-TELLO.png", url: "https://insluistello.edu.ec/" },
+  
 ];
 
 function AnimatedCounter({ end, duration = 2000, suffix = "" }: { end: number; duration?: number; suffix?: string }) {
