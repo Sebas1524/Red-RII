@@ -38,23 +38,23 @@ function formatDate(isoDate: string, locale: string = "es"): string {
   const d = new Date(isoDate);
 
   const monthsEs = [
-    "Enero","Febrero","Marzo","Abril","Mayo","Junio",
-    "Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"
+    "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+    "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
   ];
 
   const monthsEn = [
-    "January","February","March","April","May","June",
-    "July","August","September","October","November","December"
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
   ];
 
   const monthsFr = [
-    "Janvier","Février","Mars","Avril","Mai","Juin",
-    "Juillet","Août","Septembre","Octobre","Novembre","Décembre"
+    "Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
+    "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"
   ];
 
   const monthsPt = [
-    "Janeiro","Fevereiro","Março","Abril","Maio","Junho",
-    "Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"
+    "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+    "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
   ];
 
   const months: Record<string, string[]> = {
@@ -107,9 +107,15 @@ function parseACFDate(dateStr: string): string {
 // ─────────────────────────────────────────────
 
 export async function getNews(locale: string = "es"): Promise<Article[]> {
+
   try {
+
     const timestamp = new Date().getTime();
-    const langParam = locale !== "es" ? `&lang=${locale}` : "";
+
+    const langParam =
+      locale !== "es"
+        ? `&lang=${locale}`
+        : "";
 
     const res = await fetch(
       `${API}/posts?_embed&per_page=20&orderby=date&order=desc${langParam}&t=${timestamp}`,
@@ -126,18 +132,26 @@ export async function getNews(locale: string = "es"): Promise<Article[]> {
 
     return posts
       .filter((post) => {
+
         if (locale === "es") {
           return !post.link.match(/\/(en|fr|pt)\//);
         }
 
         return post.link.includes(`/${locale}/`);
       })
-      .map((post) => {
-        const categories = post._embedded?.["wp:term"]?.[0] ?? [];
-        const categoryName =
-          categories.length > 0 ? categories[0].name : "General";
 
-        const media = post._embedded?.["wp:featuredmedia"]?.[0];
+      .map((post) => {
+
+        const categories =
+          post._embedded?.["wp:term"]?.[0] ?? [];
+
+        const categoryName =
+          categories.length > 0
+            ? categories[0].name
+            : "General";
+
+        const media =
+          post._embedded?.["wp:featuredmedia"]?.[0];
 
         const imageUrl =
           media?.media_details?.sizes?.large?.source_url ??
@@ -148,24 +162,123 @@ export async function getNews(locale: string = "es"): Promise<Article[]> {
           stripHtml(post.excerpt?.rendered || "")
         );
 
-        const plainContent = stripHtml(post.content?.rendered || "");
+        const plainContent =
+          stripHtml(post.content?.rendered || "");
 
         return {
           title: decodeHtmlEntities(
             stripHtml(post.title?.rendered || "")
           ),
+
           excerpt: plainExcerpt,
+
           date: formatDate(post.date, locale),
+
           category: categoryName,
-          readTime: estimateReadTime(plainContent || plainExcerpt),
+
+          readTime: estimateReadTime(
+            plainContent || plainExcerpt
+          ),
+
           slug: post.slug,
+
           imageUrl
         };
       });
 
   } catch (error) {
-    console.error("Error fetching news from WordPress:", error);
+
+    console.error(
+      "Error fetching news from WordPress:",
+      error
+    );
+
     return [];
+  }
+}
+
+export async function getNewsBySlug(
+  slug: string,
+  locale: string = "es"
+): Promise<{
+  title: string;
+  content: string;
+  excerpt: string;
+  date: string;
+  category: string;
+  imageUrl?: string;
+  readTime: string;
+} | null> {
+
+  try {
+
+    const timestamp = new Date().getTime();
+
+    const langParam =
+      locale !== "es"
+        ? `&lang=${locale}`
+        : "";
+
+    const res = await fetch(
+      `${API}/posts?_embed&slug=${encodeURIComponent(slug)}${langParam}&t=${timestamp}`,
+      {
+        cache: "no-store"
+      }
+    );
+
+    if (!res.ok) {
+      return null;
+    }
+
+    const posts: WPPost[] = await res.json();
+
+    if (posts.length === 0) {
+      return null;
+    }
+
+    const post = posts[0];
+
+    const categories =
+      post._embedded?.["wp:term"]?.[0] ?? [];
+
+    const categoryName =
+      categories.length > 0
+        ? categories[0].name
+        : "General";
+
+    const media =
+      post._embedded?.["wp:featuredmedia"]?.[0];
+
+    const imageUrl =
+      media?.media_details?.sizes?.large?.source_url ??
+      media?.source_url ??
+      undefined;
+
+    const plainContent =
+      stripHtml(post.content?.rendered || "");
+
+    return {
+      title: decodeHtmlEntities(
+        stripHtml(post.title?.rendered || "")
+      ),
+
+      content: post.content?.rendered || "",
+
+      excerpt: decodeHtmlEntities(
+        stripHtml(post.excerpt?.rendered || "")
+      ),
+
+      date: formatDate(post.date, locale),
+
+      category: categoryName,
+
+      imageUrl,
+
+      readTime: estimateReadTime(plainContent)
+    };
+
+  } catch {
+    return null;
   }
 }
 
@@ -175,11 +288,19 @@ export async function getNews(locale: string = "es"): Promise<Article[]> {
 
 export async function getEvents(
   locale: string = "es"
-): Promise<{ upcoming: Event[]; past: Event[] }> {
+): Promise<{
+  upcoming: Event[];
+  past: Event[];
+}> {
 
   try {
+
     const timestamp = new Date().getTime();
-    const langParam = locale !== "es" ? `&lang=${locale}` : "";
+
+    const langParam =
+      locale !== "es"
+        ? `&lang=${locale}`
+        : "";
 
     const res = await fetch(
       `${API}/eventos?_embed&per_page=50&orderby=date&order=desc${langParam}&t=${timestamp}`,
@@ -196,13 +317,17 @@ export async function getEvents(
 
     const all: Event[] = events.map((ev) => {
 
-      const acf = ev.acf ?? {} as WPEvent["acf"];
+      const acf =
+        ev.acf ?? {} as WPEvent["acf"];
 
-      const rawEventDate = acf.event_date || ev.date;
+      const rawEventDate =
+        acf.event_date || ev.date;
 
-      const parsedDate = parseACFDate(rawEventDate);
+      const parsedDate =
+        parseACFDate(rawEventDate);
 
-      const media = ev._embedded?.["wp:featuredmedia"]?.[0];
+      const media =
+        ev._embedded?.["wp:featuredmedia"]?.[0];
 
       const imageUrl =
         media?.media_details?.sizes?.large?.source_url ??
@@ -210,13 +335,15 @@ export async function getEvents(
         undefined;
 
       return {
+
         title: decodeHtmlEntities(
           stripHtml(ev.title?.rendered || "")
         ),
 
         date: formatDate(parsedDate, locale),
 
-        location: acf.event_location || "Por definir",
+        location:
+          acf.event_location || "Por definir",
 
         description: decodeHtmlEntities(
           stripHtml(
@@ -226,13 +353,19 @@ export async function getEvents(
           )
         ),
 
-        content: ev.content?.rendered || "",
+        content:
+          ev.content?.rendered || "",
 
-        featured: acf.is_featured ?? false,
+        featured:
+          acf.is_featured ?? false,
 
-        link: acf.event_link || "#",
+        link:
+          acf.event_link || "#",
 
-        color: acf.is_featured ? "#582080" : "#000049",
+        color:
+          acf.is_featured
+            ? "#582080"
+            : "#000049",
 
         rawDate: parsedDate,
 
@@ -251,21 +384,117 @@ export async function getEvents(
 
     const upcoming = all
       .filter((e) => e.rawDate >= todayStr)
-      .sort((a, b) => a.rawDate.localeCompare(b.rawDate));
+      .sort((a, b) =>
+        a.rawDate.localeCompare(b.rawDate)
+      );
 
     const past = all
       .filter((e) => e.rawDate < todayStr)
-      .sort((a, b) => b.rawDate.localeCompare(a.rawDate));
+      .sort((a, b) =>
+        b.rawDate.localeCompare(a.rawDate)
+      );
 
-    return { upcoming, past };
+    return {
+      upcoming,
+      past
+    };
 
   } catch (error) {
-    console.error("Error fetching events from WordPress:", error);
+
+    console.error(
+      "Error fetching events from WordPress:",
+      error
+    );
 
     return {
       upcoming: [],
       past: []
     };
+  }
+}
+
+export async function getEventBySlug(
+  slug: string,
+  locale: string = "es"
+): Promise<{
+  title: string;
+  content: string;
+  date: string;
+  location: string;
+  imageUrl?: string;
+  featured: boolean;
+  link: string;
+} | null> {
+
+  try {
+
+    const timestamp = new Date().getTime();
+
+    const langParam =
+      locale !== "es"
+        ? `&lang=${locale}`
+        : "";
+
+    const res = await fetch(
+      `${API}/eventos?_embed&slug=${encodeURIComponent(slug)}${langParam}&t=${timestamp}`,
+      {
+        cache: "no-store"
+      }
+    );
+
+    if (!res.ok) {
+      return null;
+    }
+
+    const events: WPEvent[] = await res.json();
+
+    if (events.length === 0) {
+      return null;
+    }
+
+    const ev = events[0];
+
+    const acf =
+      ev.acf ?? {} as WPEvent["acf"];
+
+    const media =
+      ev._embedded?.["wp:featuredmedia"]?.[0];
+
+    const imageUrl =
+      media?.media_details?.sizes?.large?.source_url ??
+      media?.source_url ??
+      undefined;
+
+    return {
+
+      title: decodeHtmlEntities(
+        stripHtml(ev.title?.rendered || "")
+      ),
+
+      content:
+        ev.content?.rendered || "",
+
+      date: formatDate(
+        parseACFDate(
+          acf.event_date || ev.date
+        ),
+        locale
+      ),
+
+      location:
+        acf.event_location || "Por definir",
+
+      imageUrl,
+
+      featured:
+        acf.is_featured ?? false,
+
+      link:
+        acf.event_link || "#"
+    };
+
+  } catch {
+    return null;
   }
 }
 
@@ -278,8 +507,13 @@ export async function getMultimedia(
 ): Promise<MultimediaItem[]> {
 
   try {
+
     const timestamp = new Date().getTime();
-    const langParam = locale !== "es" ? `&lang=${locale}` : "";
+
+    const langParam =
+      locale !== "es"
+        ? `&lang=${locale}`
+        : "";
 
     const res = await fetch(
       `${API}/multimedia?_embed&per_page=50&orderby=date&order=desc${langParam}&t=${timestamp}`,
@@ -296,9 +530,11 @@ export async function getMultimedia(
 
     return items.map((item) => {
 
-      const acf = item.acf ?? {} as WPMultimedia["acf"];
+      const acf =
+        item.acf ?? {} as WPMultimedia["acf"];
 
-      const media = item._embedded?.["wp:featuredmedia"]?.[0];
+      const media =
+        item._embedded?.["wp:featuredmedia"]?.[0];
 
       let imageUrl =
         media?.media_details?.sizes?.large?.source_url ??
@@ -306,6 +542,7 @@ export async function getMultimedia(
         undefined;
 
       const getYouTubeId = (url: string) => {
+
         const match = url.match(
           /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/
         );
@@ -316,7 +553,9 @@ export async function getMultimedia(
       };
 
       if (!imageUrl && acf.video_url) {
-        const videoId = getYouTubeId(acf.video_url);
+
+        const videoId =
+          getYouTubeId(acf.video_url);
 
         if (videoId) {
           imageUrl =
@@ -325,6 +564,7 @@ export async function getMultimedia(
       }
 
       return {
+
         title: decodeHtmlEntities(
           stripHtml(item.title?.rendered || "")
         ),
@@ -337,22 +577,31 @@ export async function getMultimedia(
           )
         ),
 
-        type: acf.media_type || "foto",
+        type:
+          acf.media_type || "foto",
 
         imageUrl,
 
-        videoUrl: acf.video_url || undefined,
+        videoUrl:
+          acf.video_url || undefined,
 
-        duration: acf.video_duration || undefined,
+        duration:
+          acf.video_duration || undefined,
 
-        externalLink: acf.external_link || undefined,
+        externalLink:
+          acf.external_link || undefined,
 
         slug: item.slug
       };
     });
 
   } catch (error) {
-    console.error("Error fetching multimedia from WordPress:", error);
+
+    console.error(
+      "Error fetching multimedia from WordPress:",
+      error
+    );
+
     return [];
   }
 }
@@ -362,8 +611,11 @@ export async function getMultimedia(
 // ─────────────────────────────────────────────
 
 export async function getCategories(): Promise<WPCategory[]> {
+
   try {
-    const timestamp = new Date().getTime();
+
+    const timestamp =
+      new Date().getTime();
 
     const res = await fetch(
       `${API}/categories?per_page=50&t=${timestamp}`,
@@ -373,13 +625,20 @@ export async function getCategories(): Promise<WPCategory[]> {
     );
 
     if (!res.ok) {
-      throw new Error(`WP API responded with ${res.status}`);
+      throw new Error(
+        `WP API responded with ${res.status}`
+      );
     }
 
     return res.json();
 
   } catch (error) {
-    console.error("Error fetching categories:", error);
+
+    console.error(
+      "Error fetching categories:",
+      error
+    );
+
     return [];
   }
 }
@@ -393,11 +652,14 @@ async function getElementorCssByUrl(
 ): Promise<string[]> {
 
   try {
+
     const res = await fetch(url, {
       cache: "no-store"
     });
 
-    if (!res.ok) return [];
+    if (!res.ok) {
+      return [];
+    }
 
     const html = await res.text();
 
@@ -421,13 +683,18 @@ async function getElementorCssByUrl(
     return [...new Set(urls)];
 
   } catch (error) {
-    console.error("Error fetching Elementor CSS:", error);
+
+    console.error(
+      "Error fetching Elementor CSS:",
+      error
+    );
+
     return [];
   }
 }
 
 // ─────────────────────────────────────────────
-// GET PAGE BY SLUG
+// PAGES + CUSTOM POST TYPES
 // ─────────────────────────────────────────────
 
 export async function getPageBySlug(
@@ -440,16 +707,18 @@ export async function getPageBySlug(
 } | null> {
 
   try {
-    const timestamp = new Date().getTime();
+
+    const timestamp =
+      new Date().getTime();
 
     const langParam =
       locale !== "es"
         ? `&lang=${locale}`
         : "";
 
-    // =========================================
-    // 1. BUSCAR EN PAGES
-    // =========================================
+    // ─────────────────────────
+    // BUSCAR EN PAGES
+    // ─────────────────────────
 
     const pagesRes = await fetch(
       `${API}/pages?slug=${encodeURIComponent(slug)}${langParam}&t=${timestamp}`,
@@ -460,31 +729,37 @@ export async function getPageBySlug(
 
     if (pagesRes.ok) {
 
-      const pages = await pagesRes.json();
+      const pages =
+        await pagesRes.json();
 
       if (pages.length > 0) {
 
         const page = pages[0];
 
-        const cssUrls = await getElementorCssByUrl(
-          page.link
-        );
+        const cssUrls =
+          await getElementorCssByUrl(
+            page.link
+          );
 
         return {
+
           title: decodeHtmlEntities(
-            stripHtml(page.title?.rendered || "")
+            stripHtml(
+              page.title?.rendered || ""
+            )
           ),
 
-          content: page.content?.rendered || "",
+          content:
+            page.content?.rendered || "",
 
           cssUrls
         };
       }
     }
 
-    // =========================================
-    // 2. BUSCAR EN CUSTOM POST TYPE CAISEB
-    // =========================================
+    // ─────────────────────────
+    // BUSCAR EN CAISEB CPT
+    // ─────────────────────────
 
     const caisebRes = await fetch(
       `${API}/caiseb?slug=${encodeURIComponent(slug)}${langParam}&t=${timestamp}`,
@@ -497,7 +772,8 @@ export async function getPageBySlug(
       return null;
     }
 
-    const caiseb = await caisebRes.json();
+    const caiseb =
+      await caisebRes.json();
 
     if (caiseb.length === 0) {
       return null;
@@ -505,22 +781,31 @@ export async function getPageBySlug(
 
     const post = caiseb[0];
 
-    const cssUrls = await getElementorCssByUrl(
-      post.link
-    );
+    const cssUrls =
+      await getElementorCssByUrl(
+        post.link
+      );
 
     return {
+
       title: decodeHtmlEntities(
-        stripHtml(post.title?.rendered || "")
+        stripHtml(
+          post.title?.rendered || ""
+        )
       ),
 
-      content: post.content?.rendered || "",
+      content:
+        post.content?.rendered || "",
 
       cssUrls
     };
 
   } catch (error) {
-    console.error("Error fetching page from WordPress:", error);
+
+    console.error(
+      "Error fetching page from WordPress:",
+      error
+    );
 
     return null;
   }
