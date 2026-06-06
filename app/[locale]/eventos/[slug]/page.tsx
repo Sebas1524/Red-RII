@@ -7,22 +7,22 @@ import { getTranslations } from "next-intl/server";
 
 export const dynamic = "force-dynamic";
 
-const fallbackContent: Record<string, { title: string; content: string; date: string; location: string; imageUrl?: string; featured: boolean; link: string }> = {
-  "caiseb-2026": {
-    title: "CAISEB 2026",
-    content: `<p>El <strong>Congreso Académico Internacional CAISEB 2026</strong> es el evento insignia de la Red Iberoamericana de Investigación.</p><p>Se celebrará los días <strong>10 y 11 de marzo de 2026</strong>, reuniendo a investigadores, académicos y profesionales de toda Iberoamérica.</p><h2>¿Qué esperar?</h2><ul><li>Ponencias magistrales de expertos internacionales</li><li>Presentación de trabajos de investigación</li><li>Mesas de trabajo y networking</li><li>Talleres prácticos</li></ul>`,
-    date: "10 - 11 de Marzo, 2026",
-    location: "Internacional",
-    featured: true,
-    link: "/caiseb",
-  },
-};
+// Función para decodificar HTML escapado
+function decodeHtmlEntities(text: string) {
+  if (!text) return text;
+  return text
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&amp;/g, '&')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&nbsp;/g, ' ');
+}
 
 export async function generateStaticParams() {
   const { upcoming, past } = await getEvents();
   const all = [...upcoming, ...past];
-  if (all.length > 0) return all.map((e) => ({ slug: e.slug }));
-  return Object.keys(fallbackContent).map((slug) => ({ slug }));
+  return all.map((e) => ({ slug: e.slug }));
 }
 
 export default async function EventoDetailPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
@@ -30,11 +30,13 @@ export default async function EventoDetailPage({ params }: { params: Promise<{ l
   const t = await getTranslations({ locale, namespace: "eventos" });
 
   let event = await getEventBySlug(slug, locale);
+  
   if (!event) {
-    const fb = fallbackContent[slug];
-    if (!fb) notFound();
-    event = fb;
+    notFound();
   }
+
+  // Decodificar el contenido HTML por si viene escapado
+  const cleanContent = decodeHtmlEntities(event.content);
 
   return (
     <>
@@ -72,7 +74,9 @@ export default async function EventoDetailPage({ params }: { params: Promise<{ l
 
       <section style={{ background: "#fff", padding: event.imageUrl ? "1rem 1.5rem 5rem" : "3rem 1.5rem 5rem" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <div className="wp-content" style={{ fontSize: "1.05rem", lineHeight: 1.8, color: "#333" }} dangerouslySetInnerHTML={{ __html: event.content }} />
+          {/* ✅ ESTA ES LA LÍNEA IMPORTANTE - Renderiza el HTML del evento */}
+          <div className="wp-content" style={{ fontSize: "1.05rem", lineHeight: 1.8, color: "#333" }} dangerouslySetInnerHTML={{ __html: cleanContent }} />
+          
           {event.link && event.link !== "#" && (
             <div style={{ marginTop: "2rem" }}>
               <Link href={event.link} style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem", background: event.featured ? "#582080" : "#000049", color: "#fff", padding: "0.85rem 1.75rem", borderRadius: "12px", fontWeight: 600, textDecoration: "none", fontSize: "0.95rem" }}>
