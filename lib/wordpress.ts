@@ -334,6 +334,24 @@ export async function getEvents(
         media?.source_url ??
         undefined;
 
+      // ✅ DESCRIPCIÓN LIMPIA PARA LA TARJETA DE VISTA PREVIA
+      const rawContent = ev.excerpt?.rendered || ev.content?.rendered || "";
+      const cleanDescription = (() => {
+        // Elimina etiquetas <style> y su contenido
+        const noStyle = rawContent.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '');
+        // Elimina el resto de etiquetas HTML
+        const noHtml = noStyle.replace(/<[^>]*>/g, ' ');
+        // Decodifica entidades
+        let clean = decodeHtmlEntities(noHtml);
+        // Limpia espacios
+        clean = clean.replace(/\s+/g, ' ').trim();
+        // Corta a 180 caracteres
+        if (clean.length > 180) {
+          clean = clean.substring(0, 180) + '...';
+        }
+        return clean || "Evento académico internacional";
+      })();
+
       return {
 
         title: decodeHtmlEntities(
@@ -345,13 +363,7 @@ export async function getEvents(
         location:
           acf.event_location || "Por definir",
 
-        description: decodeHtmlEntities(
-          stripHtml(
-            ev.excerpt?.rendered ||
-            ev.content?.rendered ||
-            ""
-          )
-        ),
+        description: cleanDescription,  // ✅ USAR LA DESCRIPCIÓN LIMPIA
 
         content: decodeHtmlEntities(ev.content?.rendered || ""),
 
@@ -411,91 +423,6 @@ export async function getEvents(
     };
   }
 }
-
-export async function getEventBySlug(
-  slug: string,
-  locale: string = "es"
-): Promise<{
-  title: string;
-  content: string;
-  date: string;
-  location: string;
-  imageUrl?: string;
-  featured: boolean;
-  link: string;
-} | null> {
-
-  try {
-
-    const timestamp = new Date().getTime();
-
-    const langParam =
-      locale !== "es"
-        ? `&lang=${locale}`
-        : "";
-
-    const res = await fetch(
-      `${API}/eventos?_embed&slug=${encodeURIComponent(slug)}${langParam}&t=${timestamp}`,
-      {
-        cache: "no-store"
-      }
-    );
-
-    if (!res.ok) {
-      return null;
-    }
-
-    const events: WPEvent[] = await res.json();
-
-    if (events.length === 0) {
-      return null;
-    }
-
-    const ev = events[0];
-
-    const acf =
-      ev.acf ?? {} as WPEvent["acf"];
-
-    const media =
-      ev._embedded?.["wp:featuredmedia"]?.[0];
-
-    const imageUrl =
-      media?.media_details?.sizes?.large?.source_url ??
-      media?.source_url ??
-      undefined;
-
-    return {
-
-      title: decodeHtmlEntities(
-        stripHtml(ev.title?.rendered || "")
-      ),
-
-      content: decodeHtmlEntities(ev.content?.rendered || ""),
-
-      date: formatDate(
-        parseACFDate(
-          acf.event_date || ev.date
-        ),
-        locale
-      ),
-
-      location:
-        acf.event_location || "Por definir",
-
-      imageUrl,
-
-      featured:
-        acf.is_featured ?? false,
-
-      link:
-        acf.event_link || "#"
-    };
-
-  } catch {
-    return null;
-  }
-}
-
 // ─────────────────────────────────────────────
 // MULTIMEDIA
 // ─────────────────────────────────────────────
