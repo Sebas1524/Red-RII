@@ -262,7 +262,7 @@ export async function getNewsBySlug(
         stripHtml(post.title?.rendered || "")
       ),
 
-      content: post.content?.rendered || "",
+      content: decodeHtmlEntities(post.content?.rendered || ""),
 
       excerpt: decodeHtmlEntities(
         stripHtml(post.excerpt?.rendered || "")
@@ -353,8 +353,7 @@ export async function getEvents(
           )
         ),
 
-        content:
-          ev.content?.rendered || "",
+        content: decodeHtmlEntities(ev.content?.rendered || ""),
 
         featured:
           acf.is_featured ?? false,
@@ -471,8 +470,7 @@ export async function getEventBySlug(
         stripHtml(ev.title?.rendered || "")
       ),
 
-      content:
-        ev.content?.rendered || "",
+      content: decodeHtmlEntities(ev.content?.rendered || ""),
 
       date: formatDate(
         parseACFDate(
@@ -749,8 +747,7 @@ export async function getPageBySlug(
             )
           ),
 
-          content:
-            page.content?.rendered || "",
+          content: decodeHtmlEntities(page.content?.rendered || ""),
 
           cssUrls
         };
@@ -794,8 +791,7 @@ export async function getPageBySlug(
         )
       ),
 
-      content:
-        post.content?.rendered || "",
+      content: decodeHtmlEntities(post.content?.rendered || ""),
 
       cssUrls
     };
