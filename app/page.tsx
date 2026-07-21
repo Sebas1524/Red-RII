@@ -159,7 +159,7 @@ export default function HomePage() {
                 maxWidth: "700px",
               }}
             >
-              Red Iberoamericana
+              
               <br />
               <span style={{ color: "rgba(255,255,255,0.6)" }}>
                 de Investigación
