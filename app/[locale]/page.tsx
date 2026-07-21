@@ -583,187 +583,185 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════ */}
-      {/* CAISEB BANNER */}
-      {/* ═══════════════════════════════════════════ */}
-      <section className="section-padding" style={{ background: "#fff" }}>
-        <div className="container-custom">
-          <div
-            className="hover-lift scroll-reveal"
-            style={{
-              background: "linear-gradient(135deg, #582080 0%, #3a1060 100%)",
-              borderRadius: "20px",
-              padding: "3rem 2.5rem",
-              display: "grid",
-              gridTemplateColumns: "1fr auto",
-              gap: "2rem",
-              alignItems: "center",
-              position: "relative",
-              overflow: "hidden",
-            }}
-          >
-            <div
-              className="animate-pulse-glow"
-              style={{
-                position: "absolute",
-                top: "-50%",
-                right: "-10%",
-                width: "400px",
-                height: "400px",
-                borderRadius: "50%",
-                background: "radial-gradient(circle, rgba(254,199,4,0.15) 0%, transparent 70%)",
-                pointerEvents: "none",
-              }}
-            />
-            <div style={{ position: "relative", zIndex: 1 }}>
-              <div
-                style={{
-                  display: "inline-block",
-                  background: "#FEC704",
-                  color: "#582080",
-                  padding: "0.35rem 1rem",
-                  borderRadius: "999px",
-                  fontSize: "0.8rem",
-                  fontWeight: 700,
-                  marginBottom: "1rem",
-                  letterSpacing: "1px",
-                  textTransform: "uppercase",
-                }}
-              >
-                IV Congreso Internacional
-              </div>
-              <h3
-                style={{
-                  color: "#fff",
-                  fontSize: "clamp(1.5rem, 3vw, 2.2rem)",
-                  fontWeight: 700,
-                  marginBottom: "0.5rem",
-                }}
-              >
-                CAISEB 2026
-              </h3>
-              <p
-                style={{
-                  color: "#FEC704",
-                  fontSize: "1rem",
-                  fontWeight: 600,
-                  marginBottom: "0.75rem",
-                  letterSpacing: "0.5px",
-                }}
-              >
-                Congreso Académico Internacional de Salud, Educación y Bienestar
-              </p>
-              <p
-                style={{
-                  color: "rgba(255,255,255,0.75)",
-                  fontSize: "0.95rem",
-                  lineHeight: 1.6,
-                  marginBottom: "1rem",
-                  maxWidth: "500px",
-                }}
-              >
-                Foro internacional que reúne a investigadores, docentes y profesionales
-                para intercambiar conocimientos orientados a mejorar la calidad de vida
-                de las personas.
-              </p>
-              <div style={{ display: "flex", gap: "1.5rem", marginBottom: "1.5rem", flexWrap: "wrap" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "0.4rem" }}>
-                  <span style={{ color: "#FEC704", fontWeight: 600, fontSize: "0.85rem" }}>📍</span>
-                  <span style={{ color: "rgba(255,255,255,0.8)", fontSize: "0.85rem" }}>Quito · Ecuador</span>
-                </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "0.4rem" }}>
-                  <span style={{ color: "#FEC704", fontWeight: 600, fontSize: "0.85rem" }}>📍</span>
-                  <span style={{ color: "rgba(255,255,255,0.8)", fontSize: "0.85rem" }}>Cartagena de Indias · Colombia</span>
-                </div>
-              </div>
-              <div style={{ marginBottom: "1.5rem" }}>
-                <span
-                  style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "0.5rem",
-                    background: "rgba(255,255,255,0.1)",
-                    padding: "0.5rem 1rem",
-                    borderRadius: "8px",
-                    color: "#fff",
-                    fontSize: "0.9rem",
-                    fontWeight: 500,
-                    border: "1px solid rgba(255,255,255,0.15)",
-                  }}
-                >
-                  <Calendar size={16} color="#FEC704" />
-                  22 y 23 de octubre · Universidad de Cartagena
-                </span>
-              </div>
-              <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
-                <Link
-                  href="/caiseb"
-                  style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "0.5rem",
-                    background: "#FEC704",
-                    color: "#582080",
-                    padding: "0.8rem 1.5rem",
-                    borderRadius: "12px",
-                    fontWeight: 600,
-                    textDecoration: "none",
-                    fontSize: "0.95rem",
-                  }}
-                >
-                  Ver detalles
-                  <ArrowRight size={18} />
-                </Link>
-                <Link
-                  href="/caiseb#convocatoria"
-                  style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "0.5rem",
-                    background: "transparent",
-                    color: "#fff",
-                    padding: "0.8rem 1.5rem",
-                    borderRadius: "12px",
-                    fontWeight: 600,
-                    textDecoration: "none",
-                    fontSize: "0.95rem",
-                    border: "2px solid rgba(255,255,255,0.5)",
-                  }}
-                >
-                  Enviar ponencia
-                  <ArrowRight size={18} />
-                </Link>
-              </div>
-            </div>
-            <div
-              style={{
-                position: "relative",
-                zIndex: 1,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                minHeight: "280px",
-                borderRadius: "16px",
-                overflow: "hidden",
-              }}
-            >
-              <Image
-                src="/images/caiseb_banner.jpg"
-                alt="IV Congreso CAISEB 2026 - Cartagena de Indias"
-                width={400}
-                height={300}
-                style={{
-                  objectFit: "cover",
-                  borderRadius: "16px",
-                  opacity: 0.9,
-                  width: "100%",
-                  height: "100%",
-                  maxWidth: "350px",
-                }}
-              />
-            </div>
+{/* CAISEB BANNER */}
+{/* ═══════════════════════════════════════════ */}
+<section className="section-padding" style={{ background: "#fff" }}>
+  <div className="container-custom">
+    <div
+      className="hover-lift scroll-reveal"
+      style={{
+        background: "linear-gradient(135deg, #582080 0%, #3a1060 100%)",
+        borderRadius: "20px",
+        padding: "3rem 2.5rem",
+        display: "grid",
+        gridTemplateColumns: "1fr 1fr",
+        gap: "2rem",
+        alignItems: "center",
+        position: "relative",
+        overflow: "hidden",
+      }}
+    >
+      {/* Efecto de brillo decorativo */}
+      <div
+        className="animate-pulse-glow"
+        style={{
+          position: "absolute",
+          top: "-50%",
+          right: "-10%",
+          width: "400px",
+          height: "400px",
+          borderRadius: "50%",
+          background: "radial-gradient(circle, rgba(254,199,4,0.15) 0%, transparent 70%)",
+          pointerEvents: "none",
+        }}
+      />
+
+      {/* Contenido textual */}
+      <div style={{ position: "relative", zIndex: 1 }}>
+        <div
+          style={{
+            display: "inline-block",
+            background: "#FEC704",
+            color: "#582080",
+            padding: "0.35rem 1rem",
+            borderRadius: "999px",
+            fontSize: "0.8rem",
+            fontWeight: 700,
+            marginBottom: "1rem",
+            letterSpacing: "1px",
+            textTransform: "uppercase",
+          }}
+        >
+          IV Congreso Internacional
+        </div>
+        <h3
+          style={{
+            color: "#fff",
+            fontSize: "clamp(1.5rem, 3vw, 2.2rem)",
+            fontWeight: 700,
+            marginBottom: "0.5rem",
+          }}
+        >
+          CAISEB 2026
+        </h3>
+        <p
+          style={{
+            color: "#FEC704",
+            fontSize: "1rem",
+            fontWeight: 600,
+            marginBottom: "0.75rem",
+            letterSpacing: "0.5px",
+          }}
+        >
+          Congreso Académico Internacional de Salud, Educación y Bienestar
+        </p>
+        <p
+          style={{
+            color: "rgba(255,255,255,0.75)",
+            fontSize: "0.95rem",
+            lineHeight: 1.6,
+            marginBottom: "1rem",
+            maxWidth: "500px",
+          }}
+        >
+          Foro internacional que reúne a investigadores, docentes y profesionales
+          para intercambiar conocimientos orientados a mejorar la calidad de vida
+          de las personas.
+        </p>
+        <div style={{ display: "flex", gap: "1.5rem", marginBottom: "1.5rem", flexWrap: "wrap" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "0.4rem" }}>
+            <span style={{ fontSize: "0.85rem" }}>📍</span>
+            <span style={{ color: "rgba(255,255,255,0.8)", fontSize: "0.85rem" }}>Quito · Ecuador</span>
+          </div>
+          <div style={{ display: "flex", alignItems: "center", gap: "0.4rem" }}>
+            <span style={{ fontSize: "0.85rem" }}>📍</span>
+            <span style={{ color: "rgba(255,255,255,0.8)", fontSize: "0.85rem" }}>Cartagena de Indias · Colombia</span>
           </div>
         </div>
-      </section>
+        <div style={{ marginBottom: "1.5rem" }}>
+          <span
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "0.5rem",
+              background: "rgba(255,255,255,0.1)",
+              padding: "0.5rem 1rem",
+              borderRadius: "8px",
+              color: "#fff",
+              fontSize: "0.9rem",
+              fontWeight: 500,
+              border: "1px solid rgba(255,255,255,0.15)",
+            }}
+          >
+            <Calendar size={16} color="#FEC704" />
+            22 y 23 de octubre · Universidad de Cartagena
+          </span>
+        </div>
+        <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
+          <Link
+            href="/caiseb"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "0.5rem",
+              background: "#FEC704",
+              color: "#582080",
+              padding: "0.8rem 1.5rem",
+              borderRadius: "12px",
+              fontWeight: 600,
+              textDecoration: "none",
+              fontSize: "0.95rem",
+            }}
+          >
+            Ver detalles
+            <ArrowRight size={18} />
+          </Link>
+          <Link
+            href="/caiseb#convocatoria"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "0.5rem",
+              background: "transparent",
+              color: "#fff",
+              padding: "0.8rem 1.5rem",
+              borderRadius: "12px",
+              fontWeight: 600,
+              textDecoration: "none",
+              fontSize: "0.95rem",
+              border: "2px solid rgba(255,255,255,0.5)",
+            }}
+          >
+            Enviar ponencia
+            <ArrowRight size={18} />
+          </Link>
+        </div>
+      </div>
+
+      {/* Imagen - SIN CONTORNO, MÁS GRANDE */}
+      <div
+        style={{
+          position: "relative",
+          zIndex: 1,
+          width: "100%",
+          height: "100%",
+          minHeight: "350px",
+        }}
+      >
+        <Image
+          src="/images/caiseb_banner.jpg"
+          alt="IV Congreso CAISEB 2026 - Cartagena de Indias"
+          fill
+          style={{
+            objectFit: "cover",
+            borderRadius: "12px",
+          }}
+          sizes="(max-width: 768px) 100vw, 50vw"
+        />
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* ═══════════════════════════════════════════ */}
       {/* PRESENCIA EN IBEROAMÉRICA */}
