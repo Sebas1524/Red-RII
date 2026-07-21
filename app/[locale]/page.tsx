@@ -136,20 +136,72 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CAISEB BANNER */}
+      {/* ═══════════════════════════════════════════ */}
+      {/* CAISEB BANNER - ACTUALIZADO */}
+      {/* ═══════════════════════════════════════════ */}
       <section className="section-padding" style={{ background: "#fff" }}>
         <div className="container-custom">
           <div className="hover-lift scroll-reveal" style={{ background: "linear-gradient(135deg, #582080 0%, #3a1060 100%)", borderRadius: "20px", padding: "3rem 2.5rem", display: "grid", gridTemplateColumns: "1fr auto", gap: "2rem", alignItems: "center", position: "relative", overflow: "hidden" }}>
+            
+            {/* Efecto de brillo decorativo */}
+            <div className="animate-pulse-glow" style={{ position: "absolute", top: "-50%", right: "-10%", width: "400px", height: "400px", borderRadius: "50%", background: "radial-gradient(circle, rgba(254,199,4,0.15) 0%, transparent 70%)", pointerEvents: "none" }} />
+            
+            {/* Contenido textual */}
             <div style={{ position: "relative", zIndex: 1 }}>
-              <div style={{ display: "inline-block", background: "#FEC704", color: "#582080", padding: "0.35rem 1rem", borderRadius: "999px", fontSize: "0.8rem", fontWeight: 700, marginBottom: "1rem", letterSpacing: "1px", textTransform: "uppercase" }}>{t("caiseb.badge")}</div>
-              <h3 style={{ color: "#fff", fontSize: "clamp(1.5rem, 3vw, 2.2rem)", fontWeight: 700, marginBottom: "0.5rem" }}>{t("caiseb.title")}</h3>
-              <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "1rem", marginBottom: "1.5rem" }}>{t("caiseb.description")}</p>
-              <Link href="/caiseb" style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "#FEC704", color: "#582080", padding: "0.8rem 1.5rem", borderRadius: "12px", fontWeight: 600, textDecoration: "none" }}>
-                {t("caiseb.btn")} <ArrowRight size={18} />
-              </Link>
+              {/* Badge */}
+              <div style={{ display: "inline-block", background: "#FEC704", color: "#582080", padding: "0.35rem 1rem", borderRadius: "999px", fontSize: "0.8rem", fontWeight: 700, marginBottom: "1rem", letterSpacing: "1px", textTransform: "uppercase" }}>
+                {t("caiseb.badge")}
+              </div>
+              
+              {/* Título */}
+              <h3 style={{ color: "#fff", fontSize: "clamp(1.5rem, 3vw, 2.2rem)", fontWeight: 700, marginBottom: "0.5rem" }}>
+                {t("caiseb.title")}
+              </h3>
+              
+              {/* Subtítulo */}
+              <p style={{ color: "#FEC704", fontSize: "1rem", fontWeight: 600, marginBottom: "0.75rem", letterSpacing: "0.5px" }}>
+                {t("caiseb.subtitle")}
+              </p>
+              
+              {/* Descripción */}
+              <p style={{ color: "rgba(255,255,255,0.75)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "1rem", maxWidth: "500px" }}>
+                {t("caiseb.description")}
+              </p>
+              
+              {/* Sedes */}
+              <div style={{ display: "flex", gap: "1.5rem", marginBottom: "1.5rem", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "0.4rem" }}>
+                  <span style={{ color: "#FEC704", fontWeight: 600, fontSize: "0.85rem" }}>📍</span>
+                  <span style={{ color: "rgba(255,255,255,0.8)", fontSize: "0.85rem" }}>{t("caiseb.sede1")}</span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "0.4rem" }}>
+                  <span style={{ color: "#FEC704", fontWeight: 600, fontSize: "0.85rem" }}>📍</span>
+                  <span style={{ color: "rgba(255,255,255,0.8)", fontSize: "0.85rem" }}>{t("caiseb.sede2")}</span>
+                </div>
+              </div>
+              
+              {/* Fecha destacada */}
+              <div style={{ marginBottom: "1.5rem" }}>
+                <span style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "rgba(255,255,255,0.1)", padding: "0.5rem 1rem", borderRadius: "8px", color: "#fff", fontSize: "0.9rem", fontWeight: 500, border: "1px solid rgba(255,255,255,0.15)" }}>
+                  <Calendar size={16} color="#FEC704" />
+                  {t("caiseb.fecha")}
+                </span>
+              </div>
+              
+              {/* Botones de acción */}
+              <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
+                <Link href="/caiseb" style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "#FEC704", color: "#582080", padding: "0.8rem 1.5rem", borderRadius: "12px", fontWeight: 600, textDecoration: "none", fontSize: "0.95rem" }}>
+                  {t("caiseb.btn")} <ArrowRight size={18} />
+                </Link>
+                <Link href="/caiseb#convocatoria" style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "transparent", color: "#fff", padding: "0.8rem 1.5rem", borderRadius: "12px", fontWeight: 600, textDecoration: "none", fontSize: "0.95rem", border: "2px solid rgba(255,255,255,0.5)" }}>
+                  {t("caiseb.btnPonencia")} <ArrowRight size={18} />
+                </Link>
+              </div>
             </div>
-            <div style={{ position: "relative", zIndex: 1, display: "flex", alignItems: "center", justifyContent: "center", minHeight: "200px", borderRadius: "16px", overflow: "hidden" }}>
-              <Image src="/images/caiseb-banner.jpg" alt="CAISEB" width={400} height={300} style={{ objectFit: "cover", borderRadius: "16px", opacity: 0.65, width: "100%", height: "100%", maxWidth: "350px" }} />
+            
+            {/* Imagen actualizada */}
+            <div style={{ position: "relative", zIndex: 1, display: "flex", alignItems: "center", justifyContent: "center", minHeight: "280px", borderRadius: "16px", overflow: "hidden" }}>
+              <Image src="/images/caiseb_banner.jpg" alt="IV Congreso CAISEB 2026 - Cartagena de Indias" width={400} height={300} style={{ objectFit: "cover", borderRadius: "16px", opacity: 0.9, width: "100%", height: "100%", maxWidth: "350px" }} />
             </div>
           </div>
         </div>
@@ -195,6 +247,8 @@ export default function HomePage() {
           </div>
 
           <div className="stagger-children" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "0", borderRadius: "24px", overflow: "hidden", boxShadow: "0 20px 40px rgba(0,0,73,0.12)", maxWidth: "1000px", margin: "0 auto" }}>
+            
+            {/* NOTICIAS */}
             <div className="hover-lift" style={{ background: "#f8f8ff", padding: "3rem 2.5rem", position: "relative", borderRight: "1px solid rgba(0,0,73,0.05)" }}>
               <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "4px", background: "linear-gradient(90deg, #FEC704, #000049)", opacity: 0.5 }} />
               <div style={{ width: 64, height: 64, borderRadius: "16px", background: "linear-gradient(135deg, #FEC704, #fdd835)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "1.5rem", boxShadow: "0 10px 20px rgba(254,199,4,0.3)" }}>
@@ -210,8 +264,10 @@ export default function HomePage() {
                 onMouseLeave={(e) => { e.currentTarget.style.background = "#000049"; e.currentTarget.style.color = "#fff"; e.currentTarget.style.borderColor = "#000049"; }}>
                 {t("updates.newsBtn")} <ArrowRight size={18} />
               </Link>
+              <div style={{ position: "absolute", bottom: "2rem", right: "2rem", opacity: 0.1, fontSize: "8rem", fontWeight: 800, color: "#000049", lineHeight: 1, userSelect: "none", pointerEvents: "none" }}>01</div>
             </div>
 
+            {/* EVENTOS - ACTUALIZADO */}
             <div className="hover-lift" style={{ background: "linear-gradient(135deg, #000049, #0a0a6e)", padding: "3rem 2.5rem", position: "relative" }}>
               <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "4px", background: "linear-gradient(90deg, #FEC704, #fff)", opacity: 0.3 }} />
               <div style={{ width: 64, height: 64, borderRadius: "16px", background: "#FEC704", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "1.5rem" }}>
@@ -221,12 +277,20 @@ export default function HomePage() {
                 {t("updates.eventsTitle")}<br /><span style={{ color: "#FEC704" }}>{t("updates.eventsHighlight")}</span>
               </h3>
               <p style={{ color: "#FEC704", fontSize: "1rem", fontWeight: 600, marginBottom: "0.5rem", letterSpacing: "1px" }}>{t("updates.eventsLabel")}</p>
-              <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "2rem" }}>{t("updates.eventsDescription")}</p>
+              <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "0.95rem", lineHeight: 1.6, marginBottom: "0.75rem" }}>{t("updates.eventsDescription")}</p>
+              
+              {/* Info adicional del CAISEB */}
+              <div style={{ background: "rgba(254,199,4,0.1)", borderRadius: "8px", padding: "0.75rem", marginBottom: "1.25rem", border: "1px solid rgba(254,199,4,0.2)" }}>
+                <p style={{ color: "#FEC704", fontSize: "0.8rem", fontWeight: 700, marginBottom: "0.25rem" }}>{t("updates.caisebBadge")}</p>
+                <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "0.8rem", margin: 0 }}>{t("updates.caisebFecha")}</p>
+              </div>
+              
               <Link href="/eventos" style={{ display: "inline-flex", alignItems: "center", gap: "0.75rem", background: "transparent", color: "#FEC704", padding: "0.9rem 2rem", borderRadius: "12px", fontWeight: 600, textDecoration: "none", border: "2px solid #FEC704" }}
                 onMouseEnter={(e) => { e.currentTarget.style.background = "#FEC704"; e.currentTarget.style.color = "#000049"; }}
                 onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "#FEC704"; }}>
                 {t("updates.eventsBtn")} <ArrowRight size={18} />
               </Link>
+              <div style={{ position: "absolute", bottom: "2rem", right: "2rem", opacity: 0.1, fontSize: "8rem", fontWeight: 800, color: "#fff", lineHeight: 1, userSelect: "none", pointerEvents: "none" }}>02</div>
             </div>
           </div>
 
