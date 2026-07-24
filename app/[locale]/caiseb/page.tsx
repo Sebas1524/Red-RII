@@ -143,5 +143,3 @@ export default async function CaisebPage({ params }: { params: Promise<{ locale:
     </div>
   );
 }
-
-esto donde lo pego?
